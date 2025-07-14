@@ -1,0 +1,13 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "AESL_automem_wvarsin.v"
+sv xil_defaultlib "AESL_automem_wvarsout.v"
+sv xil_defaultlib "chunkIter.autotb.v"
+sv xil_defaultlib "chunkIter.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./svr/svr_pkg.sv"    
+sv xil_defaultlib "./svr/svr_if.sv"   
+sv xil_defaultlib "./chunkIter_subsystem/chunkIter_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

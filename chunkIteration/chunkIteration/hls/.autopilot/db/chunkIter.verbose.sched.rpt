@@ -1,0 +1,242 @@
+
+
+================================================================
+== Vitis HLS Report for 'chunkIter'
+================================================================
+* Date:           Mon Jul 14 16:40:14 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        chunkIteration
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.116 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%wvarsin_addr = getelementptr i32 %wvarsin, i64 0, i64 4" [../functions256.cpp:17->chunkIter.cpp:9]   --->   Operation 7 'getelementptr' 'wvarsin_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (1.76ns)   --->   "%wvarsin_load = load i3 %wvarsin_addr" [../functions256.cpp:17->chunkIter.cpp:9]   --->   Operation 8 'load' 'wvarsin_load' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 2 <SV = 1> <Delay = 3.53>
+ST_2 : Operation 9 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load = load i3 %wvarsin_addr" [../functions256.cpp:17->chunkIter.cpp:9]   --->   Operation 9 'load' 'wvarsin_load' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_2 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%lshr_ln = partselect i26 @_ssdm_op_PartSelect.i26.i32.i32.i32, i32 %wvarsin_load, i32 6, i32 31" [../functions256.cpp:17->chunkIter.cpp:9]   --->   Operation 10 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%trunc_ln17 = trunc i32 %wvarsin_load" [../functions256.cpp:17->chunkIter.cpp:9]   --->   Operation 11 'trunc' 'trunc_ln17' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%lshr_ln1 = partselect i21 @_ssdm_op_PartSelect.i21.i32.i32.i32, i32 %wvarsin_load, i32 11, i32 31" [../functions256.cpp:18->chunkIter.cpp:9]   --->   Operation 12 'partselect' 'lshr_ln1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%trunc_ln18 = trunc i32 %wvarsin_load" [../functions256.cpp:18->chunkIter.cpp:9]   --->   Operation 13 'trunc' 'trunc_ln18' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%lshr_ln2 = partselect i7 @_ssdm_op_PartSelect.i7.i32.i32.i32, i32 %wvarsin_load, i32 25, i32 31" [../functions256.cpp:19->chunkIter.cpp:9]   --->   Operation 14 'partselect' 'lshr_ln2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%trunc_ln19 = trunc i32 %wvarsin_load" [../functions256.cpp:19->chunkIter.cpp:9]   --->   Operation 15 'trunc' 'trunc_ln19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%wvarsin_addr_1 = getelementptr i32 %wvarsin, i64 0, i64 0" [../functions256.cpp:7->chunkIter.cpp:10]   --->   Operation 16 'getelementptr' 'wvarsin_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (1.76ns)   --->   "%wvarsin_load_1 = load i3 %wvarsin_addr_1" [../functions256.cpp:7->chunkIter.cpp:10]   --->   Operation 17 'load' 'wvarsin_load_1' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%wvarsin_addr_2 = getelementptr i32 %wvarsin, i64 0, i64 5" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 18 'getelementptr' 'wvarsin_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (1.76ns)   --->   "%wvarsin_load_2 = load i3 %wvarsin_addr_2" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 19 'load' 'wvarsin_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_2 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%or_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i6.i26, i6 %trunc_ln17, i26 %lshr_ln" [chunkIter.cpp:13]   --->   Operation 20 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%or_ln13_1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i11.i21, i11 %trunc_ln18, i21 %lshr_ln1" [chunkIter.cpp:13]   --->   Operation 21 'bitconcatenate' 'or_ln13_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%or_ln13_3 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i25.i7, i25 %trunc_ln19, i7 %lshr_ln2" [chunkIter.cpp:13]   --->   Operation 22 'bitconcatenate' 'or_ln13_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node xor_ln13_2)   --->   "%xor_ln13_1 = xor i32 %or_ln13_1, i32 %or_ln13_3" [chunkIter.cpp:13]   --->   Operation 23 'xor' 'xor_ln13_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.84ns) (out node of the LUT)   --->   "%xor_ln13_2 = xor i32 %xor_ln13_1, i32 %or_ln" [chunkIter.cpp:13]   --->   Operation 24 'xor' 'xor_ln13_2' <Predicate = true> <Delay = 0.84> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%wvarsout_addr_5 = getelementptr i32 %wvarsout, i64 0, i64 5" [chunkIter.cpp:20]   --->   Operation 25 'getelementptr' 'wvarsout_addr_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln20 = store i32 %wvarsin_load, i3 %wvarsout_addr_5" [chunkIter.cpp:20]   --->   Operation 26 'store' 'store_ln20' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 3 <SV = 2> <Delay = 3.53>
+ST_3 : Operation 27 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_1 = load i3 %wvarsin_addr_1" [../functions256.cpp:7->chunkIter.cpp:10]   --->   Operation 27 'load' 'wvarsin_load_1' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_3 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%lshr_ln7 = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %wvarsin_load_1, i32 2, i32 31" [../functions256.cpp:7->chunkIter.cpp:10]   --->   Operation 28 'partselect' 'lshr_ln7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%trunc_ln7 = trunc i32 %wvarsin_load_1" [../functions256.cpp:7->chunkIter.cpp:10]   --->   Operation 29 'trunc' 'trunc_ln7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%lshr_ln8 = partselect i19 @_ssdm_op_PartSelect.i19.i32.i32.i32, i32 %wvarsin_load_1, i32 13, i32 31" [../functions256.cpp:8->chunkIter.cpp:10]   --->   Operation 30 'partselect' 'lshr_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%trunc_ln8 = trunc i32 %wvarsin_load_1" [../functions256.cpp:8->chunkIter.cpp:10]   --->   Operation 31 'trunc' 'trunc_ln8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%lshr_ln9 = partselect i10 @_ssdm_op_PartSelect.i10.i32.i32.i32, i32 %wvarsin_load_1, i32 22, i32 31" [../functions256.cpp:9->chunkIter.cpp:10]   --->   Operation 32 'partselect' 'lshr_ln9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%trunc_ln9 = trunc i32 %wvarsin_load_1" [../functions256.cpp:9->chunkIter.cpp:10]   --->   Operation 33 'trunc' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_2 = load i3 %wvarsin_addr_2" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 34 'load' 'wvarsin_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%wvarsin_addr_3 = getelementptr i32 %wvarsin, i64 0, i64 6" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 35 'getelementptr' 'wvarsin_addr_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [2/2] (1.76ns)   --->   "%wvarsin_load_3 = load i3 %wvarsin_addr_3" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 36 'load' 'wvarsin_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%wvarsin_addr_4 = getelementptr i32 %wvarsin, i64 0, i64 1" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 37 'getelementptr' 'wvarsin_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [2/2] (1.76ns)   --->   "%wvarsin_load_4 = load i3 %wvarsin_addr_4" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 38 'load' 'wvarsin_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%or_ln15_1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i2.i30, i2 %trunc_ln7, i30 %lshr_ln7" [chunkIter.cpp:15]   --->   Operation 39 'bitconcatenate' 'or_ln15_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%or_ln15_2 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i13.i19, i13 %trunc_ln8, i19 %lshr_ln8" [chunkIter.cpp:15]   --->   Operation 40 'bitconcatenate' 'or_ln15_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%or_ln15_4 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i22.i10, i22 %trunc_ln9, i10 %lshr_ln9" [chunkIter.cpp:15]   --->   Operation 41 'bitconcatenate' 'or_ln15_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node xor_ln15_1)   --->   "%xor_ln15 = xor i32 %or_ln15_2, i32 %or_ln15_4" [chunkIter.cpp:15]   --->   Operation 42 'xor' 'xor_ln15' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.84ns) (out node of the LUT)   --->   "%xor_ln15_1 = xor i32 %xor_ln15, i32 %or_ln15_1" [chunkIter.cpp:15]   --->   Operation 43 'xor' 'xor_ln15_1' <Predicate = true> <Delay = 0.84> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%wvarsout_addr_1 = getelementptr i32 %wvarsout, i64 0, i64 1" [chunkIter.cpp:16]   --->   Operation 44 'getelementptr' 'wvarsout_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln16 = store i32 %wvarsin_load_1, i3 %wvarsout_addr_1" [chunkIter.cpp:16]   --->   Operation 45 'store' 'store_ln16' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 4 <SV = 3> <Delay = 3.53>
+ST_4 : Operation 46 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_3 = load i3 %wvarsin_addr_3" [../functions256.cpp:49->chunkIter.cpp:11]   --->   Operation 46 'load' 'wvarsin_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 47 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_4 = load i3 %wvarsin_addr_4" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 47 'load' 'wvarsin_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%wvarsin_addr_5 = getelementptr i32 %wvarsin, i64 0, i64 2" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 48 'getelementptr' 'wvarsin_addr_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [2/2] (1.76ns)   --->   "%wvarsin_load_5 = load i3 %wvarsin_addr_5" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 49 'load' 'wvarsin_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%wvarsin_addr_6 = getelementptr i32 %wvarsin, i64 0, i64 7" [chunkIter.cpp:13]   --->   Operation 50 'getelementptr' 'wvarsin_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [2/2] (1.76ns)   --->   "%wvarsin_load_6 = load i3 %wvarsin_addr_6" [chunkIter.cpp:13]   --->   Operation 51 'load' 'wvarsin_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node or_ln13)   --->   "%xor_ln13 = xor i32 %wvarsin_load, i32 4294967295" [chunkIter.cpp:13]   --->   Operation 52 'xor' 'xor_ln13' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node or_ln13)   --->   "%and_ln13 = and i32 %wvarsin_load_3, i32 %xor_ln13" [chunkIter.cpp:13]   --->   Operation 53 'and' 'and_ln13' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node or_ln13)   --->   "%and_ln13_1 = and i32 %wvarsin_load_2, i32 %wvarsin_load" [chunkIter.cpp:13]   --->   Operation 54 'and' 'and_ln13_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.84ns) (out node of the LUT)   --->   "%or_ln13 = or i32 %and_ln13, i32 %and_ln13_1" [chunkIter.cpp:13]   --->   Operation 55 'or' 'or_ln13' <Predicate = true> <Delay = 0.84> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%wvarsout_addr_6 = getelementptr i32 %wvarsout, i64 0, i64 6" [chunkIter.cpp:21]   --->   Operation 56 'getelementptr' 'wvarsout_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln21 = store i32 %wvarsin_load_2, i3 %wvarsout_addr_6" [chunkIter.cpp:21]   --->   Operation 57 'store' 'store_ln21' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%wvarsout_addr_7 = getelementptr i32 %wvarsout, i64 0, i64 7" [chunkIter.cpp:22]   --->   Operation 58 'getelementptr' 'wvarsout_addr_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln22 = store i32 %wvarsin_load_3, i3 %wvarsout_addr_7" [chunkIter.cpp:22]   --->   Operation 59 'store' 'store_ln22' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 5 <SV = 4> <Delay = 7.11>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%wt_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %wt" [chunkIter.cpp:4]   --->   Operation 60 'read' 'wt_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%kt_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %kt" [chunkIter.cpp:4]   --->   Operation 61 'read' 'kt_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_5 = load i3 %wvarsin_addr_5" [../functions256.cpp:58->chunkIter.cpp:12]   --->   Operation 62 'load' 'wvarsin_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 63 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_6 = load i3 %wvarsin_addr_6" [chunkIter.cpp:13]   --->   Operation 63 'load' 'wvarsin_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 64 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln13 = add i32 %wvarsin_load_6, i32 %xor_ln13_2" [chunkIter.cpp:13]   --->   Operation 64 'add' 'add_ln13' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 65 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln13_1 = add i32 %kt_read, i32 %wt_read" [chunkIter.cpp:13]   --->   Operation 65 'add' 'add_ln13_1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 66 [1/1] (3.55ns) (root node of TernaryAdder)   --->   "%add_ln13_2 = add i32 %add_ln13_1, i32 %or_ln13" [chunkIter.cpp:13]   --->   Operation 66 'add' 'add_ln13_2' <Predicate = true> <Delay = 3.55> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 67 [1/1] (3.55ns) (root node of TernaryAdder)   --->   "%t1 = add i32 %add_ln13_2, i32 %add_ln13" [chunkIter.cpp:13]   --->   Operation 67 'add' 't1' <Predicate = true> <Delay = 3.55> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node or_ln15_3)   --->   "%or_ln15 = or i32 %wvarsin_load_5, i32 %wvarsin_load_4" [chunkIter.cpp:15]   --->   Operation 68 'or' 'or_ln15' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 69 [1/1] (0.00ns) (grouped into LUT with out node or_ln15_3)   --->   "%and_ln15 = and i32 %wvarsin_load_1, i32 %or_ln15" [chunkIter.cpp:15]   --->   Operation 69 'and' 'and_ln15' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node or_ln15_3)   --->   "%and_ln15_1 = and i32 %wvarsin_load_5, i32 %wvarsin_load_4" [chunkIter.cpp:15]   --->   Operation 70 'and' 'and_ln15_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [1/1] (0.84ns) (out node of the LUT)   --->   "%or_ln15_3 = or i32 %and_ln15, i32 %and_ln15_1" [chunkIter.cpp:15]   --->   Operation 71 'or' 'or_ln15_3' <Predicate = true> <Delay = 0.84> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%wvarsout_addr_2 = getelementptr i32 %wvarsout, i64 0, i64 2" [chunkIter.cpp:17]   --->   Operation 72 'getelementptr' 'wvarsout_addr_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln17 = store i32 %wvarsin_load_4, i3 %wvarsout_addr_2" [chunkIter.cpp:17]   --->   Operation 73 'store' 'store_ln17' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%wvarsout_addr_3 = getelementptr i32 %wvarsout, i64 0, i64 3" [chunkIter.cpp:18]   --->   Operation 74 'getelementptr' 'wvarsout_addr_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln18 = store i32 %wvarsin_load_5, i3 %wvarsout_addr_3" [chunkIter.cpp:18]   --->   Operation 75 'store' 'store_ln18' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%wvarsin_addr_7 = getelementptr i32 %wvarsin, i64 0, i64 3" [chunkIter.cpp:19]   --->   Operation 76 'getelementptr' 'wvarsin_addr_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 77 [2/2] (1.76ns)   --->   "%wvarsin_load_7 = load i3 %wvarsin_addr_7" [chunkIter.cpp:19]   --->   Operation 77 'load' 'wvarsin_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 5.68>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [chunkIter.cpp:3]   --->   Operation 78 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %kt"   --->   Operation 79 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %kt, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %wt"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %wt, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %wvarsin, void @empty_1, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %wvarsin"   --->   Operation 84 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %wvarsout, void @empty_1, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %wvarsout"   --->   Operation 86 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln15 = add i32 %xor_ln15_1, i32 %t1" [chunkIter.cpp:15]   --->   Operation 87 'add' 'add_ln15' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 88 [1/1] (3.55ns) (root node of TernaryAdder)   --->   "%add_ln15_1 = add i32 %add_ln15, i32 %or_ln15_3" [chunkIter.cpp:15]   --->   Operation 88 'add' 'add_ln15_1' <Predicate = true> <Delay = 3.55> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 89 [1/1] (0.00ns)   --->   "%wvarsout_addr = getelementptr i32 %wvarsout, i64 0, i64 0" [chunkIter.cpp:15]   --->   Operation 89 'getelementptr' 'wvarsout_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 90 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln15 = store i32 %add_ln15_1, i3 %wvarsout_addr" [chunkIter.cpp:15]   --->   Operation 90 'store' 'store_ln15' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 91 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvarsin_load_7 = load i3 %wvarsin_addr_7" [chunkIter.cpp:19]   --->   Operation 91 'load' 'wvarsin_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 92 [1/1] (2.14ns)   --->   "%add_ln19 = add i32 %wvarsin_load_7, i32 %t1" [chunkIter.cpp:19]   --->   Operation 92 'add' 'add_ln19' <Predicate = true> <Delay = 2.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 93 [1/1] (0.00ns)   --->   "%wvarsout_addr_4 = getelementptr i32 %wvarsout, i64 0, i64 4" [chunkIter.cpp:19]   --->   Operation 93 'getelementptr' 'wvarsout_addr_4' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 94 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln19 = store i32 %add_ln19, i3 %wvarsout_addr_4" [chunkIter.cpp:19]   --->   Operation 94 'store' 'store_ln19' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 95 [1/1] (0.00ns)   --->   "%ret_ln23 = ret" [chunkIter.cpp:23]   --->   Operation 95 'ret' 'ret_ln23' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.769ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('wvarsin_addr', ../functions256.cpp:17->chunkIter.cpp:9) [16]  (0.000 ns)
+	'load' operation 32 bit ('wvarsin_load', ../functions256.cpp:17->chunkIter.cpp:9) on array 'wvarsin' [17]  (1.769 ns)
+
+ <State 2>: 3.538ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvarsin_load', ../functions256.cpp:17->chunkIter.cpp:9) on array 'wvarsin' [17]  (1.769 ns)
+	'store' operation 0 bit ('store_ln20', chunkIter.cpp:20) of variable 'wvarsin_load', ../functions256.cpp:17->chunkIter.cpp:9 on array 'wvarsout' [80]  (1.769 ns)
+
+ <State 3>: 3.538ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvarsin_load_1', ../functions256.cpp:7->chunkIter.cpp:10) on array 'wvarsin' [25]  (1.769 ns)
+	'store' operation 0 bit ('store_ln16', chunkIter.cpp:16) of variable 'wvarsin_load_1', ../functions256.cpp:7->chunkIter.cpp:10 on array 'wvarsout' [69]  (1.769 ns)
+
+ <State 4>: 3.538ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvarsin_load_3', ../functions256.cpp:49->chunkIter.cpp:11) on array 'wvarsin' [35]  (1.769 ns)
+	'store' operation 0 bit ('store_ln22', chunkIter.cpp:22) of variable 'wvarsin_load_3', ../functions256.cpp:49->chunkIter.cpp:11 on array 'wvarsout' [84]  (1.769 ns)
+
+ <State 5>: 7.116ns
+The critical path consists of the following:
+	wire read operation ('wt_read', chunkIter.cpp:4) on port 'wt' (chunkIter.cpp:4) [14]  (0.000 ns)
+	'add' operation 32 bit ('add_ln13_1', chunkIter.cpp:13) [52]  (0.000 ns)
+	'add' operation 32 bit ('add_ln13_2', chunkIter.cpp:13) [53]  (3.558 ns)
+	'add' operation 32 bit ('t1', chunkIter.cpp:13) [54]  (3.558 ns)
+
+ <State 6>: 5.683ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvarsin_load_7', chunkIter.cpp:19) on array 'wvarsin' [75]  (1.769 ns)
+	'add' operation 32 bit ('add_ln19', chunkIter.cpp:19) [76]  (2.145 ns)
+	'store' operation 0 bit ('store_ln19', chunkIter.cpp:19) of variable 'add_ln19', chunkIter.cpp:19 on array 'wvarsout' [78]  (1.769 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

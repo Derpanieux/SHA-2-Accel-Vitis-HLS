@@ -6,9 +6,35 @@
       "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
       "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkIter",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkIteration\\..\\functions256.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkIteration\\..\\functions256.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkIteration",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkIter",
       "-c",
       "D:\\Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp"
     ],
     "file": "D:\\Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkIteration",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkIteration\\tb.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkIteration\\tb.cpp"
   }
 ]
