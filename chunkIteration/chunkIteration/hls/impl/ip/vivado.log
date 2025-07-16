@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Jul 14 16:42:43 2025
-# Process ID         : 31956
+# Start of session at: Mon Jul 14 16:48:22 2025
+# Process ID         : 29820
 # Current directory  : D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip
 # Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file           : D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/vivado.log
@@ -19,14 +19,13 @@
 # Host memory        : 25691 MB
 # Swap memory        : 31138 MB
 # Total Virtual      : 56829 MB
-# Available Virtual  : 20221 MB
+# Available Virtual  : 20957 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/hls_data.json outdir=D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip srcdir=D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls ippack_options_dict= ippack_options_dict=
 INFO: Copied 1 ipmisc file(s) to D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/misc
 INFO: Copied 1 verilog file(s) to D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/hdl/verilog
 INFO: Copied 1 vhdl file(s) to D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/hdl/vhdl
-ipx::create_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 498.539 ; gain = 205.695
 INFO: Import ports from HDL: D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/hdl/vhdl/chunkIter.vhd (chunkIter)
 INFO: Add clock interface ap_clk
 INFO: Add reset interface ap_rst
@@ -49,4 +48,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/component.xml
 INFO: Created IP archive D:/Vitis/shaAccel/chunkIteration/chunkIteration/hls/impl/ip/xilinx_com_hls_chunkIter_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 14 16:42:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 14 16:48:29 2025...

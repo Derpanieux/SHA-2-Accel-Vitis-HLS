@@ -1,0 +1,230 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\wGenerator.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/16/25 02:46:22",
+ "timestampMillis": "1752648382191",
+ "buildStep": {
+  "cmdId": "7958ead5-0d21-4d7a-ba9a-5695d55ca746",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\logs\\wGenerator.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config D:\\Vitis\\shaAccel\\wGenerator\\hls_config.cfg --work_dir wGenerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "D:\\Vitis\\shaAccel\\wGenerator\\hls_config.cfg",
+   "--work_dir",
+   "wGenerator"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\wGenerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:46:22",
+ "timestampMillis": "1752648382191",
+ "status": {
+  "cmdId": "7958ead5-0d21-4d7a-ba9a-5695d55ca746",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385523",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "wGenerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385524",
+ "buildStep": {
+  "cmdId": "8c30ca6b-3074-45b1-ae29-a33959cbbd85",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\wGenerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385524",
+ "status": {
+  "cmdId": "8c30ca6b-3074-45b1-ae29-a33959cbbd85",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385524",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls\\sim\\report\\wGenerator_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385525",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385525",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385525",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:46:25",
+ "timestampMillis": "1752648385525",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:47:43",
+ "timestampMillis": "1752648463261",
+ "status": {
+  "cmdId": "8c30ca6b-3074-45b1-ae29-a33959cbbd85",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:47:43",
+ "timestampMillis": "1752648463336",
+ "status": {
+  "cmdId": "7958ead5-0d21-4d7a-ba9a-5695d55ca746",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:47:43",
+ "timestampMillis": "1752648463336",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:47:43",
+ "timestampMillis": "1752648463336",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

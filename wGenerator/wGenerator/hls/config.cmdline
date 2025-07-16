@@ -1,0 +1,3 @@
+relativeroot=D:/Vitis/shaAccel/wGenerator
+original_argv=--mode hls --impl --config D:\Vitis\shaAccel\wGenerator\hls_config.cfg --work_dir wGenerator 
+

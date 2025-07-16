@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\wGenerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/16/25 02:44:15",
+ "timestampMillis": "1752648255390",
+ "buildStep": {
+  "cmdId": "c4d6e3b8-72c9-4e7a-8b24-4217a97ec86e",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\logs\\wGenerator.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\Vitis\\shaAccel\\wGenerator\\hls_config.cfg --work_dir wGenerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\Vitis\\shaAccel\\wGenerator\\hls_config.cfg",
+   "--work_dir",
+   "wGenerator"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\wGenerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:44:15",
+ "timestampMillis": "1752648255390",
+ "status": {
+  "cmdId": "c4d6e3b8-72c9-4e7a-8b24-4217a97ec86e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/16/25 02:44:20",
+ "timestampMillis": "1752648260108",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "wGenerator",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/16/25 02:44:20",
+ "timestampMillis": "1752648260109",
+ "buildStep": {
+  "cmdId": "815fd830-c2a4-4053-aaf8-78566dde4683",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\wGenerator\\wGenerator\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\wGenerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:44:20",
+ "timestampMillis": "1752648260109",
+ "status": {
+  "cmdId": "815fd830-c2a4-4053-aaf8-78566dde4683",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:44:38",
+ "timestampMillis": "1752648278789",
+ "status": {
+  "cmdId": "815fd830-c2a4-4053-aaf8-78566dde4683",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/16/25 02:44:38",
+ "timestampMillis": "1752648278865",
+ "status": {
+  "cmdId": "c4d6e3b8-72c9-4e7a-8b24-4217a97ec86e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:44:38",
+ "timestampMillis": "1752648278865",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/16/25 02:44:38",
+ "timestampMillis": "1752648278865",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

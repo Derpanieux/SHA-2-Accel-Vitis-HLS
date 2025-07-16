@@ -1,0 +1,275 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\chunkIteration.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/14/25 16:48:17",
+ "timestampMillis": "1752526097908",
+ "buildStep": {
+  "cmdId": "d2a0d078-07ff-4695-86ad-ae775b26cee1",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\logs\\chunkIteration.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config D:\\Vitis\\shaAccel\\chunkIteration\\hls_config.cfg --work_dir chunkIteration ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "D:\\Vitis\\shaAccel\\chunkIteration\\hls_config.cfg",
+   "--work_dir",
+   "chunkIteration"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\chunkIteration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:48:17",
+ "timestampMillis": "1752526097908",
+ "status": {
+  "cmdId": "d2a0d078-07ff-4695-86ad-ae775b26cee1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101317",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "chunkIter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.h",
+     "D:/Vitis\\shaAccel\\chunkIteration\\Document.txt",
+     "D:/Vitis\\shaAccel\\chunkIteration\\Text",
+     "D:/Vitis\\shaAccel\\New",
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101318",
+ "buildStep": {
+  "cmdId": "a822f5e0-cb52-41ba-924e-ad8d37a94fb3",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\chunkIteration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101319",
+ "status": {
+  "cmdId": "a822f5e0-cb52-41ba-924e-ad8d37a94fb3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101320",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101320",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101320",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101321",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101321",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:48:21",
+ "timestampMillis": "1752526101321",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272336",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272337",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272337",
+ "status": {
+  "cmdId": "a822f5e0-cb52-41ba-924e-ad8d37a94fb3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272440",
+ "status": {
+  "cmdId": "d2a0d078-07ff-4695-86ad-ae775b26cee1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272440",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:51:12",
+ "timestampMillis": "1752526272441",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

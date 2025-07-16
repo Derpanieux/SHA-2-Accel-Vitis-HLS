@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../wGenerator.cpp in debug mode
+   Compiling ../../../../../functions256.cpp in debug mode
+   Generating csim.exe
+Discrepancies: 0
+*******************************************
+PASS: The output matches the ans output!
+*******************************************
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

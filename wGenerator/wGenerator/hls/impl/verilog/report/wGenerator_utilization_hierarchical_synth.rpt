@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Jul 16 02:50:41 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/wGenerator_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6cpga196-2I
+| Speed File   : -2I
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                          Instance                         |                             Module                             | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                              |                                                          (top) |        187 |        187 |       0 |    0 | 142 |      0 |      0 |          0 |
+|   bd_0_i                                                  |                                                           bd_0 |        187 |        187 |       0 |    0 | 142 |      0 |      0 |          0 |
+|     hls_inst                                              |                                                bd_0_hls_inst_0 |        187 |        187 |       0 |    0 | 142 |      0 |      0 |          0 |
+|       inst                                                |                                     bd_0_hls_inst_0_wGenerator |        187 |        187 |       0 |    0 | 142 |      0 |      0 |          0 |
+|         grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32     | bd_0_hls_inst_0_wGenerator_wGenerator_Pipeline_VITIS_LOOP_12_2 |        175 |        175 |       0 |    0 | 123 |      0 |      0 |          0 |
+|           (grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32) | bd_0_hls_inst_0_wGenerator_wGenerator_Pipeline_VITIS_LOOP_12_2 |        169 |        169 |       0 |    0 | 121 |      0 |      0 |          0 |
++-----------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+
