@@ -1,8 +1,8 @@
 {
     "1": {
-        "name": "wGenerator_Pipeline_VITIS_LOOP_12_2",
+        "name": "wGenerator_Pipeline_VITIS_LOOP_10_2",
         "file": "wGenerator.cpp",
-        "fileloc": "12",
+        "fileloc": "10",
         "instructions": "57",
         "total_instructions": "57",
         "calls": "",
@@ -35,9 +35,9 @@
         "def_use_depth": "0"
     },
     "2": {
-        "name": "wGenerator_Pipeline_VITIS_LOOP_9_1",
+        "name": "wGenerator_Pipeline_VITIS_LOOP_7_1",
         "file": "wGenerator.cpp",
-        "fileloc": "9",
+        "fileloc": "7",
         "instructions": "20",
         "total_instructions": "20",
         "calls": "",

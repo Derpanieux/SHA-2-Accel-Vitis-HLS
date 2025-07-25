@@ -1,0 +1,130 @@
+{
+    "1": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_25_2",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "25",
+        "instructions": "107",
+        "total_instructions": "107",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "20",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "14"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_7_1",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "18",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "chunkProcessor",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "3",
+        "instructions": "55",
+        "total_instructions": "279",
+        "calls": "2 3 4 1 5",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "16"
+        },
+        "stores": {
+            "L": "8"
+        }
+    },
+    "3": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_10_2",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "18",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "7",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_22_1",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "22",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_32_4",
+        "file": "chunkProcessor.cpp",
+        "fileloc": "32",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2",
+            "T": "1"
+        },
+        "stores": {
+            "L": "2",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

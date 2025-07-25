@@ -1,12 +1,12 @@
 {
   "0": {
     "basicblocks": 13,
-    "calls": "2 1",
+    "calls": "1 2",
     "control_depth": 1,
     "def_use_depth": 2,
     "file": "wGenerator.cpp",
     "fileloc": 3,
-    "instructions": 95,
+    "instructions": 83,
     "loads": {
       "L": 1,
       "T": 1
@@ -16,27 +16,9 @@
     "stores": {
       "T": 2
     },
-    "total_instructions": 1243
+    "total_instructions": 1231
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "functions256.cpp",
-    "fileloc": 33,
-    "instructions": 70,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "sigma1_256",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 440
-  },
-  "2": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -49,6 +31,24 @@
     },
     "memory_accesses": 0,
     "name": "sigma0_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 440
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "functions256.cpp",
+    "fileloc": 33,
+    "instructions": 70,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "sigma1_256",
     "stores": {
       "L": 1
     },

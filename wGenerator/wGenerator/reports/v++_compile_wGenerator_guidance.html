@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Wed Jul 16 02:45:16 2025</td></tr>
+<tr><td><b>Date</b></td><td>Wed Jul 16 21:48:29 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-E57T4BO running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\Vitis\shaAccel\wGenerator\hls_config.cfg --work_dir wGenerator </td></tr>
 </table></center><br>
@@ -3440,18 +3440,29 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.wGenerator.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_9_1'
+<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_7_1'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
+<td align="left">5</td>
+<td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.wGenerator.Kernel</td>
+<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.wGenerator.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 3, Depth = 6, loop 'VITIS_LOOP_12_2'
+<td align="left">The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_10_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation 0 bit ('wout_addr_4_write_ln15', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=15">wGenerator.cpp</a>) of variable 'add_ln15_4', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=15">wGenerator.cpp</a> on array 'wout' and 'load' operation 32 bit ('wout_load_1', <a href="file:///D:/Vitis/shaAccel/wGenerator\../functions256.cpp#line=37">functions256.cpp</a>-><a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=13">wGenerator.cpp</a>) on array 'wout'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3462,7 +3473,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.wGenerator.Kernel</td>
-<td align="left">The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_12_2' (loop 'VITIS_LOOP_12_2'): Unable to schedule 'load' operation 32 bit ('wout_load_3', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=16">wGenerator.cpp</a>) on array 'wout' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'wout'.
+<td align="left">The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_10_2'): Unable to schedule 'load' operation 32 bit ('wout_load_3', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=15">wGenerator.cpp</a>) on array 'wout' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'wout'.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3478,24 +3489,13 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
+<td align="left">4</td>
 <td align="left">Throughput</td>
-<td align="left">WARNING</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.wGenerator.Throughput</td>
-<td align="left">The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_12_2' (loop 'VITIS_LOOP_12_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation 0 bit ('wout_addr_4_write_ln16', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=16">wGenerator.cpp</a>) of variable 'add_ln16_3', <a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=16">wGenerator.cpp</a> on array 'wout' and 'load' operation 32 bit ('wout_load_1', <a href="file:///D:/Vitis/shaAccel/wGenerator\../functions256.cpp#line=37">functions256.cpp</a>-><a href="file:///D:/Vitis/shaAccel/wGenerator\wGenerator.cpp#line=14">wGenerator.cpp</a>) on array 'wout'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.wGenerator.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+<td align="left">Pipelining result : Target II = NA, Final II = 3, Depth = 6, loop 'VITIS_LOOP_10_2'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

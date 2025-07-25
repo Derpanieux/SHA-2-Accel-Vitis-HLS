@@ -74,10 +74,10 @@ set ArgLastReadFirstWriteLatency {
 	wGenerator {
 		win {Type I LastRead 0 FirstWrite -1}
 		wout {Type IO LastRead 4 FirstWrite 1}}
-	wGenerator_Pipeline_VITIS_LOOP_9_1 {
+	wGenerator_Pipeline_VITIS_LOOP_7_1 {
 		win {Type I LastRead 0 FirstWrite -1}
 		wout {Type O LastRead -1 FirstWrite 1}}
-	wGenerator_Pipeline_VITIS_LOOP_12_2 {
+	wGenerator_Pipeline_VITIS_LOOP_10_2 {
 		wout {Type IO LastRead 4 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0

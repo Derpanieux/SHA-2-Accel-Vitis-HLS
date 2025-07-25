@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkProcessor",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\wGenerator\\wGenerator.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\wGenerator\\wGenerator.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkProcessor",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkProcessor",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\functions256.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\functions256.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chunkProcessor",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\chunkIteration\\chunkIter.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\..\\chunkIteration\\chunkIter.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\tb.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\tb.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor\\tbmanual.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor\\tbmanual.cpp"
+  }
+]

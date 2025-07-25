@@ -1,0 +1,153 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/chunkProcessor/chunkProcessor 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/chunkProcessor/chunkProcessor/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.cpp' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.h' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.cpp' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.h' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=chunkProcessor.h' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=chunkProcessor.cpp' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb.cpp' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/chunkProcessor/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./ans.dat' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/chunkProcessor/ans.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./in.dat' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/chunkProcessor/in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=chunkProcessor' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(20)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(19)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/chunkProcessor/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/chunkProcessor/chunkProcessor/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../chunkProcessor.cpp in debug mode
+   Compiling ../../../../../wGenerator/wGenerator.cpp in debug mode
+   Compiling ../../../../../chunkIteration/chunkIter.cpp in debug mode
+   Compiling ../../../../../functions256.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb.cpp:5:
+In file included from ../../../../chunkProcessor.h:4:
+In file included from ../../../../../wGenerator/wGenerator.h:4:
+In file included from ../../../../../wGenerator/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../chunkProcessor.cpp:1:
+In file included from ../../../../chunkProcessor.h:4:
+In file included from ../../../../../wGenerator/wGenerator.h:4:
+In file included from ../../../../../wGenerator/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../wGenerator/wGenerator.cpp:1:
+In file included from ../../../../../wGenerator/wGenerator.h:4:
+In file included from ../../../../../wGenerator/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../chunkIteration/chunkIter.cpp:1:
+In file included from ../../../../../chunkIteration/chunkIter.h:4:
+In file included from ../../../../../chunkIteration/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../functions256.cpp:1:
+In file included from ../../../../../functions256.h:4:
+In file included from ../../../../../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+1,3c1,3
+< 944111222 3773174036 3327337493 1870739065 5896475359 4254845163 6027274856 3252075877 
+< 3921515658 3650523613 926473537 5214337639 4738201953 4073189042 3502845417 1283232462 
+< 4953128132 4541760249 1314805056 1856682243 4329337960 2697472489 6469157372 5385816280 
+---
+> 944111222 3773174036 3327337493 1870739065 1601508063 4254845163 1732307560 3252075877 
+> 3921515658 3650523613 926473537 919370343 443234657 4073189042 3502845417 1283232462 
+> 658160836 246792953 1314805056 1856682243 34370664 2697472489 2174190076 1090848984 
+Discrepancies: 0 out of 3 samples
+*******************************************
+FAIL: Output DOES NOT match the ans output
+*******************************************
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.715 seconds; peak allocated memory: 144.867 MB.

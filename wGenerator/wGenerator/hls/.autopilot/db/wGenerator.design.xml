@@ -5,14 +5,14 @@
 <ModuleName>wGenerator</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24</InstName>
-<ModuleName>wGenerator_Pipeline_VITIS_LOOP_9_1</ModuleName>
+<InstName>grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24</InstName>
+<ModuleName>wGenerator_Pipeline_VITIS_LOOP_7_1</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>24</ID>
 </Instance>
 <Instance>
-<InstName>grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32</InstName>
-<ModuleName>wGenerator_Pipeline_VITIS_LOOP_12_2</ModuleName>
+<InstName>grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32</InstName>
+<ModuleName>wGenerator_Pipeline_VITIS_LOOP_10_2</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>32</ID>
 </Instance>
@@ -22,9 +22,9 @@
 
 <ModuleInformation>
 <Module>
-<Name>wGenerator_Pipeline_VITIS_LOOP_9_1</Name>
+<Name>wGenerator_Pipeline_VITIS_LOOP_7_1</Name>
 <Loops>
-<VITIS_LOOP_9_1></VITIS_LOOP_9_1>
+<VITIS_LOOP_7_1></VITIS_LOOP_7_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -44,8 +44,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_9_1>
-<Name>VITIS_LOOP_9_1</Name>
+<VITIS_LOOP_7_1>
+<Name>VITIS_LOOP_7_1</Name>
 <Slack>7.30</Slack>
 <TripCount>16</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -57,19 +57,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_9_1>
+</VITIS_LOOP_7_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>wGenerator.cpp:9</SourceLocation>
+<SourceLocation>wGenerator.cpp:7</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_9_1>
-<Name>VITIS_LOOP_9_1</Name>
+<VITIS_LOOP_7_1>
+<Name>VITIS_LOOP_7_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>wGenerator.cpp:9</SourceLocation>
-</VITIS_LOOP_9_1>
+<SourceLocation>wGenerator.cpp:7</SourceLocation>
+</VITIS_LOOP_7_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -95,7 +95,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -106,7 +106,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -117,7 +117,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -128,7 +128,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -139,7 +139,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -150,7 +150,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_9_1</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_7_1</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -239,9 +239,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>wGenerator_Pipeline_VITIS_LOOP_12_2</Name>
+<Name>wGenerator_Pipeline_VITIS_LOOP_10_2</Name>
 <Loops>
-<VITIS_LOOP_12_2></VITIS_LOOP_12_2>
+<VITIS_LOOP_10_2></VITIS_LOOP_10_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -261,8 +261,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_12_2>
-<Name>VITIS_LOOP_12_2</Name>
+<VITIS_LOOP_10_2>
+<Name>VITIS_LOOP_10_2</Name>
 <Slack>7.30</Slack>
 <TripCount>48</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -274,19 +274,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_12_2>
+</VITIS_LOOP_10_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>wGenerator.cpp:12</SourceLocation>
+<SourceLocation>wGenerator.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_12_2>
-<Name>VITIS_LOOP_12_2</Name>
+<VITIS_LOOP_10_2>
+<Name>VITIS_LOOP_10_2</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Resource Limitation</ViolationType>
-<SourceLocation>wGenerator.cpp:12</SourceLocation>
-</VITIS_LOOP_12_2>
+<SourceLocation>wGenerator.cpp:10</SourceLocation>
+</VITIS_LOOP_10_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -312,7 +312,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -323,7 +323,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -334,7 +334,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -345,7 +345,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -356,7 +356,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -367,7 +367,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>wGenerator_Pipeline_VITIS_LOOP_12_2</Object>
+<Object>wGenerator_Pipeline_VITIS_LOOP_10_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>

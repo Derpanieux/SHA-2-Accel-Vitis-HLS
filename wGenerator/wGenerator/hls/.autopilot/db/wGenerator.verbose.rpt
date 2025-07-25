@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'wGenerator'
 ================================================================
-* Date:           Wed Jul 16 02:45:14 2025
+* Date:           Wed Jul 16 21:48:27 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        wGenerator
@@ -38,8 +38,8 @@
         |                                               |                                     |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
         |                    Instance                   |                Module               |   min   |   max   |    min   |    max   | min | max |                      Type                      |
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
-        |grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24   |wGenerator_Pipeline_VITIS_LOOP_9_1   |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32  |wGenerator_Pipeline_VITIS_LOOP_12_2  |      148|      148|  1.480 us|  1.480 us|  147|  147|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24   |wGenerator_Pipeline_VITIS_LOOP_7_1   |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32  |wGenerator_Pipeline_VITIS_LOOP_10_2  |      148|      148|  1.480 us|  1.480 us|  147|  147|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
 
         * Loop: 
@@ -74,8 +74,8 @@
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
     |                    Instance                   |                Module               | BRAM_18K| DSP|  FF | LUT | URAM|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
-    |grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32  |wGenerator_Pipeline_VITIS_LOOP_12_2  |        0|   0|  130|  411|    0|
-    |grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24   |wGenerator_Pipeline_VITIS_LOOP_9_1   |        0|   0|   13|   65|    0|
+    |grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32  |wGenerator_Pipeline_VITIS_LOOP_10_2  |        0|   0|  130|  411|    0|
+    |grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24   |wGenerator_Pipeline_VITIS_LOOP_7_1   |        0|   0|   13|   65|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
     |Total                                          |                                     |        0|   0|  143|  476|    0|
     +-----------------------------------------------+-------------------------------------+---------+----+-----+-----+-----+
@@ -111,8 +111,8 @@
     |                            Name                            | FF| LUT| Bits| Const Bits|
     +------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                   |  4|   0|    4|          0|
-    |grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32_ap_start_reg  |  1|   0|    1|          0|
-    |grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24_ap_start_reg   |  1|   0|    1|          0|
+    |grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32_ap_start_reg  |  1|   0|    1|          0|
+    |grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24_ap_start_reg   |  1|   0|    1|          0|
     +------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                       |  6|   0|    6|          0|
     +------------------------------------------------------------+---+----+-----+-----------+
@@ -184,13 +184,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_9_1, i32 %win, i32 %wout"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_7_1, i32 %win, i32 %wout"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 4.17>
-ST_2 : Operation 6 [1/2] (4.17ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_9_1, i32 %win, i32 %wout"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 4.17> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 6 [1/2] (4.17ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_7_1, i32 %win, i32 %wout"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 4.17> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_12_2, i32 %wout"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_10_2, i32 %wout"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [wGenerator.cpp:3]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
@@ -198,8 +198,8 @@ ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface v
 ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %win"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %wout, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %wout"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_12_2, i32 %wout"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln18 = ret" [wGenerator.cpp:18]   --->   Operation 14 'ret' 'ret_ln18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @wGenerator_Pipeline_VITIS_LOOP_10_2, i32 %wout"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%ret_ln17 = ret" [wGenerator.cpp:17]   --->   Operation 14 'ret' 'ret_ln17' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -228,7 +228,7 @@ specbitsmap_ln0   (specbitsmap  ) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
 specbitsmap_ln0   (specbitsmap  ) [ 00000]
 call_ln0          (call         ) [ 00000]
-ret_ln18          (ret          ) [ 00000]
+ret_ln17          (ret          ) [ 00000]
 </LifeTime>
 
 <model>
@@ -259,7 +259,7 @@ ret_ln18          (ret          ) [ 00000]
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wGenerator_Pipeline_VITIS_LOOP_9_1"/></StgValue>
+<StgValue><ssdm name="wGenerator_Pipeline_VITIS_LOOP_7_1"/></StgValue>
 </bind>
 </comp>
 
@@ -268,7 +268,7 @@ ret_ln18          (ret          ) [ 00000]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="wGenerator_Pipeline_VITIS_LOOP_12_2"/></StgValue>
+<StgValue><ssdm name="wGenerator_Pipeline_VITIS_LOOP_10_2"/></StgValue>
 </bind>
 </comp>
 
@@ -344,7 +344,7 @@ ret_ln18          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="24" class="1004" name="grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24">
+<comp id="24" class="1004" name="grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24">
 <pin_list>
 <pin id="25" dir="0" index="0" bw="0" slack="0"/>
 <pin id="26" dir="0" index="1" bw="32" slack="0"/>
@@ -357,7 +357,7 @@ ret_ln18          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="32" class="1004" name="grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32">
+<comp id="32" class="1004" name="grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32">
 <pin_list>
 <pin id="33" dir="0" index="0" bw="0" slack="0"/>
 <pin id="34" dir="0" index="1" bw="32" slack="0"/>
@@ -408,8 +408,8 @@ ret_ln18          (ret          ) [ 00000]
 |----------|-----------------------------------------------|---------|---------|---------|
 | Operation|                Functional Unit                |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------------------|---------|---------|---------|
-|   call   |  grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24 |  1.294  |    73   |    35   |
-|          | grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32 | 3.30675 |   141   |   363   |
+|   call   |  grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24 |  1.294  |    73   |    35   |
+|          | grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32 | 3.30675 |   141   |   363   |
 |----------|-----------------------------------------------|---------|---------|---------|
 |   Total  |                                               | 4.60075 |   214   |   398   |
 |----------|-----------------------------------------------|---------|---------|---------|

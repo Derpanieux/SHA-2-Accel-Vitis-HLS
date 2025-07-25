@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 10,
+    "file": "chunkProcessor.cpp",
+    "fileloc": 3,
+    "instructions": 171,
+    "loads": {
+      "G": 1,
+      "L": 15,
+      "T": 3
+    },
+    "memory_accesses": 14,
+    "name": "chunkProcessor",
+    "stores": {
+      "L": 12,
+      "T": 1
+    },
+    "total_instructions": 171
+  }
+}

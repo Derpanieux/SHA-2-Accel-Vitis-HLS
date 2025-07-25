@@ -1,0 +1,49 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Jul 22 20:23:35 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 7 -file ./report/sha256Accel_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6cpga196-2I
+| Speed File   : -2I
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                             Instance                             |                                 Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                     |                                                                 (top) |       1609 |       1437 |     172 |    0 | 1696 |      2 |     16 |          0 |
+|   bd_0_i                                                         |                                                                  bd_0 |       1609 |       1437 |     172 |    0 | 1696 |      2 |     16 |          0 |
+|     hls_inst                                                     |                                                       bd_0_hls_inst_0 |       1609 |       1437 |     172 |    0 | 1696 |      2 |     16 |          0 |
+|       inst                                                       |                                           bd_0_hls_inst_0_sha256Accel |       1609 |       1437 |     172 |    0 | 1696 |      2 |     16 |          0 |
+|         (inst)                                                   |                                           bd_0_hls_inst_0_sha256Accel |          6 |          6 |       0 |    0 |  451 |      0 |      0 |          0 |
+|         grp_chunkProcessor_fu_427                                |                            bd_0_hls_inst_0_sha256Accel_chunkProcessor |        980 |        872 |     108 |    0 |  958 |      1 |      0 |          0 |
+|           (grp_chunkProcessor_fu_427)                            |                            bd_0_hls_inst_0_sha256Accel_chunkProcessor |          5 |          5 |       0 |    0 |  275 |      0 |      0 |          0 |
+|           grp_chunkProcessor_Pipeline_VITIS_LOOP_10_2_fu_163     |   bd_0_hls_inst_0_sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2 |        117 |        117 |       0 |    0 |  122 |      0 |      0 |          0 |
+|             (grp_chunkProcessor_Pipeline_VITIS_LOOP_10_2_fu_163) |   bd_0_hls_inst_0_sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2 |         82 |         82 |       0 |    0 |  120 |      0 |      0 |          0 |
+|           grp_chunkProcessor_Pipeline_VITIS_LOOP_25_2_fu_168     |   bd_0_hls_inst_0_sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2 |        606 |        606 |       0 |    0 |  432 |      0 |      0 |          0 |
+|             (grp_chunkProcessor_Pipeline_VITIS_LOOP_25_2_fu_168) |   bd_0_hls_inst_0_sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2 |        362 |        362 |       0 |    0 |  398 |      0 |      0 |          0 |
+|             flow_control_loop_pipe_sequential_init_U             | bd_0_hls_inst_0_sha256Accel_flow_control_loop_pipe_sequential_init_22 |        243 |        243 |       0 |    0 |    2 |      0 |      0 |          0 |
+|           wValues_U                                              | bd_0_hls_inst_0_sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W |        162 |         54 |     108 |    0 |   96 |      0 |      0 |          0 |
+|         grp_sha256Accel_Pipeline_VITIS_LOOP_12_2_fu_333          |      bd_0_hls_inst_0_sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2 |        168 |        168 |       0 |    0 |   90 |      0 |      0 |          0 |
+|           (grp_sha256Accel_Pipeline_VITIS_LOOP_12_2_fu_333)      |      bd_0_hls_inst_0_sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2 |         95 |         95 |       0 |    0 |   88 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U               | bd_0_hls_inst_0_sha256Accel_flow_control_loop_pipe_sequential_init_18 |         73 |         73 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_sha256Accel_Pipeline_VITIS_LOOP_23_3_fu_360          |      bd_0_hls_inst_0_sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3 |        215 |        215 |       0 |    0 |   89 |      0 |      0 |          0 |
+|           (grp_sha256Accel_Pipeline_VITIS_LOOP_23_3_fu_360)      |      bd_0_hls_inst_0_sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3 |        142 |        142 |       0 |    0 |   87 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U               | bd_0_hls_inst_0_sha256Accel_flow_control_loop_pipe_sequential_init_17 |         73 |         73 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_sha256Accel_Pipeline_VITIS_LOOP_35_4_fu_385          |      bd_0_hls_inst_0_sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_35_4 |         81 |         81 |       0 |    0 |   18 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U               | bd_0_hls_inst_0_sha256Accel_flow_control_loop_pipe_sequential_init_16 |         52 |         52 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         wordsout_U                                               |                    bd_0_hls_inst_0_sha256Accel_wordsout_RAM_AUTO_1R1W |         64 |         32 |      32 |    0 |   32 |      0 |      0 |          0 |
++------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

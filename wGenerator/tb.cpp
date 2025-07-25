@@ -20,18 +20,18 @@ int main() {
 
     for (unsigned long long i = 0; i < samples; i++) {
         for (int j = 0; j < 16; j++) {
-            in >> win[j];
+            in >> std::hex >> win[j];
         }
         wGenerator(win, wout);
         for(int j = 0; j < 64; j++) {
-            ans >> truth;
-            out << wout[j] << " ";
+            ans >> std::hex >> truth;
+            out << std::hex << wout[j] << " ";
             if (wout[j] != truth) {
                 discrepancies++;
                 std::cout << 
                     "Discrepancy on sample " << i << " on output " << j << "\n" <<
-                    "Output:   " << wout[j] << "\n" <<
-                    "Expected: " << truth << std::endl;
+                    "Output:   " << std::hex << wout[j] << "\n" <<
+                    "Expected: " << std::hex << truth << std::endl;
             }
         }
         out << "\n";

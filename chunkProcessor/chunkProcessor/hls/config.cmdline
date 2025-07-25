@@ -1,0 +1,3 @@
+relativeroot=D:/Vitis/shaAccel/chunkProcessor
+original_argv=--mode hls --csim --config D:\Vitis\shaAccel\chunkProcessor\hls_config.cfg --work_dir chunkProcessor 
+

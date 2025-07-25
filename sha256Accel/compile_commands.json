@@ -1,0 +1,79 @@
+[
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha256Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\..\\chunkIteration\\chunkIter.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\..\\chunkIteration\\chunkIter.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha256Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\..\\wGenerator\\wGenerator.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\..\\wGenerator\\wGenerator.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha256Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\sha256Accel.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\sha256Accel.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha256Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\..\\functions256.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\..\\functions256.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha256Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\..\\chunkProcessor\\chunkProcessor.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\..\\chunkProcessor\\chunkProcessor.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha256Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha256Accel\\tb.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha256Accel\\tb.cpp"
+  }
+]

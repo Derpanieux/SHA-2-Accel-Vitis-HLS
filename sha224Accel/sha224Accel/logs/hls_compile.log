@@ -1,0 +1,367 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/sha224Accel/sha224Accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha224Accel/sha224Accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/sha224Accel/sha224Accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/sha224Accel/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha224Accel.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha224Accel/sha224Accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha224Accel.h' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha224Accel/sha224Accel.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb.cpp' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha224Accel/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers.dat' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha224Accel/answers.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain.dat' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha224Accel/datain.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sha224Accel' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/sha224Accel/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha224Accel/sha224Accel/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.585 seconds; current allocated memory: 144.906 MB.
+INFO: [HLS 200-10] Analyzing design file 'sha224Accel.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../chunkProcessor/chunkProcessor.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../chunkIteration/chunkIter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../wGenerator/wGenerator.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../functions256.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 17.377 seconds; current allocated memory: 147.367 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 6,968 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 472 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 383 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 368 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 315 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 316 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 316 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 316 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 316 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 381 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,484 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 806 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 783 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 823 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'sigma0_256(ap_uint<32>*, ap_uint<32>*)' into 'wGenerator(ap_uint<32>*, ap_uint<32>*)' (../wGenerator/wGenerator.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'sigma1_256(ap_uint<32>*, ap_uint<32>*)' into 'wGenerator(ap_uint<32>*, ap_uint<32>*)' (../wGenerator/wGenerator.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'sum1_256(ap_uint<32>*, ap_uint<32>*)' into 'chunkIter(ap_uint<32>, ap_uint<32>, ap_uint<32>*, ap_uint<32>*)' (../chunkIteration/chunkIter.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'sum0_256(ap_uint<32>*, ap_uint<32>*)' into 'chunkIter(ap_uint<32>, ap_uint<32>, ap_uint<32>*, ap_uint<32>*)' (../chunkIteration/chunkIter.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'ch_256(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)' into 'chunkIter(ap_uint<32>, ap_uint<32>, ap_uint<32>*, ap_uint<32>*)' (../chunkIteration/chunkIter.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'maj_256(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)' into 'chunkIter(ap_uint<32>, ap_uint<32>, ap_uint<32>*, ap_uint<32>*)' (../chunkIteration/chunkIter.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'wGenerator(ap_uint<32>*, ap_uint<32>*)' into 'chunkProcessor(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)' (../chunkProcessor/chunkProcessor.cpp:3:0)
+INFO: [HLS 214-178] Inlining function 'chunkIter(ap_uint<32>, ap_uint<32>, ap_uint<32>*, ap_uint<32>*)' into 'chunkProcessor(ap_uint<32>*, ap_uint<32>*, ap_uint<32>*)' (../chunkProcessor/chunkProcessor.cpp:3:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_25_2> at ../chunkProcessor/chunkProcessor.cpp:25:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_32_4> at ../chunkProcessor/chunkProcessor.cpp:32:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_49_7> at sha224Accel.cpp:49:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_43_5> at sha224Accel.cpp:43:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_35_4> at sha224Accel.cpp:35:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_23_3> at sha224Accel.cpp:23:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_12_2> at sha224Accel.cpp:12:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_22_1> at ../chunkProcessor/chunkProcessor.cpp:22:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_2> at ../wGenerator/wGenerator.cpp:10:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_7_1> at ../wGenerator/wGenerator.cpp:7:21 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_44_6' is marked as complete unroll implied by the pipeline pragma (sha224Accel.cpp:44:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_28_3' is marked as complete unroll implied by the pipeline pragma (../chunkProcessor/chunkProcessor.cpp:28:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_6' (sha224Accel.cpp:44:30) in function 'sha224Accel' completely with a factor of 32 (sha224Accel.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_3' (../chunkProcessor/chunkProcessor.cpp:28:26) in function 'chunkProcessor' completely with a factor of 8 (../chunkProcessor/chunkProcessor.cpp:3:0)
+INFO: [HLS 214-449] Automatically partitioning array 'newwvars' dimension 1 completely based on constant index. (../chunkProcessor/chunkProcessor.cpp:26:17)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=16 dim=1' for array 'buffer' due to pipeline pragma (sha224Accel.cpp:5:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'newwvars' due to pipeline pragma (../chunkProcessor/chunkProcessor.cpp:26:17)
+INFO: [HLS 214-248] Applying array_partition to 'newwvars': Complete partitioning on dimension 1. (../chunkProcessor/chunkProcessor.cpp:26:17)
+INFO: [HLS 214-248] Applying array_partition to 'buffer': Cyclic partitioning with factor 16 on dimension 1. (sha224Accel.cpp:5:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.843 seconds; current allocated memory: 149.699 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 149.699 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 156.023 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] sha224Accel.cpp:36: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 158.148 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'chunkProcessor' (../chunkProcessor/chunkProcessor.cpp:7:22)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 180.785 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 271.594 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sha224Accel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel_Pipeline_VITIS_LOOP_12_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_12_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_12_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.257 seconds; current allocated memory: 278.004 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 279.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel_Pipeline_VITIS_LOOP_23_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_23_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 280.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.857 seconds; current allocated memory: 280.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel_Pipeline_VITIS_LOOP_35_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_35_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_35_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 280.980 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 281.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel_Pipeline_VITIS_LOOP_43_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_43_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_43_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 281.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 281.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor_Pipeline_VITIS_LOOP_7_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'wValues'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_7_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_7_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 281.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 281.688 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor_Pipeline_VITIS_LOOP_10_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'wValues'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_2'.
+WARNING: [HLS 200-880] The II Violation in module 'chunkProcessor_Pipeline_VITIS_LOOP_10_2' (loop 'VITIS_LOOP_10_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation 0 bit ('wValues_addr_2_write_ln15', ../wGenerator/wGenerator.cpp:15->../chunkProcessor/chunkProcessor.cpp:18) of variable 'add_ln15_4', ../wGenerator/wGenerator.cpp:15->../chunkProcessor/chunkProcessor.cpp:18 on array 'wValues' and 'load' operation 32 bit ('x_1_load', ../functions256.cpp:37->../wGenerator/wGenerator.cpp:13->../chunkProcessor/chunkProcessor.cpp:18) on array 'wValues'.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'VITIS_LOOP_10_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.821 seconds; current allocated memory: 282.090 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 282.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor_Pipeline_VITIS_LOOP_22_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_22_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_22_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 282.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 282.293 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor_Pipeline_VITIS_LOOP_25_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'wValues'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_2'.
+WARNING: [HLS 200-880] The II Violation in module 'chunkProcessor_Pipeline_VITIS_LOOP_25_2' (loop 'VITIS_LOOP_25_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'add' operation 32 bit ('add_ln19', ../chunkIteration/chunkIter.cpp:19->../chunkProcessor/chunkProcessor.cpp:27) and 'add' operation 32 bit ('t1', ../chunkIteration/chunkIter.cpp:13->../chunkProcessor/chunkProcessor.cpp:27).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'VITIS_LOOP_25_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 283.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.911 seconds; current allocated memory: 283.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor_Pipeline_VITIS_LOOP_32_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_32_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 283.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 283.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chunkProcessor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 283.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 283.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel_Pipeline_VITIS_LOOP_49_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_49_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 283.973 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 283.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sha224Accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 284.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 284.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel_Pipeline_VITIS_LOOP_12_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha224Accel_Pipeline_VITIS_LOOP_12_2' pipeline 'VITIS_LOOP_12_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel_Pipeline_VITIS_LOOP_12_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 287.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel_Pipeline_VITIS_LOOP_23_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha224Accel_Pipeline_VITIS_LOOP_23_3' pipeline 'VITIS_LOOP_23_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel_Pipeline_VITIS_LOOP_23_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 292.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel_Pipeline_VITIS_LOOP_35_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_64ns_6ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel_Pipeline_VITIS_LOOP_35_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 297.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel_Pipeline_VITIS_LOOP_43_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha224Accel_Pipeline_VITIS_LOOP_43_5' pipeline 'VITIS_LOOP_43_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel_Pipeline_VITIS_LOOP_43_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 299.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor_Pipeline_VITIS_LOOP_7_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chunkProcessor_Pipeline_VITIS_LOOP_7_1' pipeline 'VITIS_LOOP_7_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor_Pipeline_VITIS_LOOP_7_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 303.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor_Pipeline_VITIS_LOOP_10_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chunkProcessor_Pipeline_VITIS_LOOP_10_2' pipeline 'VITIS_LOOP_10_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor_Pipeline_VITIS_LOOP_10_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 303.242 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor_Pipeline_VITIS_LOOP_22_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chunkProcessor_Pipeline_VITIS_LOOP_22_1' pipeline 'VITIS_LOOP_22_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor_Pipeline_VITIS_LOOP_22_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.247 seconds; current allocated memory: 304.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor_Pipeline_VITIS_LOOP_25_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chunkProcessor_Pipeline_VITIS_LOOP_25_2' pipeline 'VITIS_LOOP_25_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor_Pipeline_VITIS_LOOP_25_2'.
+INFO: [RTMG 210-279] Implementing memory 'sha224Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 304.457 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor_Pipeline_VITIS_LOOP_32_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'chunkProcessor_Pipeline_VITIS_LOOP_32_4' pipeline 'VITIS_LOOP_32_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor_Pipeline_VITIS_LOOP_32_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 307.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chunkProcessor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chunkProcessor'.
+INFO: [HLS 200-2167] Implementing memory 'sha224Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W' using auto RAMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-278] Implementing memory 'sha224Accel_chunkProcessor_wvars_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 308.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel_Pipeline_VITIS_LOOP_49_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sha224Accel_Pipeline_VITIS_LOOP_49_7' pipeline 'VITIS_LOOP_49_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel_Pipeline_VITIS_LOOP_49_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 309.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sha224Accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha224Accel/bitstream' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha224Accel/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sha224Accel/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sha224Accel' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sha224Accel'.
+INFO: [RTMG 210-278] Implementing memory 'sha224Accel_buffer_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'sha224Accel_wordsout_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'sha224Accel_message_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.7 seconds; current allocated memory: 313.430 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 319.848 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.576 seconds; current allocated memory: 324.750 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sha224Accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sha224Accel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 152.74 MHz
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 42.928 seconds; peak allocated memory: 324.797 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 47s

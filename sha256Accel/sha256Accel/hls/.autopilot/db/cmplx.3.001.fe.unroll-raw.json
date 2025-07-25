@@ -1,0 +1,184 @@
+{
+  "0": {
+    "basicblocks": 36,
+    "calls": "3",
+    "control_depth": 2,
+    "def_use_depth": 9,
+    "file": "sha256Accel.cpp",
+    "fileloc": 3,
+    "instructions": 194,
+    "loads": {
+      "L": 11
+    },
+    "memory_accesses": 14,
+    "name": "sha256Accel",
+    "stores": {
+      "L": 17,
+      "T": 1
+    },
+    "total_instructions": 475
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions256.cpp",
+    "fileloc": 43,
+    "instructions": 10,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "ch_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 10
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "7 6",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "wGenerator.cpp",
+    "fileloc": 3,
+    "instructions": 55,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 9,
+    "name": "wGenerator",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 87
+  },
+  "3": {
+    "basicblocks": 16,
+    "calls": "2 4",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "chunkProcessor.cpp",
+    "fileloc": 3,
+    "instructions": 77,
+    "loads": {
+      "G": 1,
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "chunkProcessor",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 281
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "9 5 1 8",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "chunkIter.cpp",
+    "fileloc": 3,
+    "instructions": 56,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 0,
+    "name": "chunkIter",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 117
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 3,
+    "instructions": 19,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "sum0_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 33,
+    "instructions": 16,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 0,
+    "name": "sigma1_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 23,
+    "instructions": 16,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 0,
+    "name": "sigma0_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions256.cpp",
+    "fileloc": 52,
+    "instructions": 13,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "maj_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 13,
+    "instructions": 19,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "sum1_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  }
+}

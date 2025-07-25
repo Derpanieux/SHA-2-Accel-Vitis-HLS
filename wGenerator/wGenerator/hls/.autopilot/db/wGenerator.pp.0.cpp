@@ -6270,15 +6270,14 @@ __attribute__((sdx_kernel("wGenerator", 0))) void wGenerator(
 #pragma HLSDIRECTIVE TOP name=wGenerator
 # 6 "wGenerator.cpp"
 
-    word256 sigma0s[48];
-    word256 sigma1s[48];
-    VITIS_LOOP_9_1: for(int i = 0; i < 16; i++) {
+    VITIS_LOOP_7_1: for(int i = 0; i < 16; i++) {
         wout[i] = win[i];
     }
-    VITIS_LOOP_12_2: for(int i = 16; i < 64; i++) {
-        sigma0_256(&wout[i-15], &sigma0s[i-16]);
-        sigma1_256(&wout[i-2], &sigma1s[i-16]);
+    VITIS_LOOP_10_2: for(int i = 16; i < 64; i++) {
+        word256 sigma0, sigma1;
+        sigma0_256(&wout[i-15], &sigma0);
+        sigma1_256(&wout[i-2], &sigma1);
 
-        wout[i] = sigma0s[i-16] + sigma1s[i-16] + wout[i-7] + wout[i-16];
+        wout[i] = sigma0 + sigma1 + wout[i-7] + wout[i-16];
     }
 }

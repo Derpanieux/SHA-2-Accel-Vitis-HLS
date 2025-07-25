@@ -256,27 +256,27 @@
             <ModuleName>wGenerator</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24</InstName>
-                    <ModuleName>wGenerator_Pipeline_VITIS_LOOP_9_1</ModuleName>
+                    <InstName>grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24</InstName>
+                    <ModuleName>wGenerator_Pipeline_VITIS_LOOP_7_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>24</ID>
-                    <BindInstances>icmp_ln9_fu_73_p2 add_ln9_fu_79_p2</BindInstances>
+                    <BindInstances>icmp_ln7_fu_73_p2 add_ln7_fu_79_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32</InstName>
-                    <ModuleName>wGenerator_Pipeline_VITIS_LOOP_12_2</ModuleName>
+                    <InstName>grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32</InstName>
+                    <ModuleName>wGenerator_Pipeline_VITIS_LOOP_10_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>32</ID>
-                    <BindInstances>icmp_ln12_fu_135_p2 add_ln13_fu_178_p2 add_ln13_1_fu_145_p2 add_ln14_fu_188_p2 add_ln16_fu_156_p2 xor_ln16_fu_306_p2 xor_ln16_1_fu_312_p2 xor_ln16_2_fu_326_p2 xor_ln16_3_fu_332_p2 add_ln16_2_fu_338_p2 add_ln12_fu_167_p2</BindInstances>
+                    <BindInstances>icmp_ln10_fu_135_p2 add_ln12_fu_178_p2 add_ln13_fu_188_p2 add_ln15_fu_145_p2 add_ln15_1_fu_156_p2 xor_ln15_fu_306_p2 xor_ln15_1_fu_312_p2 xor_ln15_2_fu_326_p2 xor_ln15_3_fu_332_p2 add_ln15_3_fu_338_p2 add_ln10_fu_167_p2</BindInstances>
                 </Instance>
             </InstancesList>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>wGenerator_Pipeline_VITIS_LOOP_9_1</Name>
+            <Name>wGenerator_Pipeline_VITIS_LOOP_7_1</Name>
             <Loops>
-                <VITIS_LOOP_9_1/>
+                <VITIS_LOOP_7_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -296,8 +296,8 @@
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_9_1>
-                        <Name>VITIS_LOOP_9_1</Name>
+                    <VITIS_LOOP_7_1>
+                        <Name>VITIS_LOOP_7_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>16</TripCount>
                         <isPerfectNested>0</isPerfectNested>
@@ -308,19 +308,19 @@
                         <PipelineType>yes</PipelineType>
                         <PerformancePragma>-</PerformancePragma>
                         <InstanceList/>
-                    </VITIS_LOOP_9_1>
+                    </VITIS_LOOP_7_1>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>wGenerator.cpp:9</SourceLocation>
+                    <SourceLocation>wGenerator.cpp:7</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_9_1>
-                            <Name>VITIS_LOOP_9_1</Name>
+                        <VITIS_LOOP_7_1>
+                            <Name>VITIS_LOOP_7_1</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>wGenerator.cpp:9</SourceLocation>
-                        </VITIS_LOOP_9_1>
+                            <SourceLocation>wGenerator.cpp:7</SourceLocation>
+                        </VITIS_LOOP_7_1>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -344,14 +344,14 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_9_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln9_fu_73_p2" SOURCE="wGenerator.cpp:9" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln9" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_9_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln9_fu_79_p2" SOURCE="wGenerator.cpp:9" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_7_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln7_fu_73_p2" SOURCE="wGenerator.cpp:7" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln7" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_7_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln7_fu_79_p2" SOURCE="wGenerator.cpp:7" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln7" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>wGenerator_Pipeline_VITIS_LOOP_12_2</Name>
+            <Name>wGenerator_Pipeline_VITIS_LOOP_10_2</Name>
             <Loops>
-                <VITIS_LOOP_12_2/>
+                <VITIS_LOOP_10_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -371,8 +371,8 @@
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_12_2>
-                        <Name>VITIS_LOOP_12_2</Name>
+                    <VITIS_LOOP_10_2>
+                        <Name>VITIS_LOOP_10_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>48</TripCount>
                         <isPerfectNested>0</isPerfectNested>
@@ -383,19 +383,19 @@
                         <PipelineType>yes</PipelineType>
                         <PerformancePragma>-</PerformancePragma>
                         <InstanceList/>
-                    </VITIS_LOOP_12_2>
+                    </VITIS_LOOP_10_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>wGenerator.cpp:12</SourceLocation>
+                    <SourceLocation>wGenerator.cpp:10</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_12_2>
-                            <Name>VITIS_LOOP_12_2</Name>
+                        <VITIS_LOOP_10_2>
+                            <Name>VITIS_LOOP_10_2</Name>
                             <IssueType>II Violation</IssueType>
                             <ViolationType>Resource Limitation</ViolationType>
-                            <SourceLocation>wGenerator.cpp:12</SourceLocation>
-                        </VITIS_LOOP_12_2>
+                            <SourceLocation>wGenerator.cpp:10</SourceLocation>
+                        </VITIS_LOOP_10_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -419,17 +419,17 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln12_fu_135_p2" SOURCE="wGenerator.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln12" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_178_p2" SOURCE="wGenerator.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_1_fu_145_p2" SOURCE="wGenerator.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_188_p2" SOURCE="wGenerator.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln14" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln16_fu_156_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln16" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln16_fu_306_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln16" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln16_1_fu_312_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln16_1" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln16_2_fu_326_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln16_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln16_3_fu_332_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln16_3" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln16_2_fu_338_p2" SOURCE="wGenerator.cpp:16" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln16_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_167_p2" SOURCE="wGenerator.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln10_fu_135_p2" SOURCE="wGenerator.cpp:10" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln10" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_178_p2" SOURCE="wGenerator.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_188_p2" SOURCE="wGenerator.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_145_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_1_fu_156_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln15_fu_306_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln15_1_fu_312_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln15_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln15_2_fu_326_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln15_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln15_3_fu_332_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln15_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_3_fu_338_p2" SOURCE="wGenerator.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln15_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_fu_167_p2" SOURCE="wGenerator.cpp:10" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln10" VISIBLE="true"/>
             </BindNodes>
         </Module>
         <Module>

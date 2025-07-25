@@ -1,0 +1,141 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/wGenerator/wGenerator 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/wGenerator/wGenerator/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/wGenerator/wGenerator'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/wGenerator/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=wGenerator.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=wGenerator.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./ans.dat' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/ans.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./in.dat' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=wGenerator' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/wGenerator/wGenerator/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.501 seconds; current allocated memory: 144.738 MB.
+INFO: [HLS 200-10] Analyzing design file 'wGenerator.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../functions256.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.63 seconds; current allocated memory: 147.211 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,243 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 91 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 68 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 58 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 50 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 63 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/Vitis/shaAccel/wGenerator/wGenerator/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'sigma0_256(ap_uint<32>*, ap_uint<32>*)' into 'wGenerator(ap_uint<32>*, ap_uint<32>*)' (wGenerator.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'sigma1_256(ap_uint<32>*, ap_uint<32>*)' into 'wGenerator(ap_uint<32>*, ap_uint<32>*)' (wGenerator.cpp:6:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_9_1> at wGenerator.cpp:9:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_12_2> at wGenerator.cpp:12:22 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.798 seconds; current allocated memory: 148.902 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 148.902 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 153.039 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 154.438 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'wGenerator' (wGenerator.cpp:3:22)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 174.980 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 187.211 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'wGenerator' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wGenerator_Pipeline_VITIS_LOOP_9_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_9_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 190.777 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 191.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wGenerator_Pipeline_VITIS_LOOP_12_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_12_2'.
+WARNING: [HLS 200-880] The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_12_2' (loop 'VITIS_LOOP_12_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 2, offset = 1) between 'store' operation 0 bit ('wout_addr_4_write_ln16', wGenerator.cpp:16) of variable 'add_ln16_3', wGenerator.cpp:16 on array 'wout' and 'load' operation 32 bit ('wout_load_1', ../functions256.cpp:37->wGenerator.cpp:14) on array 'wout'.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-885] The II Violation in module 'wGenerator_Pipeline_VITIS_LOOP_12_2' (loop 'VITIS_LOOP_12_2'): Unable to schedule 'load' operation 32 bit ('wout_load_3', wGenerator.cpp:16) on array 'wout' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'wout'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 6, loop 'VITIS_LOOP_12_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.293 seconds; current allocated memory: 192.195 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 192.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 192.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.014 seconds; current allocated memory: 192.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wGenerator_Pipeline_VITIS_LOOP_9_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wGenerator_Pipeline_VITIS_LOOP_9_1' pipeline 'VITIS_LOOP_9_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wGenerator_Pipeline_VITIS_LOOP_9_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 193.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wGenerator_Pipeline_VITIS_LOOP_12_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'wGenerator_Pipeline_VITIS_LOOP_12_2' pipeline 'VITIS_LOOP_12_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wGenerator_Pipeline_VITIS_LOOP_12_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 194.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'wGenerator/win' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'wGenerator/wout' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'wGenerator' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wGenerator'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 195.852 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 198.910 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.378 seconds; current allocated memory: 201.238 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for wGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for wGenerator.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 158.00 MHz
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.924 seconds; peak allocated memory: 201.285 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 25s

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'wGenerator'" level="0">
-<item name = "Date">Wed Jul 16 02:45:14 2025
+<item name = "Date">Wed Jul 16 21:48:27 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">wGenerator</item>
@@ -31,8 +31,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24">wGenerator_Pipeline_VITIS_LOOP_9_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32">wGenerator_Pipeline_VITIS_LOOP_12_2, 148, 148, 1.480 us, 1.480 us, 147, 147, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24">wGenerator_Pipeline_VITIS_LOOP_7_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32">wGenerator_Pipeline_VITIS_LOOP_10_2, 148, 148, 1.480 us, 1.480 us, 147, 147, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -63,8 +63,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32">wGenerator_Pipeline_VITIS_LOOP_12_2, 0, 0, 130, 411, 0</column>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24">wGenerator_Pipeline_VITIS_LOOP_9_1, 0, 0, 13, 65, 0</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32">wGenerator_Pipeline_VITIS_LOOP_10_2, 0, 0, 130, 411, 0</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24">wGenerator_Pipeline_VITIS_LOOP_7_1, 0, 0, 13, 65, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -96,8 +96,8 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>

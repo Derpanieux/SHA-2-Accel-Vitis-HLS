@@ -6,7 +6,7 @@
     "def_use_depth": 7,
     "file": "wGenerator.cpp",
     "fileloc": 3,
-    "instructions": 58,
+    "instructions": 62,
     "loads": {
       "L": 2,
       "T": 5
@@ -17,6 +17,6 @@
       "L": 2,
       "T": 2
     },
-    "total_instructions": 58
+    "total_instructions": 62
   }
 }

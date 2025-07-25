@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Wed Jul 16 02:47:17 2025
-# Process ID         : 27084
+# Start of session at: Wed Jul 16 21:49:31 2025
+# Process ID         : 22160
 # Current directory  : D:/Vitis/shaAccel/wGenerator/wGenerator/hls/sim/verilog
 # Command line       : xsim.exe -mode tcl -source {xsim.dir/wGenerator/xsim_script.tcl}
 # Log file           : D:/Vitis/shaAccel/wGenerator/wGenerator/hls/sim/verilog/xsim.log
@@ -19,7 +19,7 @@
 # Host memory        : 25691 MB
 # Swap memory        : 31138 MB
 # Total Virtual      : 56829 MB
-# Available Virtual  : 28544 MB
+# Available Virtual  : 25616 MB
 #-----------------------------------------------------------
 source xsim.dir/wGenerator/xsim_script.tcl
 # xsim {wGenerator} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=wGenerator_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {wGenerator.tcl}
@@ -10083,7 +10083,7 @@ UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv
 // RTL Simulation : 10000 / 10000 [100.00%] @ "16600155000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 16600205 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 190.535 ; gain = 0.000
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 191.418 ; gain = 0.000
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 60888 KB (Peak: 60888 KB), Simulation CPU Usage: 16390 ms
-INFO: [Common 17-206] Exiting xsim at Wed Jul 16 02:47:38 2025...
+INFO: xsimkernel Simulation Memory Usage: 60228 KB (Peak: 60228 KB), Simulation CPU Usage: 16452 ms
+INFO: [Common 17-206] Exiting xsim at Wed Jul 16 21:49:49 2025...

@@ -1,7 +1,7 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
+DebugLoc:        { File: wGenerator.cpp, Line: 12, Column: 9 }
 Function:        _Z10wGeneratorP7ap_uintILi32EES1_
 Args:            
   - Callee:          'sigma0_256(ap_uint<32>*, ap_uint<32>*)'
@@ -14,7 +14,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: wGenerator.cpp, Line: 14, Column: 9 }
+DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
 Function:        _Z10wGeneratorP7ap_uintILi32EES1_
 Args:            
   - Callee:          'sigma1_256(ap_uint<32>*, ap_uint<32>*)'
@@ -27,7 +27,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
+DebugLoc:        { File: wGenerator.cpp, Line: 12, Column: 9 }
 Function:        _Z10wGeneratorP7ap_uintILi32EES1_
 Args:            
   - Callee:          'sigma0_256(ap_uint<32>*, ap_uint<32>*)'
@@ -40,7 +40,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: wGenerator.cpp, Line: 14, Column: 9 }
+DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
 Function:        _Z10wGeneratorP7ap_uintILi32EES1_
 Args:            
   - Callee:          'sigma1_256(ap_uint<32>*, ap_uint<32>*)'
@@ -94,9 +94,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_9_1
+  - LoopName:        VITIS_LOOP_7_1
   - String:          '> at '
-  - LoopLoc:         'wGenerator.cpp:9:21'
+  - LoopLoc:         'wGenerator.cpp:7:21'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -104,8 +104,8 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_12_2
+  - LoopName:        VITIS_LOOP_10_2
   - String:          '> at '
-  - LoopLoc:         'wGenerator.cpp:12:22'
+  - LoopLoc:         'wGenerator.cpp:10:22'
   - String:          ' '
 ...

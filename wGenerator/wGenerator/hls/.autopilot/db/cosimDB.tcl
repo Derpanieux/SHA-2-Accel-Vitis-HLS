@@ -18,13 +18,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "win", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24", "Port" : "win", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24", "Port" : "win", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "wout", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24", "Port" : "wout", "Inst_start_state" : "1", "Inst_end_state" : "2"},
-					{"ID" : "3", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32", "Port" : "wout", "Inst_start_state" : "3", "Inst_end_state" : "4"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "wGenerator_Pipeline_VITIS_LOOP_9_1",
+					{"ID" : "1", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24", "Port" : "wout", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "3", "SubInstance" : "grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32", "Port" : "wout", "Inst_start_state" : "3", "Inst_end_state" : "4"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "wGenerator_Pipeline_VITIS_LOOP_7_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -41,11 +41,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "win", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "wout", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_9_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_7_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_9_1_fu_24.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32", "Parent" : "0", "Child" : ["4"],
-		"CDFG" : "wGenerator_Pipeline_VITIS_LOOP_12_2",
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_7_1_fu_24.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "wGenerator_Pipeline_VITIS_LOOP_10_2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -61,6 +61,6 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "wout", "Type" : "Memory", "Direction" : "IO"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_12_2", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_10_2", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_12_2_fu_32.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"}]}
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_wGenerator_Pipeline_VITIS_LOOP_10_2_fu_32.flow_control_loop_pipe_sequential_init_U", "Parent" : "3"}]}

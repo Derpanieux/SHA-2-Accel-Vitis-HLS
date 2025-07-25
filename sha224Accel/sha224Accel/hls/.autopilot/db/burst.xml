@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="sha224Accel.cpp:10:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="sha224Accel.cpp:10:22" LoopName="VITIS_LOOP_10_1" ParentFunc="sha224Accel(hls::stream&lt;bool, 0&gt;&amp;, ap_uint&lt;64&gt;, ap_uint&lt;224&gt;*)"/>
+</VitisHLS:BurstInfo>
+

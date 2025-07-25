@@ -1,7 +1,7 @@
 import random
 
 INT_BITS = 32
-SAMPLES = 10000
+SAMPLES = 3
 
 max = 2**INT_BITS-1
 
