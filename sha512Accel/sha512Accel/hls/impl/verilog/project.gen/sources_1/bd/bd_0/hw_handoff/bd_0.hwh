@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug  1 14:00:45 2025" VIVADOVERSION="2025.1">
+
+  <SYSTEMINFO ARCH="spartan7" DEVICE="xa7s6" NAME="bd_0" PACKAGE="cpga196" SPEEDGRADE="-2I"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_done" SIGIS="undef" SIGNAME="hls_inst_ap_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_idle" SIGIS="undef" SIGNAME="hls_inst_ap_idle">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_idle"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ap_ctrl_ready" SIGIS="undef" SIGNAME="hls_inst_ap_ready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_ready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_ctrl_start" SIGIS="undef" SIGNAME="hls_inst_ap_start">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_start"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="bitstream_empty_n" SIGIS="undef" SIGNAME="hls_inst_bitstream_empty_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="bitstream_empty_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="bitstream_rd_data" SIGIS="undef" SIGNAME="hls_inst_bitstream_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="bitstream_dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="bitstream_rd_en" SIGIS="undef" SIGNAME="hls_inst_bitstream_read">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="bitstream_read"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="511" NAME="output_r" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_output_r">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="output_r"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="output_r_ap_vld" SIGIS="undef" SIGNAME="hls_inst_output_r_ap_vld">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="output_r_ap_vld"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="127" NAME="size" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_size">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="size"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_ap_ctrl" NAME="ap_ctrl" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="done" PHYSICAL="ap_ctrl_done"/>
+        <PORTMAP LOGICAL="idle" PHYSICAL="ap_ctrl_idle"/>
+        <PORTMAP LOGICAL="ready" PHYSICAL="ap_ctrl_ready"/>
+        <PORTMAP LOGICAL="start" PHYSICAL="ap_ctrl_start"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="hls_inst_bitstream" NAME="bitstream" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="EMPTY_N" PHYSICAL="bitstream_empty_n"/>
+        <PORTMAP LOGICAL="RD_DATA" PHYSICAL="bitstream_rd_data"/>
+        <PORTMAP LOGICAL="RD_EN" PHYSICAL="bitstream_rd_en"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="2114196660" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sha512Accel" VLNV="xilinx.com:hls:sha512Accel:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bd_0_hls_inst_0"/>
+        <PARAMETER NAME="II" VALUE="undef"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="undef"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_done" SIGIS="undef" SIGNAME="hls_inst_ap_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_idle" SIGIS="undef" SIGNAME="hls_inst_ap_idle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_idle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_ready" SIGIS="undef" SIGNAME="hls_inst_ap_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_ap_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="hls_inst_ap_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="ap_ctrl_start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="bitstream_dout" SIGIS="undef" SIGNAME="hls_inst_bitstream_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="bitstream_rd_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="bitstream_empty_n" SIGIS="undef" SIGNAME="hls_inst_bitstream_empty_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="bitstream_empty_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="bitstream_read" SIGIS="undef" SIGNAME="hls_inst_bitstream_read">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="bitstream_rd_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="511" NAME="output_r" RIGHT="0" SIGIS="data" SIGNAME="hls_inst_output_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="output_r"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="output_r_ap_vld" SIGIS="undef" SIGNAME="hls_inst_output_r_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="output_r_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="size" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_size">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="size"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_ap_ctrl" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
+            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
+            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
+            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="hls_inst_bitstream" NAME="bitstream" TYPE="INITIATOR" VLNV="xilinx.com:interface:acc_fifo_read:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="EMPTY_N" PHYSICAL="bitstream_empty_n"/>
+            <PORTMAP LOGICAL="RD_DATA" PHYSICAL="bitstream_dout"/>
+            <PORTMAP LOGICAL="RD_EN" PHYSICAL="bitstream_read"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

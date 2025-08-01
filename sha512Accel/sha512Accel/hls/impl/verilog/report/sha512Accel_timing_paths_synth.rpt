@@ -1,0 +1,957 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Aug  1 14:05:00 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/sha512Accel_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6-cpga196
+| Speed File   : -2I  PRODUCTION 1.16 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.205ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.404ns  (logic 4.351ns (80.521%)  route 1.053ns (19.479%))
+  Logic Levels:           17  (CARRY4=16 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/CO[3]
+                         net (fo=1, unplaced)         0.000     5.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13_n_3
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.277     5.792 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14/O[3]
+                         net (fo=1, unplaced)         0.399     6.191    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.317    10.395    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_63_63/SP
+  -------------------------------------------------------------------
+                         required time                         10.395    
+                         arrival time                          -6.191    
+  -------------------------------------------------------------------
+                         slack                                  4.205    
+
+Slack (MET) :             4.215ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.399ns  (logic 4.343ns (80.447%)  route 1.056ns (19.553%))
+  Logic Levels:           17  (CARRY4=16 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/CO[3]
+                         net (fo=1, unplaced)         0.000     5.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.269     5.784 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14/O[1]
+                         net (fo=1, unplaced)         0.402     6.186    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.312    10.400    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_61_61/SP
+  -------------------------------------------------------------------
+                         required time                         10.400    
+                         arrival time                          -6.186    
+  -------------------------------------------------------------------
+                         slack                                  4.215    
+
+Slack (MET) :             4.305ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.304ns  (logic 4.251ns (80.154%)  route 1.053ns (19.846%))
+  Logic Levels:           16  (CARRY4=15 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.277     5.692 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/O[3]
+                         net (fo=1, unplaced)         0.399     6.091    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.317    10.395    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_59_59/SP
+  -------------------------------------------------------------------
+                         required time                         10.395    
+                         arrival time                          -6.091    
+  -------------------------------------------------------------------
+                         slack                                  4.305    
+
+Slack (MET) :             4.315ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.299ns  (logic 4.243ns (80.078%)  route 1.056ns (19.922%))
+  Logic Levels:           16  (CARRY4=15 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.269     5.684 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/O[1]
+                         net (fo=1, unplaced)         0.402     6.086    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.312    10.400    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_57_57/SP
+  -------------------------------------------------------------------
+                         required time                         10.400    
+                         arrival time                          -6.086    
+  -------------------------------------------------------------------
+                         slack                                  4.315    
+
+Slack (MET) :             4.405ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.204ns  (logic 4.151ns (79.772%)  route 1.053ns (20.228%))
+  Logic Levels:           15  (CARRY4=14 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.277     5.592 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/O[3]
+                         net (fo=1, unplaced)         0.399     5.991    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.317    10.395    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_55_55/SP
+  -------------------------------------------------------------------
+                         required time                         10.395    
+                         arrival time                          -5.991    
+  -------------------------------------------------------------------
+                         slack                                  4.405    
+
+Slack (MET) :             4.413ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.202ns  (logic 4.288ns (82.437%)  route 0.914ns (17.563%))
+  Logic Levels:           17  (CARRY4=16 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/CO[3]
+                         net (fo=1, unplaced)         0.000     5.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.214     5.729 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14/O[2]
+                         net (fo=1, unplaced)         0.260     5.989    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.311    10.401    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_62_62/SP
+  -------------------------------------------------------------------
+                         required time                         10.401    
+                         arrival time                          -5.989    
+  -------------------------------------------------------------------
+                         slack                                  4.413    
+
+Slack (MET) :             4.415ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.199ns  (logic 4.143ns (79.695%)  route 1.056ns (20.305%))
+  Logic Levels:           15  (CARRY4=14 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.269     5.584 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/O[1]
+                         net (fo=1, unplaced)         0.402     5.986    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.312    10.400    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_53_53/SP
+  -------------------------------------------------------------------
+                         required time                         10.400    
+                         arrival time                          -5.986    
+  -------------------------------------------------------------------
+                         slack                                  4.415    
+
+Slack (MET) :             4.448ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.173ns  (logic 4.263ns (82.415%)  route 0.910ns (17.585%))
+  Logic Levels:           17  (CARRY4=16 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/CO[3]
+                         net (fo=1, unplaced)         0.000     5.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13_n_3
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.189     5.704 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14/O[0]
+                         net (fo=1, unplaced)         0.256     5.960    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.305    10.407    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_60_60/SP
+  -------------------------------------------------------------------
+                         required time                         10.407    
+                         arrival time                          -5.960    
+  -------------------------------------------------------------------
+                         slack                                  4.448    
+
+Slack (MET) :             4.505ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.104ns  (logic 4.051ns (79.376%)  route 1.053ns (20.624%))
+  Logic Levels:           14  (CARRY4=13 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.277     5.492 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/O[3]
+                         net (fo=1, unplaced)         0.399     5.891    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.317    10.395    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_51_51/SP
+  -------------------------------------------------------------------
+                         required time                         10.395    
+                         arrival time                          -5.891    
+  -------------------------------------------------------------------
+                         slack                                  4.505    
+
+Slack (MET) :             4.513ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.102ns  (logic 4.188ns (82.092%)  route 0.914ns (17.908%))
+  Logic Levels:           16  (CARRY4=15 LUT2=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 10.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.787     0.787    bd_0_i/hls_inst/inst/interHash_U/ap_clk
+                         RAMB36E1                                     r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.125     2.912 r  bd_0_i/hls_inst/inst/interHash_U/ram_reg_0/DOBDO[1]
+                         net (fo=5, unplaced)         0.646     3.558    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry__14[1]
+                         LUT2 (Prop_lut2_I1_O)        0.105     3.663 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.000     3.663    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.444     4.107 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.515 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.515    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.615 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.715 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.715    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.815 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.815    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     4.915 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     4.915    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.015 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.015    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.115 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.115    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.215 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10/CO[3]
+                         net (fo=1, unplaced)         0.000     5.215    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.315 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11/CO[3]
+                         net (fo=1, unplaced)         0.000     5.315    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11_n_3
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.415 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12/CO[3]
+                         net (fo=1, unplaced)         0.000     5.415    bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12_n_3
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.214     5.629 r  bd_0_i/hls_inst/inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13/O[2]
+                         net (fo=1, unplaced)         0.260     5.889    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/D
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=4155, unset)         0.748    10.748    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/WCLK
+                         RAMS32                                       r  bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/SP/CLK
+                         clock pessimism              0.000    10.748    
+                         clock uncertainty           -0.035    10.712    
+                         RAMS32 (Setup_rams32_CLK_I)
+                                                     -0.311    10.401    bd_0_i/hls_inst/inst/wordsout_U/ram_reg_0_7_58_58/SP
+  -------------------------------------------------------------------
+                         required time                         10.401    
+                         arrival time                          -5.889    
+  -------------------------------------------------------------------
+                         slack                                  4.513    
+
+
+
+

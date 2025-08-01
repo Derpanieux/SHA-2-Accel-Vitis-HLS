@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor512",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\chunkIteration512\\chunkIter512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\chunkIteration512\\chunkIter512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor512",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\wGenerator512\\wGenerator512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\wGenerator512\\wGenerator512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor512",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\functions512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor512\\..\\functions512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\chunkProcessor512",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "D:\\Vitis\\shaAccel\\chunkProcessor512\\.\\chunkProcessor512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\chunkProcessor512\\.\\chunkProcessor512.cpp"
+  }
+]

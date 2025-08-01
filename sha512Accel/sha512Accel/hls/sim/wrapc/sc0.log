@@ -1,0 +1,11 @@
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling wGenerator512.cpp_pre.cpp.tb.cpp
+   Compiling functions512.cpp_pre.cpp.tb.cpp
+   Compiling chunkProcessor512.cpp_pre.cpp.tb.cpp
+   Compiling sha512Accel.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sha512Accel.cpp
+   Compiling chunkIter512.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sha512Accel_util.cpp
+   Compiling apatb_sha512Accel_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,412 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling wGenerator512.cpp_pre.cpp.tb.cpp
+   Compiling functions512.cpp_pre.cpp.tb.cpp
+   Compiling chunkProcessor512.cpp_pre.cpp.tb.cpp
+   Compiling sha512Accel.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sha512Accel.cpp
+   Compiling chunkIter512.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sha512Accel_util.cpp
+   Compiling apatb_sha512Accel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Discrepancies: 0 out of 106 samples
+*******************************************
+PASS: The output matches the ans output!
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 130784
+
+D:\Vitis\shaAccel\sha512Accel\sha512Accel\hls\sim\verilog>set PATH= 
+
+D:\Vitis\shaAccel\sha512Accel\sha512Accel\hls\sim\verilog>call C:/Xilinx/2025.1/Vivado/bin/xelab xil_defaultlib.apatb_sha512Accel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj sha512Accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib "ieee_proposed=./ieee_proposed" -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./sha512Accel_subsystem  -s sha512Accel  
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sha512Accel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj sha512Accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./sha512Accel_subsystem -s sha512Accel 
+Multi-threading is on. Using 22 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sha512Accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_bitselect_1ns_128ns_7ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_bitselect_1ns_128ns_7ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_buffer_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_buffer_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_11_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_11_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_24_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_24_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_34_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_34_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_Pipeline_VITIS_LOOP_8_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_chunkProcessor_wvars_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_chunkProcessor_wvars_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_message_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_message_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_15_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_15_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_26_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_38_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_38_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_46_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_46_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_52_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_sha512Accel_Pipeline_VITIS_LOOP_52_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_wordsout_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha512Accel_wordsout_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/svr/svr_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/svr/svr_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/sha512Accel_subsystem/sha512Accel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha512Accel/sha512Accel/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.svr_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.sha512Accel_subsystem_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.sha512Accel_buffer_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_wvars...
+Compiling module xil_defaultlib.sha512Accel_wordsout_RAM_AUTO_1R...
+Compiling module xil_defaultlib.sha512Accel_message_RAM_AUTO_1R1...
+Compiling module xil_defaultlib.sha512Accel_flow_control_loop_pi...
+Compiling module xil_defaultlib.sha512Accel_sha512Accel_Pipeline...
+Compiling module xil_defaultlib.sha512Accel_sha512Accel_Pipeline...
+Compiling module xil_defaultlib.sha512Accel_bitselect_1ns_128ns_...
+Compiling module xil_defaultlib.sha512Accel_sha512Accel_Pipeline...
+Compiling module xil_defaultlib.sha512Accel_sha512Accel_Pipeline...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_wValu...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha512Accel_chunkProcessor
+Compiling module xil_defaultlib.sha512Accel_sha512Accel_Pipeline...
+Compiling module xil_defaultlib.sha512Accel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=1)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=128)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=512)
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=19)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf_default
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_sha512Accel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sha512Accel
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Aug  1 13:57:13 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/sha512Accel/xsim_script.tcl
+# xsim {sha512Accel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sha512Accel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {sha512Accel.tcl}
+Time resolution is 1 ps
+source sha512Accel.tcl
+## run all
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------------------------------------------------
+Name                                               Type                                   Size  Value           
+----------------------------------------------------------------------------------------------------------------
+uvm_test_top                                       sha512Accel_test_lib                   -     @356            
+  top_env                                          sha512Accel_env                        -     @367            
+    env_master_svr_bitstream                       uvm_env                                -     @388            
+      m_agt                                        uvm_agent                              -     @611            
+        drv                                        uvm_driver #(REQ,RSP)                  -     @759            
+          rsp_port                                 uvm_analysis_port                      -     @778            
+          seq_item_port                            uvm_seq_item_pull_port                 -     @768            
+        mon                                        uvm_monitor                            -     @788            
+          item_collect_port                        uvm_analysis_port                      -     @799            
+        sqr                                        uvm_sequencer                          -     @622            
+          rsp_export                               uvm_analysis_export                    -     @631            
+          seq_item_export                          uvm_seq_item_pull_imp                  -     @749            
+          arbitration_queue                        array                                  0     -               
+          lock_queue                               array                                  0     -               
+          num_last_reqs                            integral                               32    'd1             
+          num_last_rsps                            integral                               32    'd1             
+    env_master_svr_size                            uvm_env                                -     @401            
+      m_agt                                        uvm_agent                              -     @817            
+        drv                                        uvm_driver #(REQ,RSP)                  -     @965            
+          rsp_port                                 uvm_analysis_port                      -     @984            
+          seq_item_port                            uvm_seq_item_pull_port                 -     @974            
+        mon                                        uvm_monitor                            -     @994            
+          item_collect_port                        uvm_analysis_port                      -     @1005           
+        sqr                                        uvm_sequencer                          -     @828            
+          rsp_export                               uvm_analysis_export                    -     @837            
+          seq_item_export                          uvm_seq_item_pull_imp                  -     @955            
+          arbitration_queue                        array                                  0     -               
+          lock_queue                               array                                  0     -               
+          num_last_reqs                            integral                               32    'd1             
+          num_last_rsps                            integral                               32    'd1             
+    env_slave_svr_output_r                         uvm_env                                -     @411            
+      s_agt                                        uvm_agent                              -     @1023           
+        drv                                        uvm_driver #(REQ,RSP)                  -     @1171           
+          rsp_port                                 uvm_analysis_port                      -     @1190           
+          seq_item_port                            uvm_seq_item_pull_port                 -     @1180           
+        mon                                        uvm_monitor                            -     @1200           
+          item_collect_port                        uvm_analysis_port                      -     @1211           
+        sqr                                        uvm_sequencer                          -     @1034           
+          rsp_export                               uvm_analysis_export                    -     @1043           
+          seq_item_export                          uvm_seq_item_pull_imp                  -     @1161           
+          arbitration_queue                        array                                  0     -               
+          lock_queue                               array                                  0     -               
+          num_last_reqs                            integral                               32    'd1             
+          num_last_rsps                            integral                               32    'd1             
+    refm                                           sha512Accel_reference_model            -     @421            
+      trans_num_idx                                integral                               32    'h0             
+    sha512Accel_virtual_sqr                        sha512Accel_virtual_sequencer          -     @473            
+      rsp_export                                   uvm_analysis_export                    -     @482            
+      seq_item_export                              uvm_seq_item_pull_imp                  -     @600            
+      arbitration_queue                            array                                  0     -               
+      lock_queue                                   array                                  0     -               
+      num_last_reqs                                integral                               32    'd1             
+      num_last_rsps                                integral                               32    'd1             
+    subsys_mon                                     sha512Accel_subsystem_monitor          -     @434            
+      scbd                                         sha512Accel_scoreboard                 -     @1238           
+        refm                                       sha512Accel_reference_model            -     @421            
+          trans_num_idx                            integral                               32    'h0             
+        TVOUT_transaction_size_queue               da(integral)                           0     -               
+        file_wr_port_output_r_output_r             <unknown>                              -     @1248           
+          TV_FILE                                  string                                 0     ""              
+          fp                                       integral                               32    'hxxxxxxxx      
+          file_open                                integral                               32    'h0             
+          write_file_done                          integral                               32    'h0             
+          write_section_done                       integral                               32    'h0             
+          TRANSACTION_NUM                          integral                               32    'h0             
+          transaction_num_idx                      integral                               32    'h0             
+          TRANSACTION_DEPTH                        integral                               32    'h0             
+          TRANSACTION_DEPTH_queue                  da(integral)                           0     -               
+          TRANSACTION_DEPTH_queue_for_depth_check  da(integral)                           0     -               
+          transaction_depth_idx                    integral                               32    'h0             
+          ap_done_num_idx                          integral                               32    'h0             
+          is_binary                                integral                               32    'h0             
+        write_file_done_output_r_output_r          integral                               32    'h0             
+        write_section_done_output_r_output_r       integral                               32    'h0             
+      svr_master_bitstream_imp                     uvm_analysis_imp_svr_master_bitstream  -     @443            
+      svr_master_size_imp                          uvm_analysis_imp_svr_master_size       -     @453            
+      svr_slave_output_r_imp                       uvm_analysis_imp_svr_slave_output_r    -     @463            
+    env_master_svr_bitstream                       uvm_env                                -     @388            
+    env_master_svr_size                            uvm_env                                -     @401            
+    env_slave_svr_output_r                         uvm_env                                -     @411            
+    refm                                           sha512Accel_reference_model            -     @421            
+    sha512Accel_virtual_sqr                        sha512Accel_virtual_sequencer          -     @473            
+    sha512Accel_cfg                                sha512Accel_config                     -     @381            
+      port_bitstream_cfg                           svr_config                             -     @382            
+        svr_type                                   svr_inst_type                          32    SVR_MASTER      
+        prt_type                                   svr_protocol_type                      32    AP_FIFO         
+        is_active                                  svr_active_passive_enum                1     SVR_ACTIVE      
+        reset_level                                svr_reset_level_enum                   1     RESET_LEVEL_HIGH
+        spec_cfg                                   svr_spec_cfg_enum                      32    NORMAL          
+        clatency                                   svr_latency                            -     @383            
+          transfer_latency                         integral                               32    'h0             
+      port_size_cfg                                svr_config                             -     @384            
+        svr_type                                   svr_inst_type                          32    SVR_MASTER      
+        prt_type                                   svr_protocol_type                      32    AP_NONE         
+        is_active                                  svr_active_passive_enum                1     SVR_ACTIVE      
+        reset_level                                svr_reset_level_enum                   1     RESET_LEVEL_HIGH
+        spec_cfg                                   svr_spec_cfg_enum                      32    NORMAL          
+        clatency                                   svr_latency                            -     @385            
+          transfer_latency                         integral                               32    'h0             
+      port_output_r_cfg                            svr_config                             -     @386            
+        svr_type                                   svr_inst_type                          32    SVR_SLAVE       
+        prt_type                                   svr_protocol_type                      32    AP_VLD          
+        is_active                                  svr_active_passive_enum                1     SVR_ACTIVE      
+        reset_level                                svr_reset_level_enum                   1     RESET_LEVEL_HIGH
+        spec_cfg                                   svr_spec_cfg_enum                      32    NORMAL          
+        clatency                                   svr_latency                            -     @387            
+          transfer_latency                         integral                               32    'h0             
+      check_ena                                    integral                               32    'h0             
+      cover_ena                                    integral                               32    'h0             
+----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 106 [n/a] @ "125000"
+// RTL Simulation : 1 / 106 [n/a] @ "14115000"
+// RTL Simulation : 2 / 106 [n/a] @ "28075000"
+// RTL Simulation : 3 / 106 [n/a] @ "42035000"
+// RTL Simulation : 4 / 106 [n/a] @ "55995000"
+// RTL Simulation : 5 / 106 [n/a] @ "83835000"
+// RTL Simulation : 6 / 106 [n/a] @ "1860555000"
+// RTL Simulation : 7 / 106 [n/a] @ "1916155000"
+// RTL Simulation : 8 / 106 [n/a] @ "1971755000"
+// RTL Simulation : 9 / 106 [n/a] @ "2041235000"
+// RTL Simulation : 10 / 106 [n/a] @ "2110715000"
+// RTL Simulation : 11 / 106 [n/a] @ "2152435000"
+// RTL Simulation : 12 / 106 [n/a] @ "2208035000"
+// RTL Simulation : 13 / 106 [n/a] @ "2249755000"
+// RTL Simulation : 14 / 106 [n/a] @ "2319235000"
+// RTL Simulation : 15 / 106 [n/a] @ "2347075000"
+// RTL Simulation : 16 / 106 [n/a] @ "2430435000"
+// RTL Simulation : 17 / 106 [n/a] @ "2458275000"
+// RTL Simulation : 18 / 106 [n/a] @ "2569395000"
+// RTL Simulation : 19 / 106 [n/a] @ "2666635000"
+// RTL Simulation : 20 / 106 [n/a] @ "2791635000"
+// RTL Simulation : 21 / 106 [n/a] @ "2874995000"
+// RTL Simulation : 22 / 106 [n/a] @ "2972235000"
+// RTL Simulation : 23 / 106 [n/a] @ "3027835000"
+// RTL Simulation : 24 / 106 [n/a] @ "3083435000"
+// RTL Simulation : 25 / 106 [n/a] @ "3194555000"
+// RTL Simulation : 26 / 106 [n/a] @ "3222395000"
+// RTL Simulation : 27 / 106 [n/a] @ "3250235000"
+// RTL Simulation : 28 / 106 [n/a] @ "3361355000"
+// RTL Simulation : 29 / 106 [n/a] @ "3389195000"
+// RTL Simulation : 30 / 106 [n/a] @ "3417035000"
+// RTL Simulation : 31 / 106 [n/a] @ "3528155000"
+// RTL Simulation : 32 / 106 [n/a] @ "3597635000"
+// RTL Simulation : 33 / 106 [n/a] @ "3625475000"
+// RTL Simulation : 34 / 106 [n/a] @ "3736595000"
+// RTL Simulation : 35 / 106 [n/a] @ "3764435000"
+// RTL Simulation : 36 / 106 [n/a] @ "3875555000"
+// RTL Simulation : 37 / 106 [n/a] @ "3972795000"
+// RTL Simulation : 38 / 106 [n/a] @ "4056155000"
+// RTL Simulation : 39 / 106 [n/a] @ "4070115000"
+// RTL Simulation : 40 / 106 [n/a] @ "4097955000"
+// RTL Simulation : 41 / 106 [n/a] @ "4125795000"
+// RTL Simulation : 42 / 106 [n/a] @ "4153635000"
+// RTL Simulation : 43 / 106 [n/a] @ "4223115000"
+// RTL Simulation : 44 / 106 [n/a] @ "4237075000"
+// RTL Simulation : 45 / 106 [n/a] @ "4348195000"
+// RTL Simulation : 46 / 106 [n/a] @ "4431555000"
+// RTL Simulation : 47 / 106 [n/a] @ "4501035000"
+// RTL Simulation : 48 / 106 [n/a] @ "4528875000"
+// RTL Simulation : 49 / 106 [n/a] @ "4598355000"
+// RTL Simulation : 50 / 106 [n/a] @ "4709475000"
+// RTL Simulation : 51 / 106 [n/a] @ "4751195000"
+// RTL Simulation : 52 / 106 [n/a] @ "4792915000"
+// RTL Simulation : 53 / 106 [n/a] @ "4820755000"
+// RTL Simulation : 54 / 106 [n/a] @ "4917995000"
+// RTL Simulation : 55 / 106 [n/a] @ "4959715000"
+// RTL Simulation : 56 / 106 [n/a] @ "5056955000"
+// RTL Simulation : 57 / 106 [n/a] @ "5154195000"
+// RTL Simulation : 58 / 106 [n/a] @ "5251435000"
+// RTL Simulation : 59 / 106 [n/a] @ "5348675000"
+// RTL Simulation : 60 / 106 [n/a] @ "5390395000"
+// RTL Simulation : 61 / 106 [n/a] @ "5501515000"
+// RTL Simulation : 62 / 106 [n/a] @ "5529355000"
+// RTL Simulation : 63 / 106 [n/a] @ "5571075000"
+// RTL Simulation : 64 / 106 [n/a] @ "5626675000"
+// RTL Simulation : 65 / 106 [n/a] @ "5682275000"
+// RTL Simulation : 66 / 106 [n/a] @ "5737875000"
+// RTL Simulation : 67 / 106 [n/a] @ "5765715000"
+// RTL Simulation : 68 / 106 [n/a] @ "5807435000"
+// RTL Simulation : 69 / 106 [n/a] @ "5932435000"
+// RTL Simulation : 70 / 106 [n/a] @ "5960275000"
+// RTL Simulation : 71 / 106 [n/a] @ "6057515000"
+// RTL Simulation : 72 / 106 [n/a] @ "6085355000"
+// RTL Simulation : 73 / 106 [n/a] @ "6140955000"
+// RTL Simulation : 74 / 106 [n/a] @ "6196555000"
+// RTL Simulation : 75 / 106 [n/a] @ "6293795000"
+// RTL Simulation : 76 / 106 [n/a] @ "6307755000"
+// RTL Simulation : 77 / 106 [n/a] @ "6377235000"
+// RTL Simulation : 78 / 106 [n/a] @ "6418955000"
+// RTL Simulation : 79 / 106 [n/a] @ "6460675000"
+// RTL Simulation : 80 / 106 [n/a] @ "6530155000"
+// RTL Simulation : 81 / 106 [n/a] @ "6544115000"
+// RTL Simulation : 82 / 106 [n/a] @ "6655235000"
+// RTL Simulation : 83 / 106 [n/a] @ "6683075000"
+// RTL Simulation : 84 / 106 [n/a] @ "6780315000"
+// RTL Simulation : 85 / 106 [n/a] @ "6794275000"
+// RTL Simulation : 86 / 106 [n/a] @ "6835995000"
+// RTL Simulation : 87 / 106 [n/a] @ "6849955000"
+// RTL Simulation : 88 / 106 [n/a] @ "6919435000"
+// RTL Simulation : 89 / 106 [n/a] @ "6947275000"
+// RTL Simulation : 90 / 106 [n/a] @ "6975115000"
+// RTL Simulation : 91 / 106 [n/a] @ "7030715000"
+// RTL Simulation : 92 / 106 [n/a] @ "7127955000"
+// RTL Simulation : 93 / 106 [n/a] @ "7239075000"
+// RTL Simulation : 94 / 106 [n/a] @ "7266915000"
+// RTL Simulation : 95 / 106 [n/a] @ "7378035000"
+// RTL Simulation : 96 / 106 [n/a] @ "7419755000"
+// RTL Simulation : 97 / 106 [n/a] @ "7447595000"
+// RTL Simulation : 98 / 106 [n/a] @ "7489315000"
+// RTL Simulation : 99 / 106 [n/a] @ "7600435000"
+// RTL Simulation : 100 / 106 [n/a] @ "7614395000"
+// RTL Simulation : 101 / 106 [n/a] @ "7725515000"
+// RTL Simulation : 102 / 106 [n/a] @ "7822755000"
+// RTL Simulation : 103 / 106 [n/a] @ "7836715000"
+// RTL Simulation : 104 / 106 [n/a] @ "7850675000"
+// RTL Simulation : 105 / 106 [n/a] @ "7920155000"
+// RTL Simulation : 106 / 106 [n/a] @ "7934115000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 7934185 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:06 . Memory (MB): peak = 194.027 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 2383136 KB (Peak: 2383136 KB), Simulation CPU Usage: 65734 ms
+INFO: [Common 17-206] Exiting xsim at Fri Aug  1 13:58:25 2025...
+Discrepancies: 0 out of 106 samples
+*******************************************
+PASS: The output matches the ans output!
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 130784
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

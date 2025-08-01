@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Aug  1 14:06:13 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_design_analysis -file ./report/sha512Accel_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Initial Estimated Router Congestion Reporting
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Characteristics      |                                                                                                                         Path #1                                                                                                                         |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Requirement               | 10.000                                                                                                                                                                                                                                                  |
+| Path Delay                | 7.888                                                                                                                                                                                                                                                   |
+| Logic Delay               | 4.055(52%)                                                                                                                                                                                                                                              |
+| Net Delay                 | 3.833(48%)                                                                                                                                                                                                                                              |
+| Clock Skew                | -0.039                                                                                                                                                                                                                                                  |
+| Slack                     | 2.096                                                                                                                                                                                                                                                   |
+| Clock Uncertainty         | 0.035                                                                                                                                                                                                                                                   |
+| Clock Pair Classification | Timed                                                                                                                                                                                                                                                   |
+| Clock Delay Group         | Same Clock                                                                                                                                                                                                                                              |
+| Logic Levels              | 32                                                                                                                                                                                                                                                      |
+| Routes                    | 31                                                                                                                                                                                                                                                      |
+| Logical Path              | FDRE/C-(7)-LUT2-(132)-LUT2-(1)-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-CARRY4-FDRE/D |
+| Start Point Clock         | ap_clk                                                                                                                                                                                                                                                  |
+| End Point Clock           | ap_clk                                                                                                                                                                                                                                                  |
+| DSP Block                 | None                                                                                                                                                                                                                                                    |
+| RAM Registers             | None-None                                                                                                                                                                                                                                               |
+| IO Crossings              | 0                                                                                                                                                                                                                                                       |
+| Config Crossings          | 0                                                                                                                                                                                                                                                       |
+| SLR Crossings             | 0                                                                                                                                                                                                                                                       |
+| PBlocks                   | 0                                                                                                                                                                                                                                                       |
+| High Fanout               | 132                                                                                                                                                                                                                                                     |
+| ASYNC REG                 | 0                                                                                                                                                                                                                                                       |
+| Dont Touch                | 0                                                                                                                                                                                                                                                       |
+| Mark Debug                | 0                                                                                                                                                                                                                                                       |
+| Start Point Pin Primitive | FDRE/C                                                                                                                                                                                                                                                  |
+| End Point Pin Primitive   | FDRE/D                                                                                                                                                                                                                                                  |
+| Start Point Pin           | grp_sha512Accel_Pipeline_VITIS_LOOP_26_3_fu_442_ap_start_reg_reg/C                                                                                                                                                                                      |
+| End Point Pin             | counter_fu_182_reg[125]/D                                                                                                                                                                                                                               |
++---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (148, 99)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| End Point Clock | Requirement |  1 |  2  |  3  |  4  |  6 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 |
++-----------------+-------------+----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| ap_clk          | 10.000ns    | 13 | 122 | 119 | 492 | 64 |  6 |  7 |  9 | 12 | 12 |  8 | 12 | 12 | 12 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  8 |  4 |
++-----------------+-------------+----+-----+-----+-----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Congestion | Window | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Initial Estimated Router Congestion Reporting
+------------------------------------------------
+
++-----------+------+-------+------------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Percentage Tiles | Window | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+------------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+* No initial estimated congestion windows are found above level 5
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+

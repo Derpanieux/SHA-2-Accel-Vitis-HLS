@@ -1,0 +1,4 @@
+  CREATE_STREAM @0 {NAME:sha512Accel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.sha512Accel_virtual_sqr STREAM:1274}
+  CREATE_STREAM @125000 {NAME:sha512Accel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_bitstream.m_agt.sqr STREAM:1358}
+  CREATE_STREAM @125000 {NAME:sha512Accel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_size.m_agt.sqr STREAM:1368}
+  CREATE_STREAM @125000 {NAME:sha512Accel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_output_r.s_agt.sqr STREAM:1378}

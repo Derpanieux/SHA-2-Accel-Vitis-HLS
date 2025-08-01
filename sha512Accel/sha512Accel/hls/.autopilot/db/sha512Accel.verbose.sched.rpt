@@ -1,0 +1,372 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha512Accel'
+================================================================
+* Date:           Fri Aug  1 13:55:24 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        sha512Accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.262 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_13_1  |        ?|        ?|      1402|          -|          -|     ?|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 16 
+6 --> 7 
+7 --> 8 10 
+8 --> 9 
+9 --> 11 
+10 --> 9 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 5 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%counter = alloca i32 1" [sha512Accel.cpp:4]   --->   Operation 20 'alloca' 'counter' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%addSize_2_loc = alloca i64 1"   --->   Operation 21 'alloca' 'addSize_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%addSize_1_loc = alloca i64 1"   --->   Operation 22 'alloca' 'addSize_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%buffer = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 23 'alloca' 'buffer' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%buffer_1 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 24 'alloca' 'buffer_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%buffer_2 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 25 'alloca' 'buffer_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%buffer_3 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 26 'alloca' 'buffer_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%buffer_4 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 27 'alloca' 'buffer_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%buffer_5 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 28 'alloca' 'buffer_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%buffer_6 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 29 'alloca' 'buffer_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%buffer_7 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 30 'alloca' 'buffer_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%buffer_8 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 31 'alloca' 'buffer_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%buffer_9 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 32 'alloca' 'buffer_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%buffer_10 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 33 'alloca' 'buffer_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%buffer_11 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 34 'alloca' 'buffer_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%buffer_12 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 35 'alloca' 'buffer_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%buffer_13 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 36 'alloca' 'buffer_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%buffer_14 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 37 'alloca' 'buffer_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%buffer_15 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 38 'alloca' 'buffer_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%buffer_16 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 39 'alloca' 'buffer_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%buffer_17 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 40 'alloca' 'buffer_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%buffer_18 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 41 'alloca' 'buffer_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%buffer_19 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 42 'alloca' 'buffer_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%buffer_20 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 43 'alloca' 'buffer_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%buffer_21 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 44 'alloca' 'buffer_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%buffer_22 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 45 'alloca' 'buffer_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%buffer_23 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 46 'alloca' 'buffer_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%buffer_24 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 47 'alloca' 'buffer_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%buffer_25 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 48 'alloca' 'buffer_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%buffer_26 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 49 'alloca' 'buffer_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%buffer_27 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 50 'alloca' 'buffer_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%buffer_28 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 51 'alloca' 'buffer_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%buffer_29 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 52 'alloca' 'buffer_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%buffer_30 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 53 'alloca' 'buffer_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%buffer_31 = alloca i64 1" [sha512Accel.cpp:5]   --->   Operation 54 'alloca' 'buffer_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%interHash = alloca i64 1" [sha512Accel.cpp:6]   --->   Operation 55 'alloca' 'interHash' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%wordsout = alloca i64 1" [sha512Accel.cpp:43]   --->   Operation 56 'alloca' 'wordsout' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%message = alloca i64 1" [sha512Accel.cpp:44]   --->   Operation 57 'alloca' 'message' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%interHash_addr = getelementptr i64 %interHash, i64 0, i64 0" [sha512Accel.cpp:7]   --->   Operation 58 'getelementptr' 'interHash_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln7 = store i64 7640891576956012808, i3 %interHash_addr" [sha512Accel.cpp:7]   --->   Operation 59 'store' 'store_ln7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%interHash_addr_1 = getelementptr i64 %interHash, i64 0, i64 1" [sha512Accel.cpp:7]   --->   Operation 60 'getelementptr' 'interHash_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln7 = store i64 13503953896175478587, i3 %interHash_addr_1" [sha512Accel.cpp:7]   --->   Operation 61 'store' 'store_ln7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 62 [1/1] (1.29ns)   --->   "%store_ln4 = store i128 0, i128 %counter" [sha512Accel.cpp:4]   --->   Operation 62 'store' 'store_ln4' <Predicate = true> <Delay = 1.29>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%interHash_addr_2 = getelementptr i64 %interHash, i64 0, i64 2" [sha512Accel.cpp:7]   --->   Operation 63 'getelementptr' 'interHash_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln7 = store i64 4354685564936845355, i3 %interHash_addr_2" [sha512Accel.cpp:7]   --->   Operation 64 'store' 'store_ln7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%interHash_addr_3 = getelementptr i64 %interHash, i64 0, i64 3" [sha512Accel.cpp:7]   --->   Operation 65 'getelementptr' 'interHash_addr_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln7 = store i64 11912009170470909681, i3 %interHash_addr_3" [sha512Accel.cpp:7]   --->   Operation 66 'store' 'store_ln7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%interHash_addr_4 = getelementptr i64 %interHash, i64 0, i64 4" [sha512Accel.cpp:8]   --->   Operation 67 'getelementptr' 'interHash_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln8 = store i64 5840696475078001361, i3 %interHash_addr_4" [sha512Accel.cpp:8]   --->   Operation 68 'store' 'store_ln8' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%interHash_addr_5 = getelementptr i64 %interHash, i64 0, i64 5" [sha512Accel.cpp:8]   --->   Operation 69 'getelementptr' 'interHash_addr_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln8 = store i64 11170449401992604703, i3 %interHash_addr_5" [sha512Accel.cpp:8]   --->   Operation 70 'store' 'store_ln8' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 4 <SV = 3> <Delay = 1.76>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%size_read = read i128 @_ssdm_op_Read.ap_auto.i128, i128 %size"   --->   Operation 71 'read' 'size_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [sha512Accel.cpp:3]   --->   Operation 72 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %bitstream, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %bitstream"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %size"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %size, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %output_r"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %output_r, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%interHash_addr_6 = getelementptr i64 %interHash, i64 0, i64 6" [sha512Accel.cpp:8]   --->   Operation 79 'getelementptr' 'interHash_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln8 = store i64 2270897969802886507, i3 %interHash_addr_6" [sha512Accel.cpp:8]   --->   Operation 80 'store' 'store_ln8' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "%interHash_addr_7 = getelementptr i64 %interHash, i64 0, i64 7" [sha512Accel.cpp:8]   --->   Operation 81 'getelementptr' 'interHash_addr_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln8 = store i64 6620516959819538809, i3 %interHash_addr_7" [sha512Accel.cpp:8]   --->   Operation 82 'store' 'store_ln8' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 83 [1/1] (1.29ns)   --->   "%br_ln13 = br void %while.cond" [sha512Accel.cpp:13]   --->   Operation 83 'br' 'br_ln13' <Predicate = true> <Delay = 1.29>
+
+State 5 <SV = 4> <Delay = 1.29>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%addSize = phi i1 0, void %entry, i1 %addSize_2, void %VITIS_LOOP_46_5"   --->   Operation 84 'phi' 'addSize' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%iterneeded = phi i1 1, void %entry, i1 %iterneeded_1, void %VITIS_LOOP_46_5"   --->   Operation 85 'phi' 'iterneeded' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %iterneeded, void %while.end, void %VITIS_LOOP_15_2" [sha512Accel.cpp:13]   --->   Operation 86 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%counter_load_1 = load i128 %counter"   --->   Operation 87 'load' 'counter_load_1' <Predicate = (iterneeded)> <Delay = 0.00>
+ST_5 : Operation 88 [2/2] (1.29ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_15_2, i1 %addSize, i128 %counter_load_1, i1 %bitstream, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read, i1 %addSize_1_loc"   --->   Operation 88 'call' 'call_ln0' <Predicate = (iterneeded)> <Delay = 1.29> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%tmp = partselect i118 @_ssdm_op_PartSelect.i118.i128.i32.i32, i128 %counter_load_1, i32 10, i32 127" [sha512Accel.cpp:15]   --->   Operation 89 'partselect' 'tmp' <Predicate = (iterneeded)> <Delay = 0.00>
+ST_5 : Operation 90 [2/2] (1.76ns)   --->   "%interHash_load = load i3 %interHash_addr_7" [sha512Accel.cpp:56]   --->   Operation 90 'load' 'interHash_load' <Predicate = (!iterneeded)> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 91 [2/2] (1.76ns)   --->   "%interHash_load_1 = load i3 %interHash_addr_6" [sha512Accel.cpp:56]   --->   Operation 91 'load' 'interHash_load_1' <Predicate = (!iterneeded)> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 2.95>
+ST_6 : Operation 92 [1/2] (2.95ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_15_2, i1 %addSize, i128 %counter_load_1, i1 %bitstream, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read, i1 %addSize_1_loc"   --->   Operation 92 'call' 'call_ln0' <Predicate = true> <Delay = 2.95> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 3.91>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [sha512Accel.cpp:13]   --->   Operation 93 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%addSize_1_loc_load = load i1 %addSize_1_loc"   --->   Operation 94 'load' 'addSize_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i128 @_ssdm_op_BitConcatenate.i128.i118.i10, i118 %tmp, i10 896" [sha512Accel.cpp:15]   --->   Operation 95 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln25 = br i1 %addSize_1_loc_load, void %for.body19.preheader, void %_ZcmILi160ELb0EE11ap_int_baseIXplT_L3$_032EELb0EERKS0_IXT_EXT0_EEi.exit.preheader" [sha512Accel.cpp:25]   --->   Operation 96 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [2/2] (1.29ns)   --->   "%call_ln15 = call void @sha512Accel_Pipeline_VITIS_LOOP_26_3, i128 %or_ln, i1 %bitstream, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read, i1 %addSize_2_loc" [sha512Accel.cpp:15]   --->   Operation 97 'call' 'call_ln15' <Predicate = (!addSize_1_loc_load)> <Delay = 1.29> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 98 [2/2] (3.91ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_38_4, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read"   --->   Operation 98 'call' 'call_ln0' <Predicate = (addSize_1_loc_load)> <Delay = 3.91> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 2.97>
+ST_8 : Operation 99 [1/2] (2.97ns)   --->   "%call_ln15 = call void @sha512Accel_Pipeline_VITIS_LOOP_26_3, i128 %or_ln, i1 %bitstream, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read, i1 %addSize_2_loc" [sha512Accel.cpp:15]   --->   Operation 99 'call' 'call_ln15' <Predicate = true> <Delay = 2.97> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 5.78>
+ST_9 : Operation 100 [1/1] (0.00ns)   --->   "%addSize_2_loc_load = load i1 %addSize_2_loc"   --->   Operation 100 'load' 'addSize_2_loc_load' <Predicate = (!addSize_1_loc_load)> <Delay = 0.00>
+ST_9 : Operation 101 [1/1] (1.29ns)   --->   "%br_ln0 = br void %VITIS_LOOP_46_5"   --->   Operation 101 'br' 'br_ln0' <Predicate = (!addSize_1_loc_load)> <Delay = 1.29>
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%counter_load = load i128 %counter" [sha512Accel.cpp:26]   --->   Operation 102 'load' 'counter_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 103 [1/1] (4.48ns)   --->   "%counter_5 = add i128 %counter_load, i128 1024" [sha512Accel.cpp:26]   --->   Operation 103 'add' 'counter_5' <Predicate = true> <Delay = 4.48> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 4.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 104 [2/2] (0.00ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_46_5, i64 %message, i1 %buffer, i1 %buffer_1, i1 %buffer_2, i1 %buffer_3, i1 %buffer_4, i1 %buffer_5, i1 %buffer_6, i1 %buffer_7, i1 %buffer_8, i1 %buffer_9, i1 %buffer_10, i1 %buffer_11, i1 %buffer_12, i1 %buffer_13, i1 %buffer_14, i1 %buffer_15, i1 %buffer_16, i1 %buffer_17, i1 %buffer_18, i1 %buffer_19, i1 %buffer_20, i1 %buffer_21, i1 %buffer_22, i1 %buffer_23, i1 %buffer_24, i1 %buffer_25, i1 %buffer_26, i1 %buffer_27, i1 %buffer_28, i1 %buffer_29, i1 %buffer_30, i1 %buffer_31"   --->   Operation 104 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 105 [1/1] (1.29ns)   --->   "%store_ln4 = store i128 %counter_5, i128 %counter" [sha512Accel.cpp:4]   --->   Operation 105 'store' 'store_ln4' <Predicate = true> <Delay = 1.29>
+
+State 10 <SV = 7> <Delay = 4.26>
+ST_10 : Operation 106 [1/2] (4.26ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_38_4, i1 %buffer_31, i1 %buffer_30, i1 %buffer_29, i1 %buffer_28, i1 %buffer_27, i1 %buffer_26, i1 %buffer_25, i1 %buffer_24, i1 %buffer_23, i1 %buffer_22, i1 %buffer_21, i1 %buffer_20, i1 %buffer_19, i1 %buffer_18, i1 %buffer_17, i1 %buffer_16, i1 %buffer_15, i1 %buffer_14, i1 %buffer_13, i1 %buffer_12, i1 %buffer_11, i1 %buffer_10, i1 %buffer_9, i1 %buffer_8, i1 %buffer_7, i1 %buffer_6, i1 %buffer_5, i1 %buffer_4, i1 %buffer_3, i1 %buffer_2, i1 %buffer_1, i1 %buffer, i128 %size_read"   --->   Operation 106 'call' 'call_ln0' <Predicate = true> <Delay = 4.26> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 107 [1/1] (1.29ns)   --->   "%br_ln0 = br void %VITIS_LOOP_46_5"   --->   Operation 107 'br' 'br_ln0' <Predicate = true> <Delay = 1.29>
+
+State 11 <SV = 9> <Delay = 4.17>
+ST_11 : Operation 108 [1/1] (0.00ns)   --->   "%addSize_2 = phi i1 1, void %_ZcmILi160ELb0EE11ap_int_baseIXplT_L3$_032EELb0EERKS0_IXT_EXT0_EEi.exit.preheader, i1 %addSize_2_loc_load, void %for.body19.preheader"   --->   Operation 108 'phi' 'addSize_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 109 [1/2] (4.17ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_46_5, i64 %message, i1 %buffer, i1 %buffer_1, i1 %buffer_2, i1 %buffer_3, i1 %buffer_4, i1 %buffer_5, i1 %buffer_6, i1 %buffer_7, i1 %buffer_8, i1 %buffer_9, i1 %buffer_10, i1 %buffer_11, i1 %buffer_12, i1 %buffer_13, i1 %buffer_14, i1 %buffer_15, i1 %buffer_16, i1 %buffer_17, i1 %buffer_18, i1 %buffer_19, i1 %buffer_20, i1 %buffer_21, i1 %buffer_22, i1 %buffer_23, i1 %buffer_24, i1 %buffer_25, i1 %buffer_26, i1 %buffer_27, i1 %buffer_28, i1 %buffer_29, i1 %buffer_30, i1 %buffer_31"   --->   Operation 109 'call' 'call_ln0' <Predicate = true> <Delay = 4.17> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 10> <Delay = 0.00>
+ST_12 : Operation 110 [2/2] (0.00ns)   --->   "%call_ln51 = call void @chunkProcessor, i64 %interHash, i64 %message, i64 %wordsout, i64 %kValues" [sha512Accel.cpp:51]   --->   Operation 110 'call' 'call_ln51' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 11> <Delay = 0.00>
+ST_13 : Operation 111 [1/2] (0.00ns)   --->   "%call_ln51 = call void @chunkProcessor, i64 %interHash, i64 %message, i64 %wordsout, i64 %kValues" [sha512Accel.cpp:51]   --->   Operation 111 'call' 'call_ln51' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 12> <Delay = 0.00>
+ST_14 : Operation 112 [2/2] (0.00ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_52_7, i64 %wordsout, i64 %interHash"   --->   Operation 112 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 13> <Delay = 4.15>
+ST_15 : Operation 113 [1/1] (0.00ns)   --->   "%iterneeded_1 = phi i1 0, void %_ZcmILi160ELb0EE11ap_int_baseIXplT_L3$_032EELb0EERKS0_IXT_EXT0_EEi.exit.preheader, i1 1, void %for.body19.preheader"   --->   Operation 113 'phi' 'iterneeded_1' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 114 [1/2] (4.15ns)   --->   "%call_ln0 = call void @sha512Accel_Pipeline_VITIS_LOOP_52_7, i64 %wordsout, i64 %interHash"   --->   Operation 114 'call' 'call_ln0' <Predicate = true> <Delay = 4.15> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 115 [1/1] (0.00ns)   --->   "%br_ln13 = br void %while.cond" [sha512Accel.cpp:13]   --->   Operation 115 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 5> <Delay = 1.76>
+ST_16 : Operation 116 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load = load i3 %interHash_addr_7" [sha512Accel.cpp:56]   --->   Operation 116 'load' 'interHash_load' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_16 : Operation 117 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_1 = load i3 %interHash_addr_6" [sha512Accel.cpp:56]   --->   Operation 117 'load' 'interHash_load_1' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_16 : Operation 118 [2/2] (1.76ns)   --->   "%interHash_load_2 = load i3 %interHash_addr_5" [sha512Accel.cpp:56]   --->   Operation 118 'load' 'interHash_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_16 : Operation 119 [2/2] (1.76ns)   --->   "%interHash_load_3 = load i3 %interHash_addr_4" [sha512Accel.cpp:56]   --->   Operation 119 'load' 'interHash_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 17 <SV = 6> <Delay = 1.76>
+ST_17 : Operation 120 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_2 = load i3 %interHash_addr_5" [sha512Accel.cpp:56]   --->   Operation 120 'load' 'interHash_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_17 : Operation 121 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_3 = load i3 %interHash_addr_4" [sha512Accel.cpp:56]   --->   Operation 121 'load' 'interHash_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_17 : Operation 122 [2/2] (1.76ns)   --->   "%interHash_load_4 = load i3 %interHash_addr_3" [sha512Accel.cpp:56]   --->   Operation 122 'load' 'interHash_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_17 : Operation 123 [2/2] (1.76ns)   --->   "%interHash_load_5 = load i3 %interHash_addr_2" [sha512Accel.cpp:56]   --->   Operation 123 'load' 'interHash_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 18 <SV = 7> <Delay = 1.76>
+ST_18 : Operation 124 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_4 = load i3 %interHash_addr_3" [sha512Accel.cpp:56]   --->   Operation 124 'load' 'interHash_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_18 : Operation 125 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_5 = load i3 %interHash_addr_2" [sha512Accel.cpp:56]   --->   Operation 125 'load' 'interHash_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_18 : Operation 126 [2/2] (1.76ns)   --->   "%interHash_load_6 = load i3 %interHash_addr_1" [sha512Accel.cpp:56]   --->   Operation 126 'load' 'interHash_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_18 : Operation 127 [2/2] (1.76ns)   --->   "%interHash_load_7 = load i3 %interHash_addr" [sha512Accel.cpp:56]   --->   Operation 127 'load' 'interHash_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+
+State 19 <SV = 8> <Delay = 1.76>
+ST_19 : Operation 128 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_6 = load i3 %interHash_addr_1" [sha512Accel.cpp:56]   --->   Operation 128 'load' 'interHash_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_19 : Operation 129 [1/2] ( I:1.76ns O:1.76ns )   --->   "%interHash_load_7 = load i3 %interHash_addr" [sha512Accel.cpp:56]   --->   Operation 129 'load' 'interHash_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 8> <RAM>
+ST_19 : Operation 130 [1/1] (0.00ns)   --->   "%tmp_6 = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i64.i64.i64.i64.i64.i64.i64.i64, i64 %interHash_load_7, i64 %interHash_load_6, i64 %interHash_load_5, i64 %interHash_load_4, i64 %interHash_load_3, i64 %interHash_load_2, i64 %interHash_load_1, i64 %interHash_load" [sha512Accel.cpp:56]   --->   Operation 130 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 131 [1/1] (0.00ns)   --->   "%write_ln56 = write void @_ssdm_op_Write.ap_auto.i512P0A, i512 %output_r, i512 %tmp_6" [sha512Accel.cpp:56]   --->   Operation 131 'write' 'write_ln56' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 132 [1/1] (0.00ns)   --->   "%ret_ln57 = ret" [sha512Accel.cpp:57]   --->   Operation 132 'ret' 'ret_ln57' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.769ns
+The critical path consists of the following:
+	'alloca' operation 64 bit ('interHash', sha512Accel.cpp:6) [48]  (0.000 ns)
+	'getelementptr' operation 3 bit ('interHash_addr', sha512Accel.cpp:7) [51]  (0.000 ns)
+	'store' operation 0 bit ('store_ln7', sha512Accel.cpp:7) of constant 7640891576956012808 on array 'interHash', sha512Accel.cpp:6 [52]  (1.769 ns)
+
+ <State 2>: 1.769ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('interHash_addr_2', sha512Accel.cpp:7) [55]  (0.000 ns)
+	'store' operation 0 bit ('store_ln7', sha512Accel.cpp:7) of constant 4354685564936845355 on array 'interHash', sha512Accel.cpp:6 [56]  (1.769 ns)
+
+ <State 3>: 1.769ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('interHash_addr_4', sha512Accel.cpp:8) [59]  (0.000 ns)
+	'store' operation 0 bit ('store_ln8', sha512Accel.cpp:8) of constant 5840696475078001361 on array 'interHash', sha512Accel.cpp:6 [60]  (1.769 ns)
+
+ <State 4>: 1.769ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('interHash_addr_6', sha512Accel.cpp:8) [63]  (0.000 ns)
+	'store' operation 0 bit ('store_ln8', sha512Accel.cpp:8) of constant 2270897969802886507 on array 'interHash', sha512Accel.cpp:6 [64]  (1.769 ns)
+
+ <State 5>: 1.294ns
+The critical path consists of the following:
+	'phi' operation 1 bit ('addSize') with incoming values : ('addSize_2_loc_load') [70]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_15_2' [76]  (1.294 ns)
+
+ <State 6>: 2.959ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_15_2' [76]  (2.959 ns)
+
+ <State 7>: 3.919ns
+The critical path consists of the following:
+	'load' operation 1 bit ('addSize_1_loc_load') on local variable 'addSize_1_loc' [77]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_38_4' [86]  (3.919 ns)
+
+ <State 8>: 2.973ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln15', sha512Accel.cpp:15) to 'sha512Accel_Pipeline_VITIS_LOOP_26_3' [82]  (2.973 ns)
+
+ <State 9>: 5.783ns
+The critical path consists of the following:
+	'load' operation 128 bit ('counter_load', sha512Accel.cpp:26) on local variable 'counter', sha512Accel.cpp:4 [91]  (0.000 ns)
+	'add' operation 128 bit ('counter', sha512Accel.cpp:26) [92]  (4.489 ns)
+	'store' operation 0 bit ('store_ln4', sha512Accel.cpp:4) of variable 'counter', sha512Accel.cpp:26 on local variable 'counter', sha512Accel.cpp:4 [96]  (1.294 ns)
+
+ <State 10>: 4.267ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_38_4' [86]  (4.267 ns)
+
+ <State 11>: 4.172ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_46_5' [93]  (4.172 ns)
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 4.155ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'sha512Accel_Pipeline_VITIS_LOOP_52_7' [95]  (4.155 ns)
+
+ <State 16>: 1.769ns
+The critical path consists of the following:
+	'load' operation 64 bit ('interHash_load', sha512Accel.cpp:56) on array 'interHash', sha512Accel.cpp:6 [99]  (1.769 ns)
+
+ <State 17>: 1.769ns
+The critical path consists of the following:
+	'load' operation 64 bit ('interHash_load_2', sha512Accel.cpp:56) on array 'interHash', sha512Accel.cpp:6 [101]  (1.769 ns)
+
+ <State 18>: 1.769ns
+The critical path consists of the following:
+	'load' operation 64 bit ('interHash_load_4', sha512Accel.cpp:56) on array 'interHash', sha512Accel.cpp:6 [103]  (1.769 ns)
+
+ <State 19>: 1.769ns
+The critical path consists of the following:
+	'load' operation 64 bit ('interHash_load_6', sha512Accel.cpp:56) on array 'interHash', sha512Accel.cpp:6 [105]  (1.769 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
