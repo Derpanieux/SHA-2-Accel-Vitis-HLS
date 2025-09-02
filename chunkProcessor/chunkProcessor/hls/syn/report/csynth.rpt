@@ -1,0 +1,159 @@
+
+
+================================================================
+== Synthesis Summary Report of 'chunkProcessor'
+================================================================
++ General Information: 
+    * Date:           Wed Jul 16 23:39:06 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        chunkProcessor
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: aspartan7
+    * Target device:  xa7s6-cpga196-2I
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |                   Modules                  | Issue|      |       Latency       | Iteration|         | Trip |          |         |    |           |            |     |
+    |                   & Loops                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |+ chunkProcessor                            |     -|  0.75|      272|  2.720e+03|         -|      273|     -|        no|  5 (50%)|   -|  902 (12%)|  1816 (48%)|    -|
+    | + chunkProcessor_Pipeline_VITIS_LOOP_7_1   |     -|  2.76|       18|    180.000|         -|       17|     -|    rewind|        -|   -|   13 (~0%)|     65 (1%)|    -|
+    |  o VITIS_LOOP_7_1                          |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|   -|          -|           -|    -|
+    | + chunkProcessor_Pipeline_VITIS_LOOP_22_1  |     -|  3.14|       10|    100.000|         -|        9|     -|    rewind|        -|   -|   11 (~0%)|     64 (1%)|    -|
+    |  o VITIS_LOOP_22_1                         |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|        -|   -|          -|           -|    -|
+    | + chunkProcessor_Pipeline_VITIS_LOOP_10_2  |     -|  0.97|       99|    990.000|         -|       98|     -|    rewind|        -|   -|   129 (1%)|   408 (10%)|    -|
+    |  o VITIS_LOOP_10_2                         |    II|  7.30|       97|    970.000|         4|        2|    48|       yes|        -|   -|          -|           -|    -|
+    | + chunkProcessor_Pipeline_VITIS_LOOP_25_2  |     -|  0.75|      132|  1.320e+03|         -|      130|     -|    rewind|  1 (10%)|   -|   399 (5%)|   801 (21%)|    -|
+    |  o VITIS_LOOP_25_2                         |    II|  7.30|      130|  1.300e+03|         4|        2|    64|       yes|        -|   -|          -|           -|    -|
+    | + chunkProcessor_Pipeline_VITIS_LOOP_32_4  |     -|  1.62|       10|    100.000|         -|        9|     -|    rewind|        -|   -|   11 (~0%)|    103 (2%)|    -|
+    |  o VITIS_LOOP_32_4                         |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|        -|   -|          -|           -|    -|
+    +--------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| input_r_address0  | out       | 3        |
+| input_r_q0        | in        | 32       |
+| message_address0  | out       | 4        |
+| message_q0        | in        | 32       |
+| output_r_address0 | out       | 3        |
+| output_r_d0       | out       | 32       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| input    | in        | ap_uint<32>* |
+| message  | in        | ap_uint<32>* |
+| output   | out       | ap_uint<32>* |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| input    | input_r_address0  | port    | offset   |
+| input    | input_r_ce0       | port    |          |
+| input    | input_r_q0        | port    |          |
+| message  | message_address0  | port    | offset   |
+| message  | message_ce0       | port    |          |
+| message  | message_q0        | port    |          |
+| output   | output_r_address0 | port    | offset   |
+| output   | output_r_ce0      | port    |          |
+| output   | output_r_we0      | port    |          |
+| output   | output_r_d0       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------+-----+--------+------------+-------+--------+---------+
+| Name                                       | DSP | Pragma | Variable   | Op    | Impl   | Latency |
++--------------------------------------------+-----+--------+------------+-------+--------+---------+
+| + chunkProcessor                           | 0   |        |            |       |        |         |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_7_1  | 0   |        |            |       |        |         |
+|    icmp_ln7_fu_73_p2                       |     |        | icmp_ln7   | seteq | auto   | 0       |
+|    add_ln7_fu_79_p2                        |     |        | add_ln7    | add   | fabric | 0       |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_22_1 | 0   |        |            |       |        |         |
+|    icmp_ln22_fu_73_p2                      |     |        | icmp_ln22  | seteq | auto   | 0       |
+|    add_ln22_fu_79_p2                       |     |        | add_ln22   | add   | fabric | 0       |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_10_2 | 0   |        |            |       |        |         |
+|    icmp_ln10_fu_135_p2                     |     |        | icmp_ln10  | seteq | auto   | 0       |
+|    add_ln12_fu_145_p2                      |     |        | add_ln12   | add   | fabric | 0       |
+|    add_ln13_fu_156_p2                      |     |        | add_ln13   | add   | fabric | 0       |
+|    add_ln15_fu_167_p2                      |     |        | add_ln15   | add   | fabric | 0       |
+|    add_ln15_1_fu_273_p2                    |     |        | add_ln15_1 | add   | fabric | 0       |
+|    xor_ln15_fu_307_p2                      |     |        | xor_ln15   | xor   | auto   | 0       |
+|    xor_ln15_1_fu_313_p2                    |     |        | xor_ln15_1 | xor   | auto   | 0       |
+|    xor_ln15_2_fu_327_p2                    |     |        | xor_ln15_2 | xor   | auto   | 0       |
+|    xor_ln15_3_fu_333_p2                    |     |        | xor_ln15_3 | xor   | auto   | 0       |
+|    add_ln15_3_fu_339_p2                    |     |        | add_ln15_3 | add   | fabric | 0       |
+|    add_ln10_fu_178_p2                      |     |        | add_ln10   | add   | fabric | 0       |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_25_2 | 0   |        |            |       |        |         |
+|    icmp_ln25_fu_318_p2                     |     |        | icmp_ln25  | seteq | auto   | 0       |
+|    add_ln25_fu_324_p2                      |     |        | add_ln25   | add   | fabric | 0       |
+|    xor_ln13_fu_411_p2                      |     |        | xor_ln13   | xor   | auto   | 0       |
+|    and_ln13_fu_417_p2                      |     |        | and_ln13   | and   | auto   | 0       |
+|    and_ln13_1_fu_423_p2                    |     |        | and_ln13_1 | and   | auto   | 0       |
+|    or_ln13_fu_445_p2                       |     |        | or_ln13    | or    | auto   | 0       |
+|    xor_ln13_1_fu_459_p2                    |     |        | xor_ln13_1 | xor   | auto   | 0       |
+|    xor_ln13_2_fu_465_p2                    |     |        | xor_ln13_2 | xor   | auto   | 0       |
+|    add_ln13_fu_341_p2                      |     |        | add_ln13   | add   | fabric | 0       |
+|    add_ln13_2_fu_476_p2                    |     |        | add_ln13_2 | add   | fabric | 0       |
+|    or_ln15_fu_545_p2                       |     |        | or_ln15    | or    | auto   | 0       |
+|    and_ln15_fu_550_p2                      |     |        | and_ln15   | and   | auto   | 0       |
+|    and_ln15_1_fu_555_p2                    |     |        | and_ln15_1 | and   | auto   | 0       |
+|    or_ln15_1_fu_576_p2                     |     |        | or_ln15_1  | or    | auto   | 0       |
+|    xor_ln15_fu_590_p2                      |     |        | xor_ln15   | xor   | auto   | 0       |
+|    xor_ln15_1_fu_596_p2                    |     |        | xor_ln15_1 | xor   | auto   | 0       |
+|    add_ln19_fu_613_p2                      |     |        | add_ln19   | add   | fabric | 0       |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_32_4 | 0   |        |            |       |        |         |
+|    icmp_ln32_fu_87_p2                      |     |        | icmp_ln32  | seteq | auto   | 0       |
+|    add_ln32_fu_93_p2                       |     |        | add_ln32   | add   | fabric | 0       |
+|    add_ln33_fu_110_p2                      |     |        | add_ln33   | add   | fabric | 0       |
++--------------------------------------------+-----+--------+------------+-------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+| Name                                       | Usage         | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                                            |               |      |      |      |        |          |      |         | Banks            |
++--------------------------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+| + chunkProcessor                           |               |      | 5    | 0    |        |          |      |         |                  |
+|   wValues_U                                | rom_np array  |      | 2    |      |        | wValues  | auto | 1       | 32, 64, 1        |
+|   wvars_U                                  | ram_t2p array |      |      |      |        | wvars    | auto | 1       | 32, 8, 1         |
+|  + chunkProcessor_Pipeline_VITIS_LOOP_25_2 |               |      | 1    | 0    |        |          |      |         |                  |
+|    kValues_U                               | rom_1p        |      | 1    |      |        | kValues  | auto | 1       | 32, 64, 1        |
++--------------------------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

@@ -1,0 +1,79 @@
+[
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha384Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\..\\functions512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\..\\functions512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha384Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\.\\sha384Accel.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\.\\sha384Accel.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha384Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\..\\chunkProcessor512\\chunkProcessor512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\..\\chunkProcessor512\\chunkProcessor512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha384Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\..\\chunkIteration512\\chunkIter512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\..\\chunkIteration512\\chunkIter512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sha384Accel",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\..\\wGenerator512\\wGenerator512.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\..\\wGenerator512\\wGenerator512.cpp"
+  },
+  {
+    "directory": "D:\\Vitis\\shaAccel\\sha384Accel",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\Vitis\\shaAccel\\sha384Accel\\.\\tb.cpp"
+    ],
+    "file": "D:\\Vitis\\shaAccel\\sha384Accel\\.\\tb.cpp"
+  }
+]

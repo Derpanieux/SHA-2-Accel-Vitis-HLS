@@ -1,0 +1,99 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/sha256Accel/sha256Accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha256Accel/sha256Accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/sha256Accel/sha256Accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/sha256Accel/hls_config.cfg
+WARNING: [HLS 200-2001] file not found './answers' see [hls] from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(20)
+WARNING: [HLS 200-2001] file not found './datain' see [hls] from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=sha256Accel.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha256Accel/sha256Accel.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=sha256Accel.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha256Accel/sha256Accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(20)
+WARNING: [HLS 200-40] Cannot find test bench file './answers'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(21)
+WARNING: [HLS 200-40] Cannot find test bench file './datain'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers.dat' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/answers.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain.dat' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(23)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/datain.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sha256Accel' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha256Accel/sha256Accel/vitis-comp.json
+WARNING: [HLS 200-1998] cannot find relative file path '../../answers' in directory(s): D:/Vitis/shaAccel/sha256Accel/sha256Accel/solution D:/Vitis/shaAccel/sha256Accel
+WARNING: [HLS 200-1998] cannot find relative file path '../../datain' in directory(s): D:/Vitis/shaAccel/sha256Accel/sha256Accel/solution D:/Vitis/shaAccel/sha256Accel
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb.cpp:5:
+In file included from ../../../../sha256Accel.h:6:
+In file included from ../../../../../chunkProcessor/chunkProcessor.h:4:
+In file included from ../../../../../chunkProcessor/../wGenerator/wGenerator.h:4:
+In file included from ../../../../../chunkProcessor/../wGenerator/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+1,6c1,6
+< 0xE3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+< 0x189F40034BE7A199F1FA9891668EE3AB6049F82D38C68BE70F596EAB2E1857B7
+< 0x6897AB3E7BED435CF094A10477F16BF68AF03A04D99B2833D43902CE2B40F0A9
+< 0x66CCE779B06F3CD69733FB5AC065AF6217416F63EAD757543B7BF20D24935D8F
+< 0x7A204761900EF4311592C3A7C123CE2659E0CED8F99ECBF85F8D1258E7853FE6
+< 0x6DE3A1941970DB57F4A8CFAB3DBC7A9B1AFBB5CF78A99495B24DF14BFDC80683
+---
+> 102987336249554097029535212322581322789799900648198034993379397001115665086549
+> 11136878849937900473579924349293516846853413769634648504817123521684605261751
+> 47308512042634251242835268329223986195444928415659517892615139511353433190569
+> 46497944940848341211198012950684491508598142730677624695121421719622567288207
+> 55239199287507978190945800073692100222040900517787359872849162880927576440806
+> 49704289953193903485429707226834479237793088283495396810469562521459723077251
+Discrepancies: 0 out of 6 samples
+*******************************************
+FAIL: Output DOES NOT match the ans output
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1816
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.214 seconds; peak allocated memory: 144.828 MB.

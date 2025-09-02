@@ -1,0 +1,348 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha256Accel'
+================================================================
+* Date:           Tue Jul 22 19:55:49 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        sha256Accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.547 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                                 |                                      |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |                     Instance                    |                Module                |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +-------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_sha256Accel_Pipeline_VITIS_LOOP_12_2_fu_333  |sha256Accel_Pipeline_VITIS_LOOP_12_2  |      450|      450|  4.500 us|  4.500 us|  449|  449|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sha256Accel_Pipeline_VITIS_LOOP_23_3_fu_360  |sha256Accel_Pipeline_VITIS_LOOP_23_3  |       66|       66|  0.660 us|  0.660 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sha256Accel_Pipeline_VITIS_LOOP_35_4_fu_385  |sha256Accel_Pipeline_VITIS_LOOP_35_4  |       66|       66|  0.660 us|  0.660 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sha256Accel_Pipeline_VITIS_LOOP_43_5_fu_406  |sha256Accel_Pipeline_VITIS_LOOP_43_5  |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_chunkProcessor_fu_427                        |chunkProcessor                        |      272|      272|  2.720 us|  2.720 us|  272|  272|                                              no|
+        |grp_sha256Accel_Pipeline_VITIS_LOOP_49_7_fu_436  |sha256Accel_Pipeline_VITIS_LOOP_49_7  |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +-------------------------------------------------+--------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_10_1  |        ?|        ?|       826|          -|          -|     ?|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+------+------+-----+
+|       Name      | BRAM_18K| DSP|  FF  |  LUT | URAM|
++-----------------+---------+----+------+------+-----+
+|DSP              |        -|   -|     -|     -|    -|
+|Expression       |        -|   -|     0|    73|    -|
+|FIFO             |        -|   -|     -|     -|    -|
+|Instance         |        5|   -|  1286|  3494|    0|
+|Memory           |        0|   -|   160|    32|    0|
+|Multiplexer      |        -|   -|     0|  3096|    -|
+|Register         |        -|   -|   524|     -|    -|
++-----------------+---------+----+------+------+-----+
+|Total            |        5|   0|  1970|  6695|    0|
++-----------------+---------+----+------+------+-----+
+|Available        |       10|  10|  7500|  3750|    0|
++-----------------+---------+----+------+------+-----+
+|Utilization (%)  |       50|   0|    26|   178|    0|
++-----------------+---------+----+------+------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
+    |                     Instance                    |                Module                | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
+    |grp_chunkProcessor_fu_427                        |chunkProcessor                        |        5|   0|  902|  1816|    0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_12_2_fu_333  |sha256Accel_Pipeline_VITIS_LOOP_12_2  |        0|   0|  165|   588|    0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_23_3_fu_360  |sha256Accel_Pipeline_VITIS_LOOP_23_3  |        0|   0|  166|   582|    0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_35_4_fu_385  |sha256Accel_Pipeline_VITIS_LOOP_35_4  |        0|   0|   19|   120|    0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_43_5_fu_406  |sha256Accel_Pipeline_VITIS_LOOP_43_5  |        0|   0|   23|   324|    0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_49_7_fu_436  |sha256Accel_Pipeline_VITIS_LOOP_49_7  |        0|   0|   11|    64|    0|
+    +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
+    |Total                                            |                                      |        5|   0| 1286|  3494|    0|
+    +-------------------------------------------------+--------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------------+------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |    Memory   |               Module               | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------------+------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |buffer_U     |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_1_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_2_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_3_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_4_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_5_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_6_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_7_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_8_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_9_U   |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_10_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_11_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_12_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_13_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_14_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |buffer_15_U  |buffer_RAM_AUTO_1R1W                |        0|   2|   1|    0|    32|    1|     1|           32|
+    |interHash_U  |chunkProcessor_wvars_RAM_AUTO_1R1W  |        0|  64|   4|    0|     8|   32|     1|          256|
+    |message_U    |message_RAM_AUTO_1R1W               |        0|  32|   8|    0|    16|   32|     1|          512|
+    |wordsout_U   |wordsout_RAM_AUTO_1R1W              |        0|  32|   4|    0|     8|   32|     1|          256|
+    +-------------+------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total        |                                    |        0| 160|  32|    0|   544|  112|    19|         1536|
+    +-------------+------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |counter_5_fu_475_p2  |         +|   0|  0|  71|          64|          10|
+    |interHash_we0        |        or|   0|  0|   2|           1|           1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  73|          65|          11|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |addSize_2_reg_305         |   9|          2|    1|          2|
+    |addSize_reg_282           |   9|          2|    1|          2|
+    |ap_NS_fsm                 |  93|         20|    1|         20|
+    |bitstream_read            |  15|          3|    1|          3|
+    |buffer_10_address0        |  27|          5|    5|         25|
+    |buffer_10_address1        |  21|          4|    5|         20|
+    |buffer_10_ce0             |  27|          5|    1|          5|
+    |buffer_10_ce1             |  21|          4|    1|          4|
+    |buffer_10_d0              |  21|          4|    1|          4|
+    |buffer_10_d1              |  15|          3|    1|          3|
+    |buffer_10_we0             |  21|          4|    1|          4|
+    |buffer_10_we1             |  15|          3|    1|          3|
+    |buffer_11_address0        |  27|          5|    5|         25|
+    |buffer_11_address1        |  21|          4|    5|         20|
+    |buffer_11_ce0             |  27|          5|    1|          5|
+    |buffer_11_ce1             |  21|          4|    1|          4|
+    |buffer_11_d0              |  21|          4|    1|          4|
+    |buffer_11_d1              |  15|          3|    1|          3|
+    |buffer_11_we0             |  21|          4|    1|          4|
+    |buffer_11_we1             |  15|          3|    1|          3|
+    |buffer_12_address0        |  27|          5|    5|         25|
+    |buffer_12_address1        |  21|          4|    5|         20|
+    |buffer_12_ce0             |  27|          5|    1|          5|
+    |buffer_12_ce1             |  21|          4|    1|          4|
+    |buffer_12_d0              |  21|          4|    1|          4|
+    |buffer_12_d1              |  15|          3|    1|          3|
+    |buffer_12_we0             |  21|          4|    1|          4|
+    |buffer_12_we1             |  15|          3|    1|          3|
+    |buffer_13_address0        |  27|          5|    5|         25|
+    |buffer_13_address1        |  21|          4|    5|         20|
+    |buffer_13_ce0             |  27|          5|    1|          5|
+    |buffer_13_ce1             |  21|          4|    1|          4|
+    |buffer_13_d0              |  21|          4|    1|          4|
+    |buffer_13_d1              |  15|          3|    1|          3|
+    |buffer_13_we0             |  21|          4|    1|          4|
+    |buffer_13_we1             |  15|          3|    1|          3|
+    |buffer_14_address0        |  27|          5|    5|         25|
+    |buffer_14_address1        |  21|          4|    5|         20|
+    |buffer_14_ce0             |  27|          5|    1|          5|
+    |buffer_14_ce1             |  21|          4|    1|          4|
+    |buffer_14_d0              |  21|          4|    1|          4|
+    |buffer_14_d1              |  15|          3|    1|          3|
+    |buffer_14_we0             |  21|          4|    1|          4|
+    |buffer_14_we1             |  15|          3|    1|          3|
+    |buffer_15_address0        |  27|          5|    5|         25|
+    |buffer_15_address1        |  21|          4|    5|         20|
+    |buffer_15_ce0             |  27|          5|    1|          5|
+    |buffer_15_ce1             |  21|          4|    1|          4|
+    |buffer_15_d0              |  21|          4|    1|          4|
+    |buffer_15_d1              |  15|          3|    1|          3|
+    |buffer_15_we0             |  21|          4|    1|          4|
+    |buffer_15_we1             |  15|          3|    1|          3|
+    |buffer_1_address0         |  27|          5|    5|         25|
+    |buffer_1_address1         |  21|          4|    5|         20|
+    |buffer_1_ce0              |  27|          5|    1|          5|
+    |buffer_1_ce1              |  21|          4|    1|          4|
+    |buffer_1_d0               |  21|          4|    1|          4|
+    |buffer_1_d1               |  15|          3|    1|          3|
+    |buffer_1_we0              |  21|          4|    1|          4|
+    |buffer_1_we1              |  15|          3|    1|          3|
+    |buffer_2_address0         |  27|          5|    5|         25|
+    |buffer_2_address1         |  21|          4|    5|         20|
+    |buffer_2_ce0              |  27|          5|    1|          5|
+    |buffer_2_ce1              |  21|          4|    1|          4|
+    |buffer_2_d0               |  21|          4|    1|          4|
+    |buffer_2_d1               |  15|          3|    1|          3|
+    |buffer_2_we0              |  21|          4|    1|          4|
+    |buffer_2_we1              |  15|          3|    1|          3|
+    |buffer_3_address0         |  27|          5|    5|         25|
+    |buffer_3_address1         |  21|          4|    5|         20|
+    |buffer_3_ce0              |  27|          5|    1|          5|
+    |buffer_3_ce1              |  21|          4|    1|          4|
+    |buffer_3_d0               |  21|          4|    1|          4|
+    |buffer_3_d1               |  15|          3|    1|          3|
+    |buffer_3_we0              |  21|          4|    1|          4|
+    |buffer_3_we1              |  15|          3|    1|          3|
+    |buffer_4_address0         |  27|          5|    5|         25|
+    |buffer_4_address1         |  21|          4|    5|         20|
+    |buffer_4_ce0              |  27|          5|    1|          5|
+    |buffer_4_ce1              |  21|          4|    1|          4|
+    |buffer_4_d0               |  21|          4|    1|          4|
+    |buffer_4_d1               |  15|          3|    1|          3|
+    |buffer_4_we0              |  21|          4|    1|          4|
+    |buffer_4_we1              |  15|          3|    1|          3|
+    |buffer_5_address0         |  27|          5|    5|         25|
+    |buffer_5_address1         |  21|          4|    5|         20|
+    |buffer_5_ce0              |  27|          5|    1|          5|
+    |buffer_5_ce1              |  21|          4|    1|          4|
+    |buffer_5_d0               |  21|          4|    1|          4|
+    |buffer_5_d1               |  15|          3|    1|          3|
+    |buffer_5_we0              |  21|          4|    1|          4|
+    |buffer_5_we1              |  15|          3|    1|          3|
+    |buffer_6_address0         |  27|          5|    5|         25|
+    |buffer_6_address1         |  21|          4|    5|         20|
+    |buffer_6_ce0              |  27|          5|    1|          5|
+    |buffer_6_ce1              |  21|          4|    1|          4|
+    |buffer_6_d0               |  21|          4|    1|          4|
+    |buffer_6_d1               |  15|          3|    1|          3|
+    |buffer_6_we0              |  21|          4|    1|          4|
+    |buffer_6_we1              |  15|          3|    1|          3|
+    |buffer_7_address0         |  27|          5|    5|         25|
+    |buffer_7_address1         |  21|          4|    5|         20|
+    |buffer_7_ce0              |  27|          5|    1|          5|
+    |buffer_7_ce1              |  21|          4|    1|          4|
+    |buffer_7_d0               |  21|          4|    1|          4|
+    |buffer_7_d1               |  15|          3|    1|          3|
+    |buffer_7_we0              |  21|          4|    1|          4|
+    |buffer_7_we1              |  15|          3|    1|          3|
+    |buffer_8_address0         |  27|          5|    5|         25|
+    |buffer_8_address1         |  21|          4|    5|         20|
+    |buffer_8_ce0              |  27|          5|    1|          5|
+    |buffer_8_ce1              |  21|          4|    1|          4|
+    |buffer_8_d0               |  21|          4|    1|          4|
+    |buffer_8_d1               |  15|          3|    1|          3|
+    |buffer_8_we0              |  21|          4|    1|          4|
+    |buffer_8_we1              |  15|          3|    1|          3|
+    |buffer_9_address0         |  27|          5|    5|         25|
+    |buffer_9_address1         |  21|          4|    5|         20|
+    |buffer_9_ce0              |  27|          5|    1|          5|
+    |buffer_9_ce1              |  21|          4|    1|          4|
+    |buffer_9_d0               |  21|          4|    1|          4|
+    |buffer_9_d1               |  15|          3|    1|          3|
+    |buffer_9_we0              |  21|          4|    1|          4|
+    |buffer_9_we1              |  15|          3|    1|          3|
+    |buffer_address0           |  27|          5|    5|         25|
+    |buffer_address1           |  21|          4|    5|         20|
+    |buffer_ce0                |  27|          5|    1|          5|
+    |buffer_ce1                |  21|          4|    1|          4|
+    |buffer_d0                 |  21|          4|    1|          4|
+    |buffer_d1                 |  15|          3|    1|          3|
+    |buffer_we0                |  21|          4|    1|          4|
+    |buffer_we1                |  15|          3|    1|          3|
+    |counter_fu_98             |   9|          2|   64|        128|
+    |interHash_address0        |  15|          3|    3|          9|
+    |interHash_address0_local  |  42|          9|    3|         27|
+    |interHash_address1_local  |  42|          9|    3|         27|
+    |interHash_ce0             |  15|          3|    1|          3|
+    |interHash_d0              |   9|          2|   32|         64|
+    |interHash_d0_local        |  27|          5|   32|        160|
+    |interHash_d1_local        |  27|          5|   32|        160|
+    |interHash_we0             |   9|          2|    1|          2|
+    |iterneeded_reg_294        |   9|          2|    1|          2|
+    |message_address0          |  15|          3|    4|         12|
+    |message_ce0               |  15|          3|    1|          3|
+    |message_we0               |   9|          2|    1|          2|
+    |wordsout_address0         |  15|          3|    3|          9|
+    |wordsout_ce0              |  15|          3|    1|          3|
+    |wordsout_we0              |   9|          2|    1|          2|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |3096|        597|  443|       1728|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                             | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |addSize_1_loc_load_reg_577                                    |   1|   0|    1|          0|
+    |addSize_2_reg_305                                             |   1|   0|    1|          0|
+    |addSize_reg_282                                               |   1|   0|    1|          0|
+    |ap_CS_fsm                                                     |  19|   0|   19|          0|
+    |counter_fu_98                                                 |  64|   0|   64|          0|
+    |counter_load_1_reg_567                                        |  64|   0|   64|          0|
+    |grp_chunkProcessor_fu_427_ap_start_reg                        |   1|   0|    1|          0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_12_2_fu_333_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_23_3_fu_360_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_35_4_fu_385_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_43_5_fu_406_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sha256Accel_Pipeline_VITIS_LOOP_49_7_fu_436_ap_start_reg  |   1|   0|    1|          0|
+    |interHash_load_1_reg_594                                      |  32|   0|   32|          0|
+    |interHash_load_2_reg_599                                      |  32|   0|   32|          0|
+    |interHash_load_3_reg_604                                      |  32|   0|   32|          0|
+    |interHash_load_4_reg_609                                      |  32|   0|   32|          0|
+    |interHash_load_5_reg_614                                      |  32|   0|   32|          0|
+    |interHash_load_reg_589                                        |  32|   0|   32|          0|
+    |iterneeded_1_reg_318                                          |   1|   0|    1|          0|
+    |iterneeded_reg_294                                            |   1|   0|    1|          0|
+    |or_ln_reg_581                                                 |  55|   0|   64|          9|
+    |size_read_reg_550                                             |  64|   0|   64|          0|
+    |tmp_reg_572                                                   |  55|   0|   55|          0|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                         | 524|   0|  533|          9|
+    +--------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|   sha256Accel|  return value|
+|bitstream_dout     |   in|    1|     ap_fifo|     bitstream|       pointer|
+|bitstream_empty_n  |   in|    1|     ap_fifo|     bitstream|       pointer|
+|bitstream_read     |  out|    1|     ap_fifo|     bitstream|       pointer|
+|size               |   in|   64|     ap_none|          size|        scalar|
+|output_r           |  out|  256|      ap_vld|      output_r|       pointer|
+|output_r_ap_vld    |  out|    1|      ap_vld|      output_r|       pointer|
++-------------------+-----+-----+------------+--------------+--------------+
+

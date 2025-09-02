@@ -1,0 +1,245 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/wGenerator/wGenerator 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/wGenerator/wGenerator/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/wGenerator/wGenerator'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/wGenerator/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=wGenerator.h' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=wGenerator.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb.cpp' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./ans.dat' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/ans.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./in.dat' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/wGenerator/in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/wGenerator/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/wGenerator/wGenerator/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../wGenerator.cpp in debug mode
+   Compiling ../../../../../functions256.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb.cpp:5:
+In file included from ../../../../wGenerator.h:4:
+In file included from ../../../../../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../wGenerator.cpp:1:
+In file included from ../../../../wGenerator.h:4:
+In file included from ../../../../../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../../functions256.cpp:1:
+In file included from ../../../../../functions256.h:4:
+In file included from ../../../../../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Discrepancy on sample 0 on output 16
+Output:   913588059
+Expected: 2592413421
+Discrepancy on sample 0 on output 17
+Output:   3704212404
+Expected: 1863977074
+Discrepancy on sample 0 on output 18
+Output:   848100581
+Expected: 1525382791
+Discrepancy on sample 0 on output 19
+Output:   974101611
+Expected: 1511468077
+Discrepancy on sample 0 on output 20
+Output:   1574787176
+Expected: 2478886718
+Discrepancy on sample 0 on output 21
+Output:   955860364
+Expected: 2920086805
+Discrepancy on sample 0 on output 22
+Output:   2334596267
+Expected: 2573857890
+Discrepancy on sample 0 on output 23
+Output:   3199670120
+Expected: 1726847652
+Discrepancy on sample 0 on output 24
+Output:   2118467333
+Expected: 593479091
+Discrepancy on sample 0 on output 25
+Output:   3368411248
+Expected: 1604196264
+Discrepancy on sample 0 on output 26
+Output:   1201019988
+Expected: 1528868904
+Discrepancy on sample 0 on output 27
+Output:   429461549
+Expected: 3733278979
+Discrepancy on sample 0 on output 28
+Output:   1854381237
+Expected: 879858110
+Discrepancy on sample 0 on output 29
+Output:   379278274
+Expected: 1094764527
+Discrepancy on sample 0 on output 30
+Output:   888751140
+Expected: 1163218474
+Discrepancy on sample 0 on output 31
+Output:   168326273
+Expected: 4101960430
+Discrepancy on sample 0 on output 32
+Output:   3390423129
+Expected: 1946574016
+Discrepancy on sample 0 on output 33
+Output:   1496452704
+Expected: 1268507453
+Discrepancy on sample 0 on output 34
+Output:   3829108952
+Expected: 3126043126
+Discrepancy on sample 0 on output 35
+Output:   4018250845
+Expected: 2030363834
+Discrepancy on sample 0 on output 36
+Output:   784796840
+Expected: 2076550035
+Discrepancy on sample 0 on output 37
+Output:   1418802185
+Expected: 2369636632
+Discrepancy on sample 0 on output 38
+Output:   1027223412
+Expected: 373783836
+Discrepancy on sample 0 on output 39
+Output:   1163754584
+Expected: 3418464153
+Discrepancy on sample 0 on output 40
+Output:   1779636750
+Expected: 2664082017
+Discrepancy on sample 0 on output 41
+Output:   3199725218
+Expected: 2379688010
+Discrepancy on sample 0 on output 42
+Output:   611545928
+Expected: 481180187
+Discrepancy on sample 0 on output 43
+Output:   3523854665
+Expected: 3924013881
+Discrepancy on sample 0 on output 44
+Output:   3676100869
+Expected: 2202692164
+Discrepancy on sample 0 on output 45
+Output:   747557995
+Expected: 385124408
+Discrepancy on sample 0 on output 46
+Output:   2989180935
+Expected: 155029440
+Discrepancy on sample 0 on output 47
+Output:   617570034
+Expected: 2176920565
+Discrepancy on sample 0 on output 48
+Output:   2520601177
+Expected: 52619563
+Discrepancy on sample 0 on output 49
+Output:   3260278481
+Expected: 724671443
+Discrepancy on sample 0 on output 50
+Output:   4186436352
+Expected: 283347357
+Discrepancy on sample 0 on output 51
+Output:   1512098557
+Expected: 1012165978
+Discrepancy on sample 0 on output 52
+Output:   2742278354
+Expected: 2611945560
+Discrepancy on sample 0 on output 53
+Output:   2197031542
+Expected: 925370971
+Discrepancy on sample 0 on output 54
+Output:   3247156664
+Expected: 1494491319
+Discrepancy on sample 0 on output 55
+Output:   1609562839
+Expected: 1305241569
+Discrepancy on sample 0 on output 56
+Output:   3653439702
+Expected: 2903191808
+Discrepancy on sample 0 on output 57
+Output:   3127288224
+Expected: 419760713
+Discrepancy on sample 0 on output 58
+Output:   2837183290
+Expected: 3652154582
+Discrepancy on sample 0 on output 59
+Output:   4199050738
+Expected: 2919087039
+Discrepancy on sample 0 on output 60
+Output:   555821223
+Expected: 1614270088
+Discrepancy on sample 0 on output 61
+Output:   697578137
+Expected: 3176254918
+Discrepancy on sample 0 on output 62
+Output:   61502860
+Expected: 660467944
+Discrepancy on sample 0 on output 63
+Output:   2645050556
+Expected: 4201255589
+1c1
+< 1743352378 1544809898 3934829392 903268144 1515969061 47828858 1542261307 4257788642 4082696281 750911043 2496203140 1874291651 664604075 3781094747 4167629937 3357951537 2592413421 1863977074 1525382791 1511468077 2478886718 2920086805 2573857890 1726847652 593479091 1604196264 1528868904 3733278979 879858110 1094764527 1163218474 4101960430 1946574016 1268507453 3126043126 2030363834 2076550035 2369636632 373783836 3418464153 2664082017 2379688010 481180187 3924013881 2202692164 385124408 155029440 2176920565 52619563 724671443 283347357 1012165978 2611945560 925370971 1494491319 1305241569 2903191808 419760713 3652154582 2919087039 1614270088 3176254918 660467944 4201255589 
+\ No newline at end of file
+---
+> 1743352378 1544809898 3934829392 903268144 1515969061 47828858 1542261307 4257788642 4082696281 750911043 2496203140 1874291651 664604075 3781094747 4167629937 3357951537 913588059 3704212404 848100581 974101611 1574787176 955860364 2334596267 3199670120 2118467333 3368411248 1201019988 429461549 1854381237 379278274 888751140 168326273 3390423129 1496452704 3829108952 4018250845 784796840 1418802185 1027223412 1163754584 1779636750 3199725218 611545928 3523854665 3676100869 747557995 2989180935 617570034 2520601177 3260278481 4186436352 1512098557 2742278354 2197031542 3247156664 1609562839 3653439702 3127288224 2837183290 4199050738 555821223 697578137 61502860 2645050556
+*******************************************
+FAIL: Output DOES NOT match the ans output
+*******************************************
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 7.785 seconds; peak allocated memory: 144.922 MB.

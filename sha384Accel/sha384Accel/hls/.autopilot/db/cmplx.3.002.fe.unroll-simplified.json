@@ -1,0 +1,184 @@
+{
+  "0": {
+    "basicblocks": 27,
+    "calls": "8",
+    "control_depth": 3,
+    "def_use_depth": 6,
+    "file": "sha384Accel.cpp",
+    "fileloc": 3,
+    "instructions": 150,
+    "loads": {
+      "L": 9
+    },
+    "memory_accesses": 12,
+    "name": "sha384Accel",
+    "stores": {
+      "L": 17,
+      "T": 1
+    },
+    "total_instructions": 381
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions512.cpp",
+    "fileloc": 33,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "sigma1_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 12
+  },
+  "2": {
+    "basicblocks": 5,
+    "calls": "4 1",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "wGenerator512.cpp",
+    "fileloc": 3,
+    "instructions": 48,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 9,
+    "name": "wGenerator",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 72
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions512.cpp",
+    "fileloc": 3,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "sum0_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 14
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions512.cpp",
+    "fileloc": 23,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "sigma0_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 12
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions512.cpp",
+    "fileloc": 13,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "sum1_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 14
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions512.cpp",
+    "fileloc": 43,
+    "instructions": 9,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "ch_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 9
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "5 3 6 9",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "chunkIter512.cpp",
+    "fileloc": 3,
+    "instructions": 50,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 0,
+    "name": "chunkIter",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 97
+  },
+  "8": {
+    "basicblocks": 9,
+    "calls": "2 7",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "chunkProcessor512.cpp",
+    "fileloc": 3,
+    "instructions": 62,
+    "loads": {
+      "G": 1,
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "chunkProcessor",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 231
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions512.cpp",
+    "fileloc": 52,
+    "instructions": 10,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "maj_512",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 10
+  }
+}

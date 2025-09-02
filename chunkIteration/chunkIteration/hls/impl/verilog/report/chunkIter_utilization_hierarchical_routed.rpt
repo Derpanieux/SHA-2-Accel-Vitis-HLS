@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Jul 14 16:51:08 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/chunkIter_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6cpga196-2I
+| Speed File   : -2I
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|   Instance   |           Module          | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper |                     (top) |        409 |        409 |       0 |    0 | 262 |      0 |      0 |          0 |
+|   bd_0_i     |                      bd_0 |        409 |        409 |       0 |    0 | 262 |      0 |      0 |          0 |
+|     hls_inst |           bd_0_hls_inst_0 |        409 |        409 |       0 |    0 | 262 |      0 |      0 |          0 |
+|       inst   | bd_0_hls_inst_0_chunkIter |        409 |        409 |       0 |    0 | 262 |      0 |      0 |          0 |
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

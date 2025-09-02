@@ -1,0 +1,93 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 4 2 1",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "chunkIter.cpp",
+    "fileloc": 3,
+    "instructions": 58,
+    "loads": {
+      "L": 4,
+      "T": 8
+    },
+    "memory_accesses": 0,
+    "name": "chunkIter",
+    "stores": {
+      "T": 8
+    },
+    "total_instructions": 119
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions256.cpp",
+    "fileloc": 52,
+    "instructions": 13,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "maj_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "functions256.cpp",
+    "fileloc": 43,
+    "instructions": 10,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "ch_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 10
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 13,
+    "instructions": 19,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "sum1_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "functions256.cpp",
+    "fileloc": 3,
+    "instructions": 19,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 0,
+    "name": "sum0_256",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  }
+}

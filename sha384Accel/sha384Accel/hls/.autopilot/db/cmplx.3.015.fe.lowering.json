@@ -1,0 +1,40 @@
+{
+  "0": {
+    "basicblocks": 258,
+    "calls": "1",
+    "control_depth": 3,
+    "def_use_depth": 6,
+    "file": "sha384Accel.cpp",
+    "fileloc": 3,
+    "instructions": 1111,
+    "loads": {
+      "L": 71
+    },
+    "memory_accesses": 300,
+    "name": "sha384Accel",
+    "stores": {
+      "L": 234,
+      "T": 1
+    },
+    "total_instructions": 1261
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 9,
+    "file": "chunkProcessor512.cpp",
+    "fileloc": 3,
+    "instructions": 150,
+    "loads": {
+      "G": 1,
+      "L": 17
+    },
+    "memory_accesses": 30,
+    "name": "chunkProcessor",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 150
+  }
+}

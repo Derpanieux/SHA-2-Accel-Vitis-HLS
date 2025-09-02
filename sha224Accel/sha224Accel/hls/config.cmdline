@@ -1,0 +1,3 @@
+relativeroot=D:/Vitis/shaAccel/sha224Accel
+original_argv=--mode hls --cosim --config D:\Vitis\shaAccel\sha224Accel\hls_config.cfg --work_dir sha224Accel 
+

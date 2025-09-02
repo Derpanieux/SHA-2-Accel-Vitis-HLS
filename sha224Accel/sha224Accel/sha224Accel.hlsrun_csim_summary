@@ -1,0 +1,166 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\sha224Accel\\sha224Accel\\sha224Accel.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/22/25 20:44:30",
+ "timestampMillis": "1753231470924",
+ "buildStep": {
+  "cmdId": "eefde10f-b295-4468-b439-1b9dae3be9ef",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\sha224Accel\\sha224Accel\\logs\\sha224Accel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\Vitis\\shaAccel\\sha224Accel\\hls_config.cfg --work_dir sha224Accel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\Vitis\\shaAccel\\sha224Accel\\hls_config.cfg",
+   "--work_dir",
+   "sha224Accel"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\sha224Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:44:30",
+ "timestampMillis": "1753231470924",
+ "status": {
+  "cmdId": "eefde10f-b295-4468-b439-1b9dae3be9ef",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/22/25 20:44:34",
+ "timestampMillis": "1753231474776",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha224Accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.cpp",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.h",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.h",
+     "D:/Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.cpp",
+     "D:/Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.h",
+     "D:/Vitis\\shaAccel\\sha224Accel\\sha224Accel.cpp",
+     "D:/Vitis\\shaAccel\\sha224Accel\\sha224Accel.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/22/25 20:44:34",
+ "timestampMillis": "1753231474777",
+ "buildStep": {
+  "cmdId": "9c265836-099d-486b-b388-27506fc4e38f",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\sha224Accel\\sha224Accel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\sha224Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:44:34",
+ "timestampMillis": "1753231474778",
+ "status": {
+  "cmdId": "9c265836-099d-486b-b388-27506fc4e38f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:44:40",
+ "timestampMillis": "1753231480423",
+ "status": {
+  "cmdId": "9c265836-099d-486b-b388-27506fc4e38f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:44:40",
+ "timestampMillis": "1753231480490",
+ "status": {
+  "cmdId": "eefde10f-b295-4468-b439-1b9dae3be9ef",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:44:40",
+ "timestampMillis": "1753231480490",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:44:40",
+ "timestampMillis": "1753231480491",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

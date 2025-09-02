@@ -1,0 +1,107 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sha384Accel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj sha384Accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./sha384Accel_subsystem -s sha384Accel 
+Multi-threading is on. Using 22 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sha384Accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_bitselect_1ns_128ns_7ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_bitselect_1ns_128ns_7ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_buffer_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_buffer_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_11_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_11_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_24_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_24_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_34_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_34_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_8_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_chunkProcessor_wvars_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_chunkProcessor_wvars_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_message_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_message_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_26_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_38_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_38_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_46_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_46_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_52_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_52_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_wordsout_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha384Accel_wordsout_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/svr/svr_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/svr/svr_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/sha384Accel_subsystem/sha384Accel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.svr_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.sha384Accel_subsystem_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.sha384Accel_buffer_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_wvars...
+Compiling module xil_defaultlib.sha384Accel_wordsout_RAM_AUTO_1R...
+Compiling module xil_defaultlib.sha384Accel_message_RAM_AUTO_1R1...
+Compiling module xil_defaultlib.sha384Accel_flow_control_loop_pi...
+Compiling module xil_defaultlib.sha384Accel_sha384Accel_Pipeline...
+Compiling module xil_defaultlib.sha384Accel_sha384Accel_Pipeline...
+Compiling module xil_defaultlib.sha384Accel_bitselect_1ns_128ns_...
+Compiling module xil_defaultlib.sha384Accel_sha384Accel_Pipeline...
+Compiling module xil_defaultlib.sha384Accel_sha384Accel_Pipeline...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_wValu...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor_Pipel...
+Compiling module xil_defaultlib.sha384Accel_chunkProcessor
+Compiling module xil_defaultlib.sha384Accel_sha384Accel_Pipeline...
+Compiling module xil_defaultlib.sha384Accel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=1)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=128)
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=384)
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=18)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf_default
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_sha384Accel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sha384Accel

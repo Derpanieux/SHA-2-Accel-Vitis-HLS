@@ -1,0 +1,111 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: wGenerator.cpp, Line: 12, Column: 9 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - Callee:          'sigma0_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 26, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - Callee:          'sigma1_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: wGenerator.cpp, Line: 12, Column: 9 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - Callee:          'sigma0_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 26, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: wGenerator.cpp, Line: 13, Column: 9 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - Callee:          'sigma1_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 36, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_wGenerator_ir
+Args:            
+  - Callee:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_wGenerator_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigma0_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+Function:        _Z10wGeneratorP7ap_uintILi32EES1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigma1_256(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: ../functions256.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'wGenerator(ap_uint<32>*, ap_uint<32>*)'
+    DebugLoc:        { File: wGenerator.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_7_1
+  - String:          '> at '
+  - LoopLoc:         'wGenerator.cpp:7:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_10_2
+  - String:          '> at '
+  - LoopLoc:         'wGenerator.cpp:10:22'
+  - String:          ' '
+...

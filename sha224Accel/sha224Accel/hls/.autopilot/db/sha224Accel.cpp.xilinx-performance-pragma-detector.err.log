@@ -1,0 +1,5 @@
+In file included from D:\Vitis\shaAccel\sha224Accel\sha224Accel.cpp:1:
+In file included from D:\Vitis\shaAccel\sha224Accel/sha224Accel.h:5:
+C:\Xilinx\2025.1\Vitis\win64\tools\clang-3.9-csynth\bin\..\lib\clang\7.0.0\include\inttypes.h:30:15: fatal error: 'inttypes.h' file not found
+#include_next <inttypes.h>
+              ^~~~~~~~~~~~

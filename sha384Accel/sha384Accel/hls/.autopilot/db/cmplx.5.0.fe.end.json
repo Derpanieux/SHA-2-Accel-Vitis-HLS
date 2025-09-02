@@ -1,0 +1,252 @@
+{
+    "1": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_8_1",
+        "file": "..\/chunkProcessor512\/chunkProcessor512.cpp",
+        "fileloc": "20",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "chunkProcessor",
+        "file": "chunkProcessor512.cpp",
+        "fileloc": "3",
+        "instructions": "48",
+        "total_instructions": "268",
+        "calls": "1 9 7 5 8",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "16"
+        },
+        "stores": {
+            "L": "8"
+        }
+    },
+    "3": {
+        "name": "sha384Accel_Pipeline_VITIS_LOOP_15_2",
+        "file": "sha384Accel.cpp",
+        "fileloc": "4",
+        "instructions": "265",
+        "total_instructions": "265",
+        "calls": "",
+        "basicblocks": "108",
+        "memory_accesses": "102",
+        "control_depth": "4",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "102"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "sha384Accel_Pipeline_VITIS_LOOP_46_5",
+        "file": "sha384Accel.cpp",
+        "fileloc": "45",
+        "instructions": "246",
+        "total_instructions": "246",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "69",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "66"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_27_2",
+        "file": "..\/chunkProcessor512\/chunkProcessor512.cpp",
+        "fileloc": "27",
+        "instructions": "107",
+        "total_instructions": "107",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "20",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "14"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "sha384Accel_Pipeline_VITIS_LOOP_52_7",
+        "file": "sha384Accel.cpp",
+        "fileloc": "52",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_24_1",
+        "file": "..\/chunkProcessor512\/chunkProcessor512.cpp",
+        "fileloc": "24",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_34_4",
+        "file": "..\/chunkProcessor512\/chunkProcessor512.cpp",
+        "fileloc": "34",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "5",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sha384Accel",
+        "file": "sha384Accel.cpp",
+        "fileloc": "3",
+        "instructions": "97",
+        "total_instructions": "1282",
+        "calls": "3 10 4 2 6 11",
+        "basicblocks": "7",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "chunkProcessor_Pipeline_VITIS_LOOP_11_2",
+        "file": "..\/chunkProcessor512\/chunkProcessor512.cpp",
+        "fileloc": "20",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "7",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "sha384Accel_Pipeline_VITIS_LOOP_38_4",
+        "file": "sha384Accel.cpp",
+        "fileloc": "14",
+        "instructions": "123",
+        "total_instructions": "123",
+        "calls": "",
+        "basicblocks": "37",
+        "memory_accesses": "37",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "36"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "sha384Accel_Pipeline_VITIS_LOOP_26_3",
+        "file": "sha384Accel.cpp",
+        "fileloc": "4",
+        "instructions": "265",
+        "total_instructions": "265",
+        "calls": "",
+        "basicblocks": "108",
+        "memory_accesses": "102",
+        "control_depth": "4",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "102"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

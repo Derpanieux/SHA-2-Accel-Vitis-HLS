@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jul 22 20:19:14 2025
+# Process ID         : 21572
+# Current directory  : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/vivado.log
+# Journal file       : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip\vivado.jou
+# Running On         : DESKTOP-E57T4BO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 25691 MB
+# Swap memory        : 31138 MB
+# Total Virtual      : 56829 MB
+# Available Virtual  : 22773 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/hls_data.json outdir=D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip srcdir=D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/misc
+INFO: Copied 22 verilog file(s) to D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/hdl/verilog
+INFO: Copied 20 vhdl file(s) to D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/hdl/vhdl/sha256Accel.vhd (sha256Accel)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add ap_fifo interface bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add data interface size
+INFO: Add data interface output_r
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/component.xml
+INFO: Created IP archive D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip/xilinx_com_hls_sha256Accel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 20:19:21 2025...

@@ -1,0 +1,255 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\sha512Accel.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "08/01/25 13:54:45",
+ "timestampMillis": "1754070885299",
+ "buildStep": {
+  "cmdId": "8fda1242-a894-4d26-a91d-9b4d24624113",
+  "name": "v++",
+  "logFile": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\logs\\sha512Accel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\Vitis\\shaAccel\\sha512Accel\\hls_config.cfg --work_dir sha512Accel ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\Vitis\\shaAccel\\sha512Accel\\hls_config.cfg",
+   "--work_dir",
+   "sha512Accel"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/Vitis\\shaAccel\\sha512Accel\\hls_config.cfg",
+    "content": "part=xa7s6cpga196-2I\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=../chunkIteration512/chunkIter512.cpp\nsyn.file=../chunkIteration512/chunkIter512.h\nsyn.file=../chunkProcessor512/chunkProcessor512.cpp\nsyn.file=../chunkProcessor512/chunkProcessor512.h\nsyn.file=../wGenerator512/wGenerator512.cpp\nsyn.file=../wGenerator512/wGenerator512.h\nsyn.file=../functions512.cpp\nsyn.file=../functions512.h\nsyn.file=./sha512Accel.cpp\nsyn.file=./sha512Accel.h\nsyn.file=../dataTypes.h\ntb.file=./answers.dat\ntb.file=./datain.dat\ntb.file=./tb.cpp\nsyn.top=sha512Accel\ncosim.tool=modelsim"
+   }
+  ],
+  "cwd": "D:\\Vitis\\shaAccel\\sha512Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/01/25 13:54:45",
+ "timestampMillis": "1754070885301",
+ "status": {
+  "cmdId": "8fda1242-a894-4d26-a91d-9b4d24624113",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889199",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha512Accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\chunkIteration512\\chunkIter512.cpp",
+     "D:/Vitis\\shaAccel\\chunkIteration512\\chunkIter512.h",
+     "D:/Vitis\\shaAccel\\chunkProcessor512\\chunkProcessor512.cpp",
+     "D:/Vitis\\shaAccel\\chunkProcessor512\\chunkProcessor512.h",
+     "D:/Vitis\\shaAccel\\wGenerator512\\wGenerator512.cpp",
+     "D:/Vitis\\shaAccel\\wGenerator512\\wGenerator512.h",
+     "D:/Vitis\\shaAccel\\functions512.cpp",
+     "D:/Vitis\\shaAccel\\functions512.h",
+     "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel.cpp",
+     "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel.h",
+     "D:/Vitis\\shaAccel\\dataTypes.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889201",
+ "buildStep": {
+  "cmdId": "0572c1fa-92ca-4944-b29f-1e5152112a51",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\sha512Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889201",
+ "status": {
+  "cmdId": "0572c1fa-92ca-4944-b29f-1e5152112a51",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889201",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889201",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:54:49",
+ "timestampMillis": "1754070889202",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930711",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930711",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930711",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930711",
+ "status": {
+  "cmdId": "0572c1fa-92ca-4944-b29f-1e5152112a51",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930826",
+ "status": {
+  "cmdId": "8fda1242-a894-4d26-a91d-9b4d24624113",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930870",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\reports\\v++_compile_sha512Accel_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/01/25 13:55:30",
+ "timestampMillis": "1754070930870",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha512Accel\\sha512Accel\\reports\\.db\\v++_compile_sha512Accel_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

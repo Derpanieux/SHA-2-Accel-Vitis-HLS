@@ -1,0 +1,13 @@
+{
+  "name": "chunkProcessor",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "chunkProcessor"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

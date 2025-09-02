@@ -1,0 +1,234 @@
+
+
+================================================================
+== Synthesis Summary Report of 'sha224Accel'
+================================================================
++ General Information: 
+    * Date:           Tue Jul 22 20:45:32 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        sha224Accel
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: aspartan7
+    * Target device:  xa7s6-cpga196-2I
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+-------------+-----+
+    |                    Modules                   | Issue|      |       Latency       | Iteration|         | Trip |          |         |    |            |             |     |
+    |                    & Loops                   | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF     |     LUT     | URAM|
+    +----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+-------------+-----+
+    |+ sha224Accel                                 |     -|  0.75|        -|          -|         -|        -|     -|        no|  5 (50%)|   -|  1938 (25%)|  6692 (178%)|    -|
+    | o VITIS_LOOP_10_1                            |     -|  7.30|        -|          -|       826|        -|     -|        no|        -|   -|           -|            -|    -|
+    |  + sha224Accel_Pipeline_VITIS_LOOP_12_2      |     -|  2.29|      450|  4.500e+03|         -|      449|     -|    rewind|        -|   -|    165 (2%)|    588 (15%)|    -|
+    |   o VITIS_LOOP_12_2                          |     -|  7.30|      448|  4.480e+03|         2|        1|   448|       yes|        -|   -|           -|            -|    -|
+    |  + sha224Accel_Pipeline_VITIS_LOOP_23_3      |     -|  2.29|       66|    660.000|         -|       65|     -|    rewind|        -|   -|    166 (2%)|    582 (15%)|    -|
+    |   o VITIS_LOOP_23_3                          |     -|  7.30|       64|    640.000|         2|        1|    64|       yes|        -|   -|           -|            -|    -|
+    |  + sha224Accel_Pipeline_VITIS_LOOP_35_4      |     -|  2.41|       66|    660.000|         -|       65|     -|    rewind|        -|   -|    19 (~0%)|     120 (3%)|    -|
+    |   o VITIS_LOOP_35_4                          |     -|  7.30|       64|    640.000|         1|        1|    64|       yes|        -|   -|           -|            -|    -|
+    |  + sha224Accel_Pipeline_VITIS_LOOP_43_5      |     -|  2.59|       18|    180.000|         -|       17|     -|    rewind|        -|   -|    23 (~0%)|     324 (8%)|    -|
+    |   o VITIS_LOOP_43_5                          |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|   -|           -|            -|    -|
+    |  + chunkProcessor                            |     -|  0.75|      272|  2.720e+03|         -|      272|     -|        no|  5 (50%)|   -|   902 (12%)|   1816 (48%)|    -|
+    |   + chunkProcessor_Pipeline_VITIS_LOOP_7_1   |     -|  2.76|       18|    180.000|         -|       17|     -|    rewind|        -|   -|    13 (~0%)|      65 (1%)|    -|
+    |    o VITIS_LOOP_7_1                          |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|   -|           -|            -|    -|
+    |   + chunkProcessor_Pipeline_VITIS_LOOP_22_1  |     -|  3.14|       10|    100.000|         -|        9|     -|    rewind|        -|   -|    11 (~0%)|      64 (1%)|    -|
+    |    o VITIS_LOOP_22_1                         |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|        -|   -|           -|            -|    -|
+    |   + chunkProcessor_Pipeline_VITIS_LOOP_10_2  |     -|  0.97|       99|    990.000|         -|       98|     -|    rewind|        -|   -|    129 (1%)|    408 (10%)|    -|
+    |    o VITIS_LOOP_10_2                         |    II|  7.30|       97|    970.000|         4|        2|    48|       yes|        -|   -|           -|            -|    -|
+    |   + chunkProcessor_Pipeline_VITIS_LOOP_25_2  |     -|  0.75|      132|  1.320e+03|         -|      130|     -|    rewind|  1 (10%)|   -|    399 (5%)|    801 (21%)|    -|
+    |    o VITIS_LOOP_25_2                         |    II|  7.30|      130|  1.300e+03|         4|        2|    64|       yes|        -|   -|           -|            -|    -|
+    |   + chunkProcessor_Pipeline_VITIS_LOOP_32_4  |     -|  1.62|       10|    100.000|         -|        9|     -|    rewind|        -|   -|    11 (~0%)|     103 (2%)|    -|
+    |    o VITIS_LOOP_32_4                         |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|        -|   -|           -|            -|    -|
+    |  + sha224Accel_Pipeline_VITIS_LOOP_49_7      |     -|  3.14|       10|    100.000|         -|        9|     -|    rewind|        -|   -|    11 (~0%)|      64 (1%)|    -|
+    |   o VITIS_LOOP_49_7                          |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|        -|   -|           -|            -|    -|
+    +----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+----+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++-----------+-----------+------------+
+| Interface | Direction | Data Width |
++-----------+-----------+------------+
+| bitstream | in        | 1          |
++-----------+-----------+------------+
+
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| output_r | ap_vld  | out       | 224      |
+| size     | ap_none | in        | 64       |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+------------------+
+| Argument  | Direction | Datatype         |
++-----------+-----------+------------------+
+| bitstream | in        | stream<bool, 0>& |
+| size      | in        | ap_uint<64>      |
+| output    | out       | ap_uint<224>*    |
++-----------+-----------+------------------+
+
+* SW-to-HW Mapping
++-----------+-----------------+-----------+
+| Argument  | HW Interface    | HW Type   |
++-----------+-----------------+-----------+
+| bitstream | bitstream       | interface |
+| size      | size            | port      |
+| output    | output_r        | port      |
+| output    | output_r_ap_vld | port      |
++-----------+-----------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------+-----+--------+-------------+-----------+--------+---------+
+| Name                                        | DSP | Pragma | Variable    | Op        | Impl   | Latency |
++---------------------------------------------+-----+--------+-------------+-----------+--------+---------+
+| + sha224Accel                               | 0   |        |             |           |        |         |
+|   counter_5_fu_475_p2                       |     |        | counter_5   | add       | fabric | 0       |
+|  + sha224Accel_Pipeline_VITIS_LOOP_12_2     | 0   |        |             |           |        |         |
+|    icmp_ln12_fu_539_p2                      |     |        | icmp_ln12   | seteq     | auto   | 0       |
+|    add_ln12_fu_545_p2                       |     |        | add_ln12    | add       | fabric | 0       |
+|    icmp_ln13_fu_586_p2                      |     |        | icmp_ln13   | setlt     | auto   | 0       |
+|    icmp_ln15_fu_591_p2                      |     |        | icmp_ln15   | seteq     | auto   | 0       |
+|    counter_4_fu_596_p2                      |     |        | counter_4   | add       | fabric | 0       |
+|  + sha224Accel_Pipeline_VITIS_LOOP_23_3     | 0   |        |             |           |        |         |
+|    icmp_ln23_fu_529_p2                      |     |        | icmp_ln23   | seteq     | auto   | 0       |
+|    icmp_ln24_fu_574_p2                      |     |        | icmp_ln24   | setlt     | auto   | 0       |
+|    icmp_ln26_fu_579_p2                      |     |        | icmp_ln26   | seteq     | auto   | 0       |
+|    add_ln23_fu_584_p2                       |     |        | add_ln23    | add       | fabric | 0       |
+|    counter_2_fu_590_p2                      |     |        | counter_2   | add       | fabric | 0       |
+|  + sha224Accel_Pipeline_VITIS_LOOP_35_4     | 0   |        |             |           |        |         |
+|    icmp_ln35_fu_339_p2                      |     |        | icmp_ln35   | seteq     | auto   | 0       |
+|    bitselect_1ns_64ns_6ns_1_1_1_U42         |     |        | tmp         | bitselect | auto   | 0       |
+|    add_ln35_fu_451_p2                       |     |        | add_ln35    | add       | fabric | 0       |
+|    sizeIndex_1_fu_457_p2                    |     |        | sizeIndex_1 | add       | fabric | 0       |
+|  + sha224Accel_Pipeline_VITIS_LOOP_43_5     | 0   |        |             |           |        |         |
+|    icmp_ln43_fu_548_p2                      |     |        | icmp_ln43   | seteq     | auto   | 0       |
+|    add_ln43_fu_554_p2                       |     |        | add_ln43    | add       | fabric | 0       |
+|    buffi_2_fu_601_p2                        |     |        | buffi_2     | add       | fabric | 0       |
+|    buffi_3_fu_622_p2                        |     |        | buffi_3     | add       | fabric | 0       |
+|    buffi_4_fu_643_p2                        |     |        | buffi_4     | add       | fabric | 0       |
+|    buffi_5_fu_664_p2                        |     |        | buffi_5     | add       | fabric | 0       |
+|    buffi_6_fu_685_p2                        |     |        | buffi_6     | add       | fabric | 0       |
+|    buffi_7_fu_706_p2                        |     |        | buffi_7     | add       | fabric | 0       |
+|    buffi_8_fu_727_p2                        |     |        | buffi_8     | add       | fabric | 0       |
+|    buffi_9_fu_748_p2                        |     |        | buffi_9     | add       | fabric | 0       |
+|    buffi_10_fu_769_p2                       |     |        | buffi_10    | add       | fabric | 0       |
+|    buffi_11_fu_790_p2                       |     |        | buffi_11    | add       | fabric | 0       |
+|    buffi_12_fu_811_p2                       |     |        | buffi_12    | add       | fabric | 0       |
+|    buffi_13_fu_832_p2                       |     |        | buffi_13    | add       | fabric | 0       |
+|    buffi_14_fu_853_p2                       |     |        | buffi_14    | add       | fabric | 0       |
+|    buffi_15_fu_874_p2                       |     |        | buffi_15    | add       | fabric | 0       |
+|    add_ln45_fu_919_p2                       |     |        | add_ln45    | add       | fabric | 0       |
+|  + chunkProcessor                           | 0   |        |             |           |        |         |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_7_1  | 0   |        |             |           |        |         |
+|     icmp_ln7_fu_69_p2                       |     |        | icmp_ln7    | seteq     | auto   | 0       |
+|     add_ln7_fu_75_p2                        |     |        | add_ln7     | add       | fabric | 0       |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_22_1 | 0   |        |             |           |        |         |
+|     icmp_ln22_fu_69_p2                      |     |        | icmp_ln22   | seteq     | auto   | 0       |
+|     add_ln22_fu_75_p2                       |     |        | add_ln22    | add       | fabric | 0       |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_10_2 | 0   |        |             |           |        |         |
+|     icmp_ln10_fu_135_p2                     |     |        | icmp_ln10   | seteq     | auto   | 0       |
+|     add_ln12_fu_145_p2                      |     |        | add_ln12    | add       | fabric | 0       |
+|     add_ln13_fu_156_p2                      |     |        | add_ln13    | add       | fabric | 0       |
+|     add_ln15_fu_167_p2                      |     |        | add_ln15    | add       | fabric | 0       |
+|     add_ln15_1_fu_273_p2                    |     |        | add_ln15_1  | add       | fabric | 0       |
+|     xor_ln15_fu_307_p2                      |     |        | xor_ln15    | xor       | auto   | 0       |
+|     xor_ln15_1_fu_313_p2                    |     |        | xor_ln15_1  | xor       | auto   | 0       |
+|     xor_ln15_2_fu_327_p2                    |     |        | xor_ln15_2  | xor       | auto   | 0       |
+|     xor_ln15_3_fu_333_p2                    |     |        | xor_ln15_3  | xor       | auto   | 0       |
+|     add_ln15_3_fu_339_p2                    |     |        | add_ln15_3  | add       | fabric | 0       |
+|     add_ln10_fu_178_p2                      |     |        | add_ln10    | add       | fabric | 0       |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_25_2 | 0   |        |             |           |        |         |
+|     icmp_ln25_fu_318_p2                     |     |        | icmp_ln25   | seteq     | auto   | 0       |
+|     add_ln25_fu_324_p2                      |     |        | add_ln25    | add       | fabric | 0       |
+|     xor_ln13_fu_411_p2                      |     |        | xor_ln13    | xor       | auto   | 0       |
+|     and_ln13_fu_417_p2                      |     |        | and_ln13    | and       | auto   | 0       |
+|     and_ln13_1_fu_423_p2                    |     |        | and_ln13_1  | and       | auto   | 0       |
+|     or_ln13_fu_445_p2                       |     |        | or_ln13     | or        | auto   | 0       |
+|     xor_ln13_1_fu_459_p2                    |     |        | xor_ln13_1  | xor       | auto   | 0       |
+|     xor_ln13_2_fu_465_p2                    |     |        | xor_ln13_2  | xor       | auto   | 0       |
+|     add_ln13_fu_341_p2                      |     |        | add_ln13    | add       | fabric | 0       |
+|     add_ln13_2_fu_476_p2                    |     |        | add_ln13_2  | add       | fabric | 0       |
+|     or_ln15_fu_545_p2                       |     |        | or_ln15     | or        | auto   | 0       |
+|     and_ln15_fu_550_p2                      |     |        | and_ln15    | and       | auto   | 0       |
+|     and_ln15_1_fu_555_p2                    |     |        | and_ln15_1  | and       | auto   | 0       |
+|     or_ln15_1_fu_576_p2                     |     |        | or_ln15_1   | or        | auto   | 0       |
+|     xor_ln15_fu_590_p2                      |     |        | xor_ln15    | xor       | auto   | 0       |
+|     xor_ln15_1_fu_596_p2                    |     |        | xor_ln15_1  | xor       | auto   | 0       |
+|     add_ln19_fu_613_p2                      |     |        | add_ln19    | add       | fabric | 0       |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_32_4 | 0   |        |             |           |        |         |
+|     icmp_ln32_fu_83_p2                      |     |        | icmp_ln32   | seteq     | auto   | 0       |
+|     add_ln32_fu_89_p2                       |     |        | add_ln32    | add       | fabric | 0       |
+|     add_ln33_fu_106_p2                      |     |        | add_ln33    | add       | fabric | 0       |
+|  + sha224Accel_Pipeline_VITIS_LOOP_49_7     | 0   |        |             |           |        |         |
+|    icmp_ln49_fu_69_p2                       |     |        | icmp_ln49   | seteq     | auto   | 0       |
+|    add_ln49_fu_75_p2                        |     |        | add_ln49    | add       | fabric | 0       |
++---------------------------------------------+-----+--------+-------------+-----------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------------+---------------+------+------+------+--------+-----------+------+---------+------------------+
+| Name                                        | Usage         | Type | BRAM | URAM | Pragma | Variable  | Impl | Latency | Bitwidth, Depth, |
+|                                             |               |      |      |      |        |           |      |         | Banks            |
++---------------------------------------------+---------------+------+------+------+--------+-----------+------+---------+------------------+
+| + sha224Accel                               |               |      | 5    | 0    |        |           |      |         |                  |
+|   buffer_U                                  | ram_t2p array |      |      |      |        | buffer    | auto | 1       | 1, 32, 1         |
+|   buffer_1_U                                | ram_t2p array |      |      |      |        | buffer_1  | auto | 1       | 1, 32, 1         |
+|   buffer_2_U                                | ram_t2p array |      |      |      |        | buffer_2  | auto | 1       | 1, 32, 1         |
+|   buffer_3_U                                | ram_t2p array |      |      |      |        | buffer_3  | auto | 1       | 1, 32, 1         |
+|   buffer_4_U                                | ram_t2p array |      |      |      |        | buffer_4  | auto | 1       | 1, 32, 1         |
+|   buffer_5_U                                | ram_t2p array |      |      |      |        | buffer_5  | auto | 1       | 1, 32, 1         |
+|   buffer_6_U                                | ram_t2p array |      |      |      |        | buffer_6  | auto | 1       | 1, 32, 1         |
+|   buffer_7_U                                | ram_t2p array |      |      |      |        | buffer_7  | auto | 1       | 1, 32, 1         |
+|   buffer_8_U                                | ram_t2p array |      |      |      |        | buffer_8  | auto | 1       | 1, 32, 1         |
+|   buffer_9_U                                | ram_t2p array |      |      |      |        | buffer_9  | auto | 1       | 1, 32, 1         |
+|   buffer_10_U                               | ram_t2p array |      |      |      |        | buffer_10 | auto | 1       | 1, 32, 1         |
+|   buffer_11_U                               | ram_t2p array |      |      |      |        | buffer_11 | auto | 1       | 1, 32, 1         |
+|   buffer_12_U                               | ram_t2p array |      |      |      |        | buffer_12 | auto | 1       | 1, 32, 1         |
+|   buffer_13_U                               | ram_t2p array |      |      |      |        | buffer_13 | auto | 1       | 1, 32, 1         |
+|   buffer_14_U                               | ram_t2p array |      |      |      |        | buffer_14 | auto | 1       | 1, 32, 1         |
+|   buffer_15_U                               | ram_t2p array |      |      |      |        | buffer_15 | auto | 1       | 1, 32, 1         |
+|   interHash_U                               | ram_t2p array |      |      |      |        | interHash | auto | 1       | 32, 8, 1         |
+|   wordsout_U                                | ram_1p array  |      |      |      |        | wordsout  | auto | 1       | 32, 8, 1         |
+|   message_U                                 | ram_1p array  |      |      |      |        | message   | auto | 1       | 32, 16, 1        |
+|  + chunkProcessor                           |               |      | 5    | 0    |        |           |      |         |                  |
+|    wValues_U                                | rom_np array  |      | 2    |      |        | wValues   | auto | 1       | 32, 64, 1        |
+|    wvars_U                                  | ram_t2p array |      |      |      |        | wvars     | auto | 1       | 32, 8, 1         |
+|   + chunkProcessor_Pipeline_VITIS_LOOP_25_2 |               |      | 1    | 0    |        |           |      |         |                  |
+|     kValues_U                               | rom_1p        |      | 1    |      |        | kValues   | auto | 1       | 32, 64, 1        |
++---------------------------------------------+---------------+------+------+------+--------+-----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

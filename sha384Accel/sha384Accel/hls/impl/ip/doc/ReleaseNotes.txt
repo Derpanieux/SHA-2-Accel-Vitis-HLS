@@ -1,0 +1,6 @@
+
+Family       : aspartan7
+Device       : xa7s6
+Package      : -cpga196
+Speed Grade  : -2I
+Clock Period : 10

@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jul 22 20:19:48 2025
+# Process ID         : 33272
+# Current directory  : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : DESKTOP-E57T4BO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 25691 MB
+# Swap memory        : 31138 MB
+# Total Virtual      : 56829 MB
+# Available Virtual  : 22327 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 53556
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xa7s6cpga196-2I -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7s6'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7s6'
+INFO: [Device 21-403] Loading part xa7s6cpga196-2I
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26348
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1147.891 ; gain = 491.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_buffer_RAM_AUTO_1R1W' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_buffer_RAM_AUTO_1R1W' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_wordsout_RAM_AUTO_1R1W' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_wordsout_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_wordsout_RAM_AUTO_1R1W' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_wordsout_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_message_RAM_AUTO_1R1W' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_message_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_message_RAM_AUTO_1R1W' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_message_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_flow_control_loop_pipe_sequential_init' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_flow_control_loop_pipe_sequential_init' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_12_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_23_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_35_4' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_35_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_bitselect_1ns_64ns_6ns_1_1_1' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_bitselect_1ns_64ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_bitselect_1ns_64ns_6ns_1_1_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_bitselect_1ns_64ns_6ns_1_1_1' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_bitselect_1ns_64ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_35_4' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_35_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_43_5' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_43_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_43_5' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_43_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_7_1' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_7_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_7_1' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_7_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_22_1' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_22_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_22_1' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_22_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R.dat' is read successfully [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_32_4' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_32_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_32_4' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_32_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_chunkProcessor' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_49_7' [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_49_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_49_7' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_49_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sha256Accel' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_message_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_wordsout_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_buffer_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1296.328 ; gain = 639.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1296.328 ; gain = 639.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1296.328 ; gain = 639.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1296.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sha256Accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sha256Accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1371.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1371.672 ; gain = 0.059
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1371.672 ; gain = 715.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7s6cpga196-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1371.672 ; gain = 715.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1371.672 ; gain = 715.086
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'j_2_reg_1022_reg' and it is trimmed from '5' to '4' bits. [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_43_5.v:421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln22_reg_101_reg' and it is trimmed from '4' to '3' bits. [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_22_1.v:141]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_366_pp0_iter1_reg_reg' and it is trimmed from '7' to '6' bits. [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_10_2.v:216]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln32_reg_123_reg' and it is trimmed from '4' to '3' bits. [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_32_4.v:149]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln49_reg_101_reg' and it is trimmed from '4' to '3' bits. [d:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e034/hdl/verilog/sha256Accel_sha256Accel_Pipeline_VITIS_LOOP_49_7.v:141]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "sha256Accel_buffer_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "sha256Accel_chunkProcessor_wvars_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2814.457 ; gain = 2157.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 15    
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   3 Input     32 Bit         XORs := 4     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               59 Bit    Registers := 1     
+	               55 Bit    Registers := 2     
+	               32 Bit    Registers := 39    
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 111   
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 2     
+	              512 Bit	(16 X 32 bit)          RAMs := 1     
+	              256 Bit	(8 X 32 bit)          RAMs := 3     
+	               32 Bit	(32 X 1 bit)          RAMs := 16    
++---Muxes : 
+	  65 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 9     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   31 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 81    
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 261   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 10 (col length:20)
+BRAMs: 10 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port reset in module sha256Accel_chunkProcessor_Pipeline_VITIS_LOOP_25_2_kValues_ROM_AUTO_1R is either unconnected or has no load
+INFO: [Synth 8-3971] The signal "inst/buffer_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_2_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_3_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_4_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_5_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_6_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_7_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_8_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_9_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_10_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_11_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_12_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_13_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_14_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/buffer_15_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/interHash_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/grp_chunkProcessor_fu_427/wvars_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:36 ; elapsed = 00:02:40 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 23, Available = 10. Will try to implement using LUT-RAM. 
+CRITICAL WARNING: [Synth 8-7048] Resources of type BRAM have been overutilized even after performing resource management. Used = 20, Available = 10. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                    | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst                           | buffer_U/ram_reg    | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_1_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_2_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_3_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_4_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_5_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_6_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_7_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_8_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_9_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_10_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_11_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_12_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_13_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_14_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_15_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | interHash_U/ram_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|inst/grp_chunkProcessor_fu_427 | wvars_U/ram_reg     | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------------------------+--------------------+-----------+----------------------+----------------+
+|Module Name                    | RTL Object         | Inference | Size (Depth x Width) | Primitives     | 
++-------------------------------+--------------------+-----------+----------------------+----------------+
+|inst/grp_chunkProcessor_fu_427 | wValues_U/ram0_reg | Implied   | 64 x 32              | RAM64X1D x 32  | 
+|inst/grp_chunkProcessor_fu_427 | wValues_U/ram1_reg | Implied   | 64 x 32              | RAM64M x 11    | 
+|inst                           | wordsout_U/ram_reg | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|inst                           | message_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-------------------------------+--------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:40 ; elapsed = 00:02:44 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:47 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                    | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst                           | buffer_U/ram_reg    | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_1_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_2_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_3_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_4_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_5_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_6_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_7_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_8_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_9_U/ram_reg  | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_10_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_11_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_12_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_13_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_14_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | buffer_15_U/ram_reg | 32 x 1(READ_FIRST)     | W | R | 32 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 
+|inst                           | interHash_U/ram_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|inst/grp_chunkProcessor_fu_427 | wvars_U/ram_reg     | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++-------------------------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-------------------------------+--------------------+-----------+----------------------+----------------+
+|Module Name                    | RTL Object         | Inference | Size (Depth x Width) | Primitives     | 
++-------------------------------+--------------------+-----------+----------------------+----------------+
+|inst/grp_chunkProcessor_fu_427 | wValues_U/ram0_reg | Implied   | 64 x 32              | RAM64X1D x 32  | 
+|inst/grp_chunkProcessor_fu_427 | wValues_U/ram1_reg | Implied   | 64 x 32              | RAM64M x 11    | 
+|inst                           | wordsout_U/ram_reg | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|inst                           | message_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-------------------------------+--------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_8_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_8_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_9_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_9_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/buffer_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/interHash_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/interHash_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_chunkProcessor_fu_427/wvars_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_chunkProcessor_fu_427/wvars_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:43 ; elapsed = 00:02:48 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:47 ; elapsed = 00:02:51 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:47 ; elapsed = 00:02:51 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   130|
+|2     |LUT1     |     4|
+|3     |LUT2     |   168|
+|4     |LUT3     |   356|
+|5     |LUT4     |   513|
+|6     |LUT5     |   325|
+|7     |LUT6     |   404|
+|8     |MUXF7    |    12|
+|9     |MUXF8    |     4|
+|10    |RAM16X1S |    64|
+|11    |RAM64M   |    11|
+|12    |RAM64X1D |    32|
+|13    |RAMB18E1 |    16|
+|14    |RAMB36E1 |     2|
+|15    |FDRE     |  1688|
+|16    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:39 ; elapsed = 00:02:50 . Memory (MB): peak = 3082.219 ; gain = 2350.289
+Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:02:52 . Memory (MB): peak = 3082.219 ; gain = 2425.633
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 3082.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 271 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3082.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 107 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 11 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+Synth Design complete | Checksum: 6f9e8c9d
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 14 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 3082.219 ; gain = 2572.062
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3082.219 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 44 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3082.219 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vitis/shaAccel/sha256Accel/sha256Accel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 20:22:53 2025...

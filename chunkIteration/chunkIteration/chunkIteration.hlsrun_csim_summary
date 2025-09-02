@@ -1,0 +1,163 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\chunkIteration.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/14/25 16:39:32",
+ "timestampMillis": "1752525572440",
+ "buildStep": {
+  "cmdId": "9ceaedad-a7a9-421f-983e-c79afb50984f",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\logs\\chunkIteration.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\Vitis\\shaAccel\\chunkIteration\\hls_config.cfg --work_dir chunkIteration ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\Vitis\\shaAccel\\chunkIteration\\hls_config.cfg",
+   "--work_dir",
+   "chunkIteration"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\chunkIteration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:39:32",
+ "timestampMillis": "1752525572440",
+ "status": {
+  "cmdId": "9ceaedad-a7a9-421f-983e-c79afb50984f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/14/25 16:39:35",
+ "timestampMillis": "1752525575733",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "chunkIter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.h",
+     "D:/Vitis\\shaAccel\\chunkIteration\\Document.txt",
+     "D:/Vitis\\shaAccel\\chunkIteration\\Text",
+     "D:/Vitis\\shaAccel\\New",
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/14/25 16:39:35",
+ "timestampMillis": "1752525575733",
+ "buildStep": {
+  "cmdId": "bcc4cdad-533d-4ff1-bf69-4a4314ed1a74",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\chunkIteration\\chunkIteration\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\chunkIteration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:39:35",
+ "timestampMillis": "1752525575734",
+ "status": {
+  "cmdId": "bcc4cdad-533d-4ff1-bf69-4a4314ed1a74",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:39:41",
+ "timestampMillis": "1752525581011",
+ "status": {
+  "cmdId": "bcc4cdad-533d-4ff1-bf69-4a4314ed1a74",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/14/25 16:39:41",
+ "timestampMillis": "1752525581080",
+ "status": {
+  "cmdId": "9ceaedad-a7a9-421f-983e-c79afb50984f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:39:41",
+ "timestampMillis": "1752525581080",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/14/25 16:39:41",
+ "timestampMillis": "1752525581081",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

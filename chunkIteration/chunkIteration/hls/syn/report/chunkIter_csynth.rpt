@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vitis HLS Report for 'chunkIter'
+================================================================
+* Date:           Mon Jul 14 16:40:14 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        chunkIteration
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.116 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+------+------+-----+
+|       Name      | BRAM_18K| DSP|  FF  |  LUT | URAM|
++-----------------+---------+----+------+------+-----+
+|DSP              |        -|   -|     -|     -|    -|
+|Expression       |        -|   -|     0|   615|    -|
+|FIFO             |        -|   -|     -|     -|    -|
+|Instance         |        -|   -|     -|     -|    -|
+|Memory           |        -|   -|     -|     -|    -|
+|Multiplexer      |        -|   -|     0|   201|    -|
+|Register         |        -|   -|   262|     -|    -|
++-----------------+---------+----+------+------+-----+
+|Total            |        0|   0|   262|   816|    0|
++-----------------+---------+----+------+------+-----+
+|Available        |       10|  10|  7500|  3750|    0|
++-----------------+---------+----+------+------+-----+
+|Utilization (%)  |        0|   0|     3|    21|    0|
++-----------------+---------+----+------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln13_1_fu_449_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln13_2_fu_455_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln13_fu_444_p2    |         +|   0|  0|  32|          32|          32|
+    |add_ln15_1_fu_493_p2  |         +|   0|  0|  32|          32|          32|
+    |add_ln15_fu_489_p2    |         +|   0|  0|  32|          32|          32|
+    |add_ln19_fu_499_p2    |         +|   0|  0|  39|          32|          32|
+    |t1_fu_460_p2          |         +|   0|  0|  32|          32|          32|
+    |and_ln13_1_fu_433_p2  |       and|   0|  0|  32|          32|          32|
+    |and_ln13_fu_427_p2    |       and|   0|  0|  32|          32|          32|
+    |and_ln15_1_fu_477_p2  |       and|   0|  0|  32|          32|          32|
+    |and_ln15_fu_472_p2    |       and|   0|  0|  32|          32|          32|
+    |or_ln13_fu_438_p2     |        or|   0|  0|  32|          32|          32|
+    |or_ln15_3_fu_483_p2   |        or|   0|  0|  32|          32|          32|
+    |or_ln15_fu_466_p2     |        or|   0|  0|  32|          32|          32|
+    |xor_ln13_1_fu_331_p2  |       xor|   0|  0|  32|          32|          32|
+    |xor_ln13_2_fu_337_p2  |       xor|   0|  0|  32|          32|          32|
+    |xor_ln13_fu_421_p2    |       xor|   0|  0|  32|          32|           2|
+    |xor_ln15_1_fu_415_p2  |       xor|   0|  0|  32|          32|          32|
+    |xor_ln15_fu_409_p2    |       xor|   0|  0|  32|          32|          32|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0| 615|         608|         578|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  36|          7|    1|          7|
+    |reg_259                  |   9|          2|   32|         64|
+    |wvarsin_address0_local   |  27|          5|    3|         15|
+    |wvarsin_address1_local   |  27|          5|    3|         15|
+    |wvarsout_address0_local  |  33|          6|    3|         18|
+    |wvarsout_address1_local  |  21|          4|    3|         12|
+    |wvarsout_d0_local        |  27|          5|   32|        160|
+    |wvarsout_d1_local        |  21|          4|   32|        128|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 201|         38|  109|        419|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------+----+----+-----+-----------+
+    |          Name          | FF | LUT| Bits| Const Bits|
+    +------------------------+----+----+-----+-----------+
+    |ap_CS_fsm               |   6|   0|    6|          0|
+    |or_ln13_reg_561         |  32|   0|   32|          0|
+    |or_ln15_3_reg_572       |  32|   0|   32|          0|
+    |reg_259                 |  32|   0|   32|          0|
+    |t1_reg_566              |  32|   0|   32|          0|
+    |wvarsin_load_1_reg_525  |  32|   0|   32|          0|
+    |wvarsin_load_2_reg_530  |  32|   0|   32|          0|
+    |xor_ln13_2_reg_520      |  32|   0|   32|          0|
+    |xor_ln15_1_reg_546      |  32|   0|   32|          0|
+    +------------------------+----+----+-----+-----------+
+    |Total                   | 262|   0|  262|          0|
+    +------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|     chunkIter|  return value|
+|kt                 |   in|   32|     ap_none|            kt|        scalar|
+|wt                 |   in|   32|     ap_none|            wt|        scalar|
+|wvarsin_address0   |  out|    3|   ap_memory|       wvarsin|         array|
+|wvarsin_ce0        |  out|    1|   ap_memory|       wvarsin|         array|
+|wvarsin_q0         |   in|   32|   ap_memory|       wvarsin|         array|
+|wvarsin_address1   |  out|    3|   ap_memory|       wvarsin|         array|
+|wvarsin_ce1        |  out|    1|   ap_memory|       wvarsin|         array|
+|wvarsin_q1         |   in|   32|   ap_memory|       wvarsin|         array|
+|wvarsout_address0  |  out|    3|   ap_memory|      wvarsout|         array|
+|wvarsout_ce0       |  out|    1|   ap_memory|      wvarsout|         array|
+|wvarsout_we0       |  out|    1|   ap_memory|      wvarsout|         array|
+|wvarsout_d0        |  out|   32|   ap_memory|      wvarsout|         array|
+|wvarsout_address1  |  out|    3|   ap_memory|      wvarsout|         array|
+|wvarsout_ce1       |  out|    1|   ap_memory|      wvarsout|         array|
+|wvarsout_we1       |  out|    1|   ap_memory|      wvarsout|         array|
+|wvarsout_d1        |  out|   32|   ap_memory|      wvarsout|         array|
++-------------------+-----+-----+------------+--------------+--------------+
+

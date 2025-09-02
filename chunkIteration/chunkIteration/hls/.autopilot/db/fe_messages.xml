@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="chunkIter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=chunkIter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="chunkIter.cpp:7:0" msg_body="Inlining function 'sum1_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)' into 'chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)'">
+        <args Callee="sum1_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Callee-DebugLoc="File ../functions256.cpp Line 16 Column 0" Caller="chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Caller-DebugLoc="File chunkIter.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="chunkIter.cpp:7:0" msg_body="Inlining function 'sum0_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)' into 'chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)'">
+        <args Callee="sum0_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Callee-DebugLoc="File ../functions256.cpp Line 6 Column 0" Caller="chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Caller-DebugLoc="File chunkIter.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="chunkIter.cpp:7:0" msg_body="Inlining function 'ch_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)' into 'chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)'">
+        <args Callee="ch_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Callee-DebugLoc="File ../functions256.cpp Line 48 Column 0" Caller="chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Caller-DebugLoc="File chunkIter.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="chunkIter.cpp:7:0" msg_body="Inlining function 'maj_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)' into 'chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)'">
+        <args Callee="maj_256(ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Callee-DebugLoc="File ../functions256.cpp Line 57 Column 0" Caller="chunkIter(ap_uint&lt;32&gt;, ap_uint&lt;32&gt;, ap_uint&lt;32&gt;*, ap_uint&lt;32&gt;*)" Caller-DebugLoc="File chunkIter.cpp Line 7 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

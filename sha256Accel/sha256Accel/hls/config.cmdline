@@ -1,0 +1,3 @@
+relativeroot=D:/Vitis/shaAccel/sha256Accel
+original_argv=--mode hls --impl --config D:\Vitis\shaAccel\sha256Accel\hls_config.cfg --work_dir sha256Accel 
+

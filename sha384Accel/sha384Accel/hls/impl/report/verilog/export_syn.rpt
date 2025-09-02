@@ -1,0 +1,663 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Aug 01 20:28:43 -0400 2025
+    * Version:         2025.1 (Build 6135595 on May 21 2025)
+    * Project:         sha384Accel
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  aspartan7
+    * Target device:   xa7s6-cpga196-2I
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              3496
+FF:               3399
+DSP:              0
+BRAM:             8
+URAM:             0
+SRL:              0
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 5.795       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++--------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                   | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++--------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                   | 3496 | 3399 |     | 8    |      |     |        |      |         |          |        |
+|   (inst)                                               | 3    | 767  |     |      |      |     |        |      |         |          |        |
+|   buffer_10_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_11_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_12_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_13_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_14_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_15_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_16_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_17_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_18_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_19_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_1_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_20_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_21_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_22_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_23_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_24_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_25_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_26_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_27_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_28_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_29_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_2_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_30_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_31_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_3_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_4_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_5_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_6_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_7_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_8_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_9_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   buffer_U                                             |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_chunkProcessor_fu_557                            | 2409 | 2083 |     | 4    |      |     |        |      |         |          |        |
+|     (grp_chunkProcessor_fu_557)                        | 5    | 533  |     |      |      |     |        |      |         |          |        |
+|       kValues_U                                        | 1    | 64   |     |      |      |     |        |      |         |          |        |
+|     grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193 |      |      |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U         |      |      |     |      |      |     |        |      |         |          |        |
+|     grp_chunkProcessor_Pipeline_VITIS_LOOP_8_1_fu_147  |      |      |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U         |      |      |     |      |      |     |        |      |         |          |        |
+|     wValues_U                                          | 582  | 192  |     |      |      |     |        |      |         |          |        |
+|     wvars_U                                            | 71   |      |     | 4    |      |     |        |      |         |          |        |
+|   grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399      | 320  | 156  |     |      |      |     |        |      |         |          |        |
+|     (grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399)  | 182  | 154  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U           | 138  | 2    |     |      |      |     |        |      |         |          |        |
+|   grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442      | 287  | 155  |     |      |      |     |        |      |         |          |        |
+|     (grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442)  | 147  | 153  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U           | 140  | 2    |     |      |      |     |        |      |         |          |        |
+|   grp_sha384Accel_Pipeline_VITIS_LOOP_38_4_fu_483      | 129  | 20   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U           | 80   | 2    |     |      |      |     |        |      |         |          |        |
+|   grp_sha384Accel_Pipeline_VITIS_LOOP_46_5_fu_520      |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U           |      |      |     |      |      |     |        |      |         |          |        |
+|   grp_sha384Accel_Pipeline_VITIS_LOOP_52_7_fu_566      |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U           |      |      |     |      |      |     |        |      |         |          |        |
+|   interHash_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   message_U                                            | 64   | 64   |     |      |      |     |        |      |         |          |        |
+|   wordsout_U                                           | 128  | 64   |     |      |      |     |        |      |         |          |        |
++--------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 93.23% | REVIEW |
+| FD                                                        | 50%       | 45.32% | OK     |
+| LUTRAM+SRL                                                | 25%       | 25.83% | REVIEW |
+| MUXF7                                                     | 15%       | 0.50%  | OK     |
+| LUT Combining                                             | 20%       | 26.95% | REVIEW |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 80.00% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 80.00% | REVIEW |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 70        | 80     | REVIEW |
+| Average Fanout for modules > 100k cells                   | 4         | 3.14   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.500ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.350ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------------------+-----------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                  | ENDPOINT PIN                      | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                 |                                   |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------------------+-----------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 4.205 | interHash_U/ram_reg_0/CLKBWRCLK | wordsout_U/ram_reg_0_7_63_63/SP/I |           17 |          4 |          5.404 |          4.351 |        1.053 |
+| Path2 | 4.215 | interHash_U/ram_reg_0/CLKBWRCLK | wordsout_U/ram_reg_0_7_61_61/SP/I |           17 |          4 |          5.399 |          4.343 |        1.056 |
+| Path3 | 4.305 | interHash_U/ram_reg_0/CLKBWRCLK | wordsout_U/ram_reg_0_7_59_59/SP/I |           16 |          4 |          5.304 |          4.251 |        1.053 |
+| Path4 | 4.315 | interHash_U/ram_reg_0/CLKBWRCLK | wordsout_U/ram_reg_0_7_57_57/SP/I |           16 |          4 |          5.299 |          4.243 |        1.056 |
+| Path5 | 4.405 | interHash_U/ram_reg_0/CLKBWRCLK | wordsout_U/ram_reg_0_7_55_55/SP/I |           15 |          4 |          5.204 |          4.151 |        1.053 |
++-------+-------+---------------------------------+-----------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | Path1 Cells                                                                                               | Primitive Type      |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_63_63/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_61_61/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_59_59/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_57_57/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_55_55/SP                                                                           | DMEM.dram.RAM32X1S  |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | Path2 Cells                                                                                               | Primitive Type      |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_63_63/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_61_61/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_59_59/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_57_57/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_55_55/SP                                                                           | DMEM.dram.RAM32X1S  |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | Path3 Cells                                                                                               | Primitive Type      |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_63_63/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_61_61/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_59_59/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_57_57/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_55_55/SP                                                                           | DMEM.dram.RAM32X1S  |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | Path4 Cells                                                                                               | Primitive Type      |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_63_63/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_61_61/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_59_59/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_57_57/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_55_55/SP                                                                           | DMEM.dram.RAM32X1S  |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | Path5 Cells                                                                                               | Primitive Type      |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_63_63/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__14 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_61_61/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_59_59/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__13 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_57_57/SP                                                                           | DMEM.dram.RAM32X1S  |
+    | interHash_U/ram_reg_0                                                                                     | BMEM.bram.RAMB36E1  |
+    | grp_chunkProcessor_fu_557/wvars_U/add_ln35_fu_106_p2_carry_i_3                                            | LUT.others.LUT2     |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry     | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__0  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__1  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__2  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__3  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__4  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__5  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__6  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__7  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__8  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__9  | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__10 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__11 | CARRY.others.CARRY4 |
+    | grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/add_ln35_fu_106_p2_carry__12 | CARRY.others.CARRY4 |
+    | wordsout_U/ram_reg_0_7_55_55/SP                                                                           | DMEM.dram.RAM32X1S  |
+    +-----------------------------------------------------------------------------------------------------------+---------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------+
+| Report Type              | Report Location                                                    |
++--------------------------+--------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/sha384Accel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/sha384Accel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/sha384Accel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/sha384Accel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/sha384Accel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/sha384Accel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/sha384Accel_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------------+
+
+

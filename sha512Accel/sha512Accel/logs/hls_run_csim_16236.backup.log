@@ -1,0 +1,100 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/sha512Accel/sha512Accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha512Accel/sha512Accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/sha512Accel/sha512Accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/sha512Accel/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration512/chunkIter512.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration512/chunkIter512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration512/chunkIter512.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration512/chunkIter512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor512/chunkProcessor512.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor512/chunkProcessor512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor512/chunkProcessor512.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor512/chunkProcessor512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator512/wGenerator512.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator512/wGenerator512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator512/wGenerator512.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator512/wGenerator512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions512.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions512.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha512Accel.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha512Accel/sha512Accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha512Accel.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha512Accel/sha512Accel.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers.dat' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha512Accel/answers.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain.dat' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha512Accel/datain.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb.cpp' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha512Accel/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/sha512Accel/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha512Accel/sha512Accel/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb.cpp:7:
+In file included from ../../../../sha512Accel.h:6:
+In file included from ../../../../../chunkProcessor512/chunkProcessor512.h:4:
+In file included from ../../../../../chunkProcessor512/../wGenerator512/wGenerator512.h:4:
+In file included from ../../../../../chunkProcessor512/../wGenerator512/../dataTypes.h:4:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+58c58
+< 0x00DF42CA5014246AEEEA9312BC41E1986D92984A67099F31252CDBD25C2A0ED0F16273019C3EFA7CCBBBAD63EE628E0B0591BED25C7E6663004FF1D84DF39397
+---
+> 0x0DF42CA5014246AEEEA9312BC41E1986D92984A67099F31252CDBD25C2A0ED0F16273019C3EFA7CCBBBAD63EE628E0B0591BED25C7E6663004FF1D84DF39397
+132c132
+< 0x00E6C92422D250EE40F0886F515D5293820D523F7600DA6E3C5B356E7418BA64688287DBB166D5D83B5E9FC2A19184D4176EE3DB7C27FE70E1133C3569D346F8
+---
+> 0x0E6C92422D250EE40F0886F515D5293820D523F7600DA6E3C5B356E7418BA64688287DBB166D5D83B5E9FC2A19184D4176EE3DB7C27FE70E1133C3569D346F8
+535c535
+< 0x0098771C6169FE3EF327FE53C448D0E9DA20B66492BBD484768E3A237AB5D68F9678E87C3F79504AD7F6F96D6E81DD035C77BCA0D670E8E02F7E8F244E581A0E
+---
+> 0x098771C6169FE3EF327FE53C448D0E9DA20B66492BBD484768E3A237AB5D68F9678E87C3F79504AD7F6F96D6E81DD035C77BCA0D670E8E02F7E8F244E581A0E
+616c616
+< 0x0072F09EA6DBC1D1E5E6B727DD79DF4AA596AB15A6146CF873BA7F38C2E2974427D25F510582A8FEEF152A7D11F6A2D1F6D98DA0D53867153AB7CD6EAF48B2AC
+---
+> 0x072F09EA6DBC1D1E5E6B727DD79DF4AA596AB15A6146CF873BA7F38C2E2974427D25F510582A8FEEF152A7D11F6A2D1F6D98DA0D53867153AB7CD6EAF48B2AC
+778c778
+< 0x00CEDA69040C4BF20001F3183877C00F1BF572570DE575DBB36E1086121883130ACC8600F8ABD69BF59017DFFCFE997059D6FCDA822362A80220258C5F36B27C
+---
+> 0x0CEDA69040C4BF20001F3183877C00F1BF572570DE575DBB36E1086121883130ACC8600F8ABD69BF59017DFFCFE997059D6FCDA822362A80220258C5F36B27C
+801c801
+< 0x005604D6D71C98D63D94FF9E77D5567E5402C83908FAF7593A719443B4E8ACB7B0A7DEE71C7AE52CAF4A04CDE42FEF84A4115ADAFE331770EF542EDA6D9EE836
+---
+> 0x05604D6D71C98D63D94FF9E77D5567E5402C83908FAF7593A719443B4E8ACB7B0A7DEE71C7AE52CAF4A04CDE42FEF84A4115ADAFE331770EF542EDA6D9EE836
+Discrepancies: 0 out of 1006 samples
+*******************************************
+FAIL: Output DOES NOT match the ans output
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 130784
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 61.011 seconds; peak allocated memory: 144.652 MB.

@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sha512Accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sha512Accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../wGenerator512/wGenerator512.cpp:6:0" msg_body="Inlining function 'sigma0_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="sigma0_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 26 Column 0" Caller="wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../wGenerator512/wGenerator512.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../wGenerator512/wGenerator512.cpp:6:0" msg_body="Inlining function 'sigma1_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="sigma1_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 36 Column 0" Caller="wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../wGenerator512/wGenerator512.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkIteration512/chunkIter512.cpp:7:0" msg_body="Inlining function 'sum1_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="sum1_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 16 Column 0" Caller="chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkIteration512/chunkIter512.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkIteration512/chunkIter512.cpp:7:0" msg_body="Inlining function 'sum0_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="sum0_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 6 Column 0" Caller="chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkIteration512/chunkIter512.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkIteration512/chunkIter512.cpp:7:0" msg_body="Inlining function 'ch_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="ch_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 48 Column 0" Caller="chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkIteration512/chunkIter512.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkIteration512/chunkIter512.cpp:7:0" msg_body="Inlining function 'maj_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="maj_512(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../functions512.cpp Line 57 Column 0" Caller="chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkIteration512/chunkIter512.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:3:0" msg_body="Inlining function 'wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkProcessor(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="wGenerator(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../wGenerator512/wGenerator512.cpp Line 6 Column 0" Caller="chunkProcessor(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkProcessor512/chunkProcessor512.cpp Line 3 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:3:0" msg_body="Inlining function 'chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)' into 'chunkProcessor(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)'">
+        <args Callee="chunkIter(ap_uint&lt;64&gt;, ap_uint&lt;64&gt;, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Callee-DebugLoc="File ../chunkIteration512/chunkIter512.cpp Line 7 Column 0" Caller="chunkProcessor(ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*, ap_uint&lt;64&gt;*)" Caller-DebugLoc="File ../chunkProcessor512/chunkProcessor512.cpp Line 3 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="sha512Accel.cpp:47:30" msg_body="Loop 'VITIS_LOOP_47_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_47_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:30:26" msg_body="Loop 'VITIS_LOOP_30_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="sha512Accel.cpp:3:0" msg_body="Unrolling loop 'VITIS_LOOP_47_6' (sha512Accel.cpp:47:30) in function 'sha512Accel' completely with a factor of 64">
+        <args Factor="64" LoopLoc="sha512Accel.cpp:47:30" LoopName="VITIS_LOOP_47_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:3:0" msg_body="Unrolling loop 'VITIS_LOOP_30_3' (../chunkProcessor512/chunkProcessor512.cpp:30:26) in function 'chunkProcessor' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../chunkProcessor512/chunkProcessor512.cpp:30:26" LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:28:17" msg_body="Automatically partitioning array 'newwvars' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="newwvars"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="sha512Accel.cpp:5:9" msg_body="array_partition dim=1 type=cyclic factor=32 variable=buffer 1 sha512Accel sha512Accel.cpp:5:9 buffer">
+        <args PragmaFunction="sha512Accel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=32 variable=buffer" PragmaType="array_partition" VarName="buffer" varLoc="sha512Accel.cpp:5:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="sha512Accel.cpp:5:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'buffer' due to pipeline pragma">
+        <args Dim="1" Factor="32" Mode="cyclic" Name="buffer" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:28:17" msg_body="array_partition dim=1 type=complete  variable=newwvars 1 chunkProcessor ../chunkProcessor512/chunkProcessor512.cpp:28:17 newwvars">
+        <args PragmaFunction="chunkProcessor" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=newwvars" PragmaType="array_partition" VarName="newwvars" varLoc="../chunkProcessor512/chunkProcessor512.cpp:28:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:28:17" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'newwvars' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="newwvars" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../chunkProcessor512/chunkProcessor512.cpp:28:17" msg_body="Applying array_partition to 'newwvars': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="newwvars"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="sha512Accel.cpp:5:9" msg_body="Applying array_partition to 'buffer': Cyclic partitioning with factor 32 on dimension 1.">
+        <args Dim="1" Factor="32" Mode="Cyclic" UOName="buffer"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

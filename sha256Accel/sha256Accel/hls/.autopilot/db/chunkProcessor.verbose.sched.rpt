@@ -1,0 +1,272 @@
+
+
+================================================================
+== Vitis HLS Report for 'chunkProcessor'
+================================================================
+* Date:           Tue Jul 22 19:55:45 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        sha256Accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.547 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      272|      272|  2.720 us|  2.720 us|  272|  272|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%add_i26_i241_loc = alloca i64 1"   --->   Operation 15 'alloca' 'add_i26_i241_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%thr_add562_loc = alloca i64 1"   --->   Operation 16 'alloca' 'thr_add562_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%add_i26_i2413_loc = alloca i64 1"   --->   Operation 17 'alloca' 'add_i26_i2413_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%add_i26_i24134_loc = alloca i64 1"   --->   Operation 18 'alloca' 'add_i26_i24134_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%thr_add5625_loc = alloca i64 1"   --->   Operation 19 'alloca' 'thr_add5625_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%thr_add56256_loc = alloca i64 1"   --->   Operation 20 'alloca' 'thr_add56256_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%add_i26_i241347_loc = alloca i64 1"   --->   Operation 21 'alloca' 'add_i26_i241347_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%thr_add562568_loc = alloca i64 1"   --->   Operation 22 'alloca' 'thr_add562568_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%wValues = alloca i64 1" [../chunkProcessor/chunkProcessor.cpp:17]   --->   Operation 23 'alloca' 'wValues' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%wvars = alloca i64 1" [../chunkProcessor/chunkProcessor.cpp:21]   --->   Operation 24 'alloca' 'wvars' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_1 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_7_1, i32 %message, i32 %wValues"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_22_1, i32 %input_r, i32 %wvars"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 4.17>
+ST_2 : Operation 27 [1/2] (4.17ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_7_1, i32 %message, i32 %wValues"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 4.17> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 28 [1/2] (4.15ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_22_1, i32 %input_r, i32 %wvars"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 4.15> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_10_2, i32 %wValues"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%wvars_addr = getelementptr i32 %wvars, i64 0, i64 0"   --->   Operation 30 'getelementptr' 'wvars_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%wvars_addr_1 = getelementptr i32 %wvars, i64 0, i64 4"   --->   Operation 31 'getelementptr' 'wvars_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [2/2] (1.76ns)   --->   "%wvars_load = load i3 %wvars_addr_1" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 32 'load' 'wvars_load' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_3 : Operation 33 [2/2] (1.76ns)   --->   "%wvars_load_1 = load i3 %wvars_addr" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 33 'load' 'wvars_load_1' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 4 <SV = 3> <Delay = 1.76>
+ST_4 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_10_2, i32 %wValues"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%wvars_addr_2 = getelementptr i32 %wvars, i64 0, i64 5"   --->   Operation 35 'getelementptr' 'wvars_addr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%wvars_addr_3 = getelementptr i32 %wvars, i64 0, i64 6"   --->   Operation 36 'getelementptr' 'wvars_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load = load i3 %wvars_addr_1" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 37 'load' 'wvars_load' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 38 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_1 = load i3 %wvars_addr" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 38 'load' 'wvars_load_1' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 39 [2/2] (1.76ns)   --->   "%wvars_load_2 = load i3 %wvars_addr_2" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 39 'load' 'wvars_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 40 [2/2] (1.76ns)   --->   "%wvars_load_3 = load i3 %wvars_addr_3" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 40 'load' 'wvars_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 5 <SV = 4> <Delay = 1.76>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%wvars_addr_4 = getelementptr i32 %wvars, i64 0, i64 1"   --->   Operation 41 'getelementptr' 'wvars_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%wvars_addr_5 = getelementptr i32 %wvars, i64 0, i64 2"   --->   Operation 42 'getelementptr' 'wvars_addr_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_2 = load i3 %wvars_addr_2" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 43 'load' 'wvars_load_2' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 44 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_3 = load i3 %wvars_addr_3" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 44 'load' 'wvars_load_3' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 45 [2/2] (1.76ns)   --->   "%wvars_load_4 = load i3 %wvars_addr_4" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 45 'load' 'wvars_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 46 [2/2] (1.76ns)   --->   "%wvars_load_5 = load i3 %wvars_addr_5" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 46 'load' 'wvars_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 1.76>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%wvars_addr_6 = getelementptr i32 %wvars, i64 0, i64 7"   --->   Operation 47 'getelementptr' 'wvars_addr_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%wvars_addr_7 = getelementptr i32 %wvars, i64 0, i64 3"   --->   Operation 48 'getelementptr' 'wvars_addr_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_4 = load i3 %wvars_addr_4" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 49 'load' 'wvars_load_4' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 50 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_5 = load i3 %wvars_addr_5" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 50 'load' 'wvars_load_5' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 51 [2/2] (1.76ns)   --->   "%wvars_load_6 = load i3 %wvars_addr_6" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 51 'load' 'wvars_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 52 [2/2] (1.76ns)   --->   "%wvars_load_7 = load i3 %wvars_addr_7" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 52 'load' 'wvars_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 7 <SV = 6> <Delay = 3.06>
+ST_7 : Operation 53 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_6 = load i3 %wvars_addr_6" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 53 'load' 'wvars_load_6' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_7 : Operation 54 [1/2] ( I:1.76ns O:1.76ns )   --->   "%wvars_load_7 = load i3 %wvars_addr_7" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 54 'load' 'wvars_load_7' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_7 : Operation 55 [2/2] (1.29ns)   --->   "%call_ln29 = call void @chunkProcessor_Pipeline_VITIS_LOOP_25_2, i32 %wvars_load_7, i32 %wvars_load_6, i32 %wvars_load_5, i32 %wvars_load_4, i32 %wvars_load_3, i32 %wvars_load_2, i32 %wvars_load_1, i32 %wvars_load, i32 %wValues, i32 %thr_add562568_loc, i32 %add_i26_i241347_loc, i32 %thr_add56256_loc, i32 %thr_add5625_loc, i32 %add_i26_i24134_loc, i32 %add_i26_i2413_loc, i32 %thr_add562_loc, i32 %add_i26_i241_loc, i32 %kValues" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 55 'call' 'call_ln29' <Predicate = true> <Delay = 1.29> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln29 = call void @chunkProcessor_Pipeline_VITIS_LOOP_25_2, i32 %wvars_load_7, i32 %wvars_load_6, i32 %wvars_load_5, i32 %wvars_load_4, i32 %wvars_load_3, i32 %wvars_load_2, i32 %wvars_load_1, i32 %wvars_load, i32 %wValues, i32 %thr_add562568_loc, i32 %add_i26_i241347_loc, i32 %thr_add56256_loc, i32 %thr_add5625_loc, i32 %add_i26_i24134_loc, i32 %add_i26_i2413_loc, i32 %thr_add562_loc, i32 %add_i26_i241_loc, i32 %kValues" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 56 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 1.76>
+ST_9 : Operation 57 [1/1] (0.00ns)   --->   "%thr_add562_loc_load = load i32 %thr_add562_loc"   --->   Operation 57 'load' 'thr_add562_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 58 [1/1] (0.00ns)   --->   "%add_i26_i241_loc_load = load i32 %add_i26_i241_loc"   --->   Operation 58 'load' 'add_i26_i241_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 59 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %add_i26_i241_loc_load, i3 %wvars_addr_1" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 59 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_9 : Operation 60 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %thr_add562_loc_load, i3 %wvars_addr" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 60 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 10 <SV = 9> <Delay = 1.76>
+ST_10 : Operation 61 [1/1] (0.00ns)   --->   "%add_i26_i24134_loc_load = load i32 %add_i26_i24134_loc"   --->   Operation 61 'load' 'add_i26_i24134_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "%add_i26_i2413_loc_load = load i32 %add_i26_i2413_loc"   --->   Operation 62 'load' 'add_i26_i2413_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %add_i26_i2413_loc_load, i3 %wvars_addr_2" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 63 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_10 : Operation 64 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %add_i26_i24134_loc_load, i3 %wvars_addr_3" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 64 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 11 <SV = 10> <Delay = 1.76>
+ST_11 : Operation 65 [1/1] (0.00ns)   --->   "%thr_add56256_loc_load = load i32 %thr_add56256_loc"   --->   Operation 65 'load' 'thr_add56256_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 66 [1/1] (0.00ns)   --->   "%thr_add5625_loc_load = load i32 %thr_add5625_loc"   --->   Operation 66 'load' 'thr_add5625_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 67 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %thr_add5625_loc_load, i3 %wvars_addr_4" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 67 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_11 : Operation 68 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %thr_add56256_loc_load, i3 %wvars_addr_5" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 68 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 12 <SV = 11> <Delay = 1.76>
+ST_12 : Operation 69 [1/1] (0.00ns)   --->   "%thr_add562568_loc_load = load i32 %thr_add562568_loc"   --->   Operation 69 'load' 'thr_add562568_loc_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 70 [1/1] (0.00ns)   --->   "%add_i26_i241347_loc_load = load i32 %add_i26_i241347_loc"   --->   Operation 70 'load' 'add_i26_i241347_loc_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 71 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %add_i26_i241347_loc_load, i3 %wvars_addr_6" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 71 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+ST_12 : Operation 72 [1/1] ( I:1.76ns O:1.76ns )   --->   "%store_ln29 = store i32 %thr_add562568_loc_load, i3 %wvars_addr_7" [../chunkProcessor/chunkProcessor.cpp:29]   --->   Operation 72 'store' 'store_ln29' <Predicate = true> <Delay = 1.76> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 8> <RAM>
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 73 [2/2] (0.00ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_32_4, i32 %input_r, i32 %wvars, i32 %output_r"   --->   Operation 73 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 4.15>
+ST_14 : Operation 74 [1/2] (4.15ns)   --->   "%call_ln0 = call void @chunkProcessor_Pipeline_VITIS_LOOP_32_4, i32 %input_r, i32 %wvars, i32 %output_r"   --->   Operation 74 'call' 'call_ln0' <Predicate = true> <Delay = 4.15> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 75 [1/1] (0.00ns)   --->   "%ret_ln35 = ret" [../chunkProcessor/chunkProcessor.cpp:35]   --->   Operation 75 'ret' 'ret_ln35' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 4.172ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'chunkProcessor_Pipeline_VITIS_LOOP_7_1' [15]  (4.172 ns)
+
+ <State 3>: 1.769ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('wvars_addr_1') [19]  (0.000 ns)
+	'load' operation 32 bit ('wvars_load', ../chunkProcessor/chunkProcessor.cpp:29) on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [26]  (1.769 ns)
+
+ <State 4>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvars_load', ../chunkProcessor/chunkProcessor.cpp:29) on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [26]  (1.769 ns)
+
+ <State 5>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvars_load_2', ../chunkProcessor/chunkProcessor.cpp:29) on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [28]  (1.769 ns)
+
+ <State 6>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvars_load_4', ../chunkProcessor/chunkProcessor.cpp:29) on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [30]  (1.769 ns)
+
+ <State 7>: 3.063ns
+The critical path consists of the following:
+	'load' operation 32 bit ('wvars_load_6', ../chunkProcessor/chunkProcessor.cpp:29) on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [32]  (1.769 ns)
+	'call' operation 0 bit ('call_ln29', ../chunkProcessor/chunkProcessor.cpp:29) to 'chunkProcessor_Pipeline_VITIS_LOOP_25_2' [34]  (1.294 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('add_i26_i241_loc_load') on local variable 'add_i26_i241_loc' [42]  (0.000 ns)
+	'store' operation 0 bit ('store_ln29', ../chunkProcessor/chunkProcessor.cpp:29) of variable 'add_i26_i241_loc_load' on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [43]  (1.769 ns)
+
+ <State 10>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('add_i26_i2413_loc_load') on local variable 'add_i26_i2413_loc' [40]  (0.000 ns)
+	'store' operation 0 bit ('store_ln29', ../chunkProcessor/chunkProcessor.cpp:29) of variable 'add_i26_i2413_loc_load' on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [45]  (1.769 ns)
+
+ <State 11>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('thr_add5625_loc_load') on local variable 'thr_add5625_loc' [38]  (0.000 ns)
+	'store' operation 0 bit ('store_ln29', ../chunkProcessor/chunkProcessor.cpp:29) of variable 'thr_add5625_loc_load' on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [47]  (1.769 ns)
+
+ <State 12>: 1.769ns
+The critical path consists of the following:
+	'load' operation 32 bit ('add_i26_i241347_loc_load') on local variable 'add_i26_i241347_loc' [36]  (0.000 ns)
+	'store' operation 0 bit ('store_ln29', ../chunkProcessor/chunkProcessor.cpp:29) of variable 'add_i26_i241347_loc_load' on array 'wvars', ../chunkProcessor/chunkProcessor.cpp:21 [49]  (1.769 ns)
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 4.155ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'chunkProcessor_Pipeline_VITIS_LOOP_32_4' [51]  (4.155 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

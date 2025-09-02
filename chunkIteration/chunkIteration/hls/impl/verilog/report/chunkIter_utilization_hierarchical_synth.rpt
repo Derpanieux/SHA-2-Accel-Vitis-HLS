@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Jul 14 16:50:17 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/chunkIter_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xa7s6cpga196-2I
+| Speed File   : -2I
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|   Instance   |           Module          | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper |                     (top) |        410 |        410 |       0 |    0 | 262 |      0 |      0 |          0 |
+|   bd_0_i     |                      bd_0 |        410 |        410 |       0 |    0 | 262 |      0 |      0 |          0 |
+|     hls_inst |           bd_0_hls_inst_0 |        410 |        410 |       0 |    0 | 262 |      0 |      0 |          0 |
+|       inst   | bd_0_hls_inst_0_chunkIter |        410 |        410 |       0 |    0 | 262 |      0 |      0 |          0 |
++--------------+---------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

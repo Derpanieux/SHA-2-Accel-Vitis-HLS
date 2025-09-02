@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 9,
+    "file": "chunkIter.cpp",
+    "fileloc": 3,
+    "instructions": 78,
+    "loads": {
+      "T": 8
+    },
+    "memory_accesses": 0,
+    "name": "chunkIter",
+    "stores": {
+      "T": 8
+    },
+    "total_instructions": 78
+  }
+}

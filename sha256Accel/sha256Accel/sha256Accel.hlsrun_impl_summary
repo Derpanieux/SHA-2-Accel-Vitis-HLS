@@ -1,0 +1,278 @@
+<ENTRY>
+{
+ "thisFile": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\sha256Accel.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/22/25 20:19:09",
+ "timestampMillis": "1753229949531",
+ "buildStep": {
+  "cmdId": "c36e3dc1-9241-4f7a-8ea0-64527da18dee",
+  "name": "vitis-run",
+  "logFile": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\logs\\sha256Accel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config D:\\Vitis\\shaAccel\\sha256Accel\\hls_config.cfg --work_dir sha256Accel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "D:\\Vitis\\shaAccel\\sha256Accel\\hls_config.cfg",
+   "--work_dir",
+   "sha256Accel"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\sha256Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:19:09",
+ "timestampMillis": "1753229949531",
+ "status": {
+  "cmdId": "c36e3dc1-9241-4f7a-8ea0-64527da18dee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953018",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sha256Accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/Vitis\\shaAccel\\dataTypes.h",
+     "D:/Vitis\\shaAccel\\functions256.cpp",
+     "D:/Vitis\\shaAccel\\functions256.h",
+     "D:/Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.cpp",
+     "D:/Vitis\\shaAccel\\chunkProcessor\\chunkProcessor.h",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.cpp",
+     "D:/Vitis\\shaAccel\\chunkIteration\\chunkIter.h",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.cpp",
+     "D:/Vitis\\shaAccel\\wGenerator\\wGenerator.h",
+     "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel.h",
+     "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953019",
+ "buildStep": {
+  "cmdId": "5085e6f9-4be2-452c-be58-8a09815ac1c9",
+  "name": "",
+  "logFile": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\Vitis\\shaAccel\\sha256Accel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953019",
+ "status": {
+  "cmdId": "5085e6f9-4be2-452c-be58-8a09815ac1c9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953020",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953020",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953021",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953021",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953021",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:19:13",
+ "timestampMillis": "1753229953021",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:24:17",
+ "timestampMillis": "1753230257921",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:24:17",
+ "timestampMillis": "1753230257922",
+ "report": {
+  "path": "D:/Vitis\\shaAccel\\sha256Accel\\sha256Accel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:24:17",
+ "timestampMillis": "1753230257922",
+ "status": {
+  "cmdId": "5085e6f9-4be2-452c-be58-8a09815ac1c9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/22/25 20:24:18",
+ "timestampMillis": "1753230258016",
+ "status": {
+  "cmdId": "c36e3dc1-9241-4f7a-8ea0-64527da18dee",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:24:18",
+ "timestampMillis": "1753230258017",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/22/25 20:24:18",
+ "timestampMillis": "1753230258017",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,129 @@
+
+
+================================================================
+== Synthesis Summary Report of 'chunkIter'
+================================================================
++ General Information: 
+    * Date:           Mon Jul 14 16:40:14 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        chunkIteration
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: aspartan7
+    * Target device:  xa7s6-cpga196-2I
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |   Modules   | Issue|      |      Latency     | Iteration|         | Trip |          |      |    |          |           |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ chunkIter  |     -|  0.18|        5|  50.000|         -|        6|     -|        no|     -|   -|  262 (3%)|  816 (21%)|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| wvarsin_address0  | out       | 3        |
+| wvarsin_address1  | out       | 3        |
+| wvarsin_q0        | in        | 32       |
+| wvarsin_q1        | in        | 32       |
+| wvarsout_address0 | out       | 3        |
+| wvarsout_address1 | out       | 3        |
+| wvarsout_d0       | out       | 32       |
+| wvarsout_d1       | out       | 32       |
++-------------------+-----------+----------+
+
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| kt   | ap_none | in        | 32       |
+| wt   | ap_none | in        | 32       |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| kt       | in        | ap_uint<32>  |
+| wt       | in        | ap_uint<32>  |
+| wvarsin  | in        | ap_uint<32>* |
+| wvarsout | out       | ap_uint<32>* |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| kt       | kt                | port    |          |
+| wt       | wt                | port    |          |
+| wvarsin  | wvarsin_address0  | port    | offset   |
+| wvarsin  | wvarsin_ce0       | port    |          |
+| wvarsin  | wvarsin_q0        | port    |          |
+| wvarsin  | wvarsin_address1  | port    | offset   |
+| wvarsin  | wvarsin_ce1       | port    |          |
+| wvarsin  | wvarsin_q1        | port    |          |
+| wvarsout | wvarsout_address0 | port    | offset   |
+| wvarsout | wvarsout_ce0      | port    |          |
+| wvarsout | wvarsout_we0      | port    |          |
+| wvarsout | wvarsout_d0       | port    |          |
+| wvarsout | wvarsout_address1 | port    | offset   |
+| wvarsout | wvarsout_ce1      | port    |          |
+| wvarsout | wvarsout_we1      | port    |          |
+| wvarsout | wvarsout_d1       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+------------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++------------------------+-----+--------+------------+-----+--------+---------+
+| + chunkIter            | 0   |        |            |     |        |         |
+|   xor_ln13_fu_421_p2   |     |        | xor_ln13   | xor | auto   | 0       |
+|   and_ln13_fu_427_p2   |     |        | and_ln13   | and | auto   | 0       |
+|   and_ln13_1_fu_433_p2 |     |        | and_ln13_1 | and | auto   | 0       |
+|   or_ln13_fu_438_p2    |     |        | or_ln13    | or  | auto   | 0       |
+|   xor_ln13_1_fu_331_p2 |     |        | xor_ln13_1 | xor | auto   | 0       |
+|   xor_ln13_2_fu_337_p2 |     |        | xor_ln13_2 | xor | auto   | 0       |
+|   or_ln15_fu_466_p2    |     |        | or_ln15    | or  | auto   | 0       |
+|   and_ln15_fu_472_p2   |     |        | and_ln15   | and | auto   | 0       |
+|   and_ln15_1_fu_477_p2 |     |        | and_ln15_1 | and | auto   | 0       |
+|   or_ln15_3_fu_483_p2  |     |        | or_ln15_3  | or  | auto   | 0       |
+|   xor_ln15_fu_409_p2   |     |        | xor_ln15   | xor | auto   | 0       |
+|   xor_ln15_1_fu_415_p2 |     |        | xor_ln15_1 | xor | auto   | 0       |
+|   add_ln19_fu_499_p2   |     |        | add_ln19   | add | fabric | 0       |
++------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

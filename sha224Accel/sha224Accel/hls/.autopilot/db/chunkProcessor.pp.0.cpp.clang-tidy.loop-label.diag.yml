@@ -1,0 +1,76 @@
+---
+MainSourceFile:  'D:/Vitis/shaAccel/sha224Accel/sha224Accel/hls/.autopilot/db/chunkProcessor.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          279809
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          280275
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          280742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          575212
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_1:  '
+    FileOffset:      22
+    FilePath:        'D:\Vitis\shaAccel\chunkProcessor\chunkProcessor.cpp'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          953494
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_2:  '
+    FileOffset:      25
+    FilePath:        'D:\Vitis\shaAccel\chunkProcessor\chunkProcessor.cpp'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          953562
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_3:  '
+    FileOffset:      28
+    FilePath:        'D:\Vitis\shaAccel\chunkProcessor\chunkProcessor.cpp'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          953689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_32_4:  '
+    FileOffset:      32
+    FilePath:        'D:\Vitis\shaAccel\chunkProcessor\chunkProcessor.cpp'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha224Accel\sha224Accel\hls\.autopilot\db\chunkProcessor.pp.0.cpp'
+        Offset:          953775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_32_4: '
+...

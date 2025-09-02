@@ -1,0 +1,13 @@
+{
+  "name": "sha384Accel",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "sha384Accel"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

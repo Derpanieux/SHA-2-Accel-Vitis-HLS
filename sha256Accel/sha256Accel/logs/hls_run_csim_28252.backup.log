@@ -1,0 +1,172 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/sha256Accel/sha256Accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha256Accel/sha256Accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/sha256Accel/sha256Accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/sha256Accel/hls_config.cfg
+WARNING: [HLS 200-2001] file not found './answers' see [hls] from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(20)
+WARNING: [HLS 200-2001] file not found './datain' see [hls] from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions256.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions256.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor/chunkProcessor.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor/chunkProcessor.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration/chunkIter.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration/chunkIter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator/wGenerator.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator/wGenerator.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=sha256Accel.h' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha256Accel/sha256Accel.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=sha256Accel.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha256Accel/sha256Accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb.cpp' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(20)
+WARNING: [HLS 200-40] Cannot find test bench file './answers'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(21)
+WARNING: [HLS 200-40] Cannot find test bench file './datain'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers.dat' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/answers.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain.dat' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(23)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha256Accel/datain.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sha256Accel' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/sha256Accel/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha256Accel/sha256Accel/vitis-comp.json
+WARNING: [HLS 200-1998] cannot find relative file path '../../answers' in directory(s): D:/Vitis/shaAccel/sha256Accel/sha256Accel/solution D:/Vitis/shaAccel/sha256Accel
+WARNING: [HLS 200-1998] cannot find relative file path '../../datain' in directory(s): D:/Vitis/shaAccel/sha256Accel/sha256Accel/solution D:/Vitis/shaAccel/sha256Accel
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make: 'csim.exe' is up to date.
+0
+counter (hex): 0x0
+Wordsout[0]: 0xe3b0c442
+Wordsout[1]: 0x98fc1c14
+Wordsout[2]: 0x9afbf4c8
+Wordsout[3]: 0x996fb924
+Wordsout[4]: 0x27ae41e4
+Wordsout[5]: 0x649b934c
+Wordsout[6]: 0xa495991b
+Wordsout[7]: 0x7852b855
+final hash[0]: 0xe3b0c442
+final hash[1]: 0x98fc1c14
+final hash[2]: 0x9afbf4c8
+final hash[3]: 0x996fb924
+final hash[4]: 0x27ae41e4
+final hash[5]: 0x649b934c
+final hash[6]: 0xa495991b
+final hash[7]: 0x7852b855
+0x08
+counter (hex): 0x0
+Wordsout[0]: 0x5a6e7a47
+Wordsout[1]: 0x54af8e7f
+Wordsout[2]: 0x47fc9493
+Wordsout[3]: 0x40d853e
+Wordsout[4]: 0x7b01e39d
+Wordsout[5]: 0x537cb1dd
+Wordsout[6]: 0x353c93b7
+Wordsout[7]: 0xae58eb3d
+final hash[0]: 0x5a6e7a47
+final hash[1]: 0x54af8e7f
+final hash[2]: 0x47fc9493
+final hash[3]: 0x40d853e
+final hash[4]: 0x7b01e39d
+final hash[5]: 0x537cb1dd
+final hash[6]: 0x353c93b7
+final hash[7]: 0xae58eb3d
+0x10
+counter (hex): 0x0
+Wordsout[0]: 0xf283e82d
+Wordsout[1]: 0x87f61539
+Wordsout[2]: 0xa8f8c006
+Wordsout[3]: 0xffc36f3f
+Wordsout[4]: 0x6b4f9f11
+Wordsout[5]: 0x96d9d179
+Wordsout[6]: 0x76b18989
+Wordsout[7]: 0xbec87dc1
+final hash[0]: 0xf283e82d
+final hash[1]: 0x87f61539
+final hash[2]: 0xa8f8c006
+final hash[3]: 0xffc36f3f
+final hash[4]: 0x6b4f9f11
+final hash[5]: 0x96d9d179
+final hash[6]: 0x76b18989
+final hash[7]: 0xbec87dc1
+0x20
+counter (hex): 0x0
+Wordsout[0]: 0x4fc3f76d
+Wordsout[1]: 0x0e61a393
+Wordsout[2]: 0xa131ce04
+Wordsout[3]: 0x339c304c
+Wordsout[4]: 0x8342857a
+Wordsout[5]: 0xf38cceb8
+Wordsout[6]: 0x728bc757
+Wordsout[7]: 0x69fcdb96
+final hash[0]: 0x4fc3f76d
+final hash[1]: 0x0e61a393
+final hash[2]: 0xa131ce04
+final hash[3]: 0x339c304c
+final hash[4]: 0x8342857a
+final hash[5]: 0xf38cceb8
+final hash[6]: 0x728bc757
+final hash[7]: 0x69fcdb96
+0x400
+counter (hex): 0x0
+Wordsout[0]: 0xcfa82ab3
+Wordsout[1]: 0x774b3a6f
+Wordsout[2]: 0x134187c0
+Wordsout[3]: 0x33be2534
+Wordsout[4]: 0x465466e
+Wordsout[5]: 0xa2731e0e
+Wordsout[6]: 0x3c93f43c
+Wordsout[7]: 0xc12f5032
+counter (hex): 0x200
+Wordsout[0]: 0xcc605698
+Wordsout[1]: 0x3e95c953
+Wordsout[2]: 0x0810bbde
+Wordsout[3]: 0xddba4c55
+Wordsout[4]: 0x1018dfa
+Wordsout[5]: 0x756d6abc
+Wordsout[6]: 0x6718881a
+Wordsout[7]: 0x45174d23
+counter (hex): 0x400
+Wordsout[0]: 0xca6e804e
+Wordsout[1]: 0x1806e478
+Wordsout[2]: 0x193e6918
+Wordsout[3]: 0xb582e037
+Wordsout[4]: 0x972c1753
+Wordsout[5]: 0x32892f01
+Wordsout[6]: 0xf10ab712
+Wordsout[7]: 0x53315fea
+final hash[0]: 0xca6e804e
+final hash[1]: 0x1806e478
+final hash[2]: 0x193e6918
+final hash[3]: 0xb582e037
+final hash[4]: 0x972c1753
+final hash[5]: 0x32892f01
+final hash[6]: 0xf10ab712
+final hash[7]: 0x53315fea
+Discrepancies: 0 out of 5 samples
+*******************************************
+PASS: The output matches the ans output!
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 400
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 3.803 seconds; peak allocated memory: 145.387 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 7s

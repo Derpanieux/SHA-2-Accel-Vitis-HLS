@@ -1,0 +1,7 @@
+Running: xsim.dir/sha224Accel/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sha224Accel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb sha224Accel.wdb -simrunnum 0 -socket 54004
+Design successfully loaded
+Design Loading Memory Usage: 19696 KB (Peak: 19696 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 17428172 KB (Peak: 17428172 KB)
+Simulation CPU Usage: 923656 ms
