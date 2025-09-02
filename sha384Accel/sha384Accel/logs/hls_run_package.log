@@ -1,0 +1,79 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/Vitis/shaAccel/sha384Accel/sha384Accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha384Accel/sha384Accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/Vitis/shaAccel/sha384Accel/sha384Accel'.
+INFO: [HLS 200-1611] Setting target device to 'xa7s6-cpga196-2I'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/Vitis/shaAccel/sha384Accel/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration512/chunkIter512.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration512/chunkIter512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkIteration512/chunkIter512.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkIteration512/chunkIter512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor512/chunkProcessor512.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor512/chunkProcessor512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../chunkProcessor512/chunkProcessor512.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/chunkProcessor512/chunkProcessor512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator512/wGenerator512.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator512/wGenerator512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../wGenerator512/wGenerator512.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/wGenerator512/wGenerator512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions512.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions512.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../functions512.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/functions512.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dataTypes.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/dataTypes.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha384Accel.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(21)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha384Accel/sha384Accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./sha384Accel.h' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(22)
+INFO: [HLS 200-10] Adding design file 'D:/Vitis/shaAccel/sha384Accel/sha384Accel.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./answers.dat' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha384Accel/answers.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./datain.dat' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha384Accel/datain.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./tb.cpp' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/Vitis/shaAccel/sha384Accel/tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sha384Accel' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7s6cpga196-2I' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'cosim.tool=xsim' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/Vitis/shaAccel/sha384Accel/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/Vitis/shaAccel/sha384Accel/sha384Accel/vitis-comp.json
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Aug  1 20:21:39 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/hls_data.json outdir=D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip srcdir=D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/misc
+INFO: Copied 22 verilog file(s) to D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/hdl/verilog
+INFO: Copied 20 vhdl file(s) to D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 499.707 ; gain = 207.457
+INFO: Import ports from HDL: D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/hdl/vhdl/sha384Accel.vhd (sha384Accel)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add ap_fifo interface bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add data interface size
+INFO: Add data interface output_r
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/component.xml
+INFO: Created IP archive D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/impl/ip/xilinx_com_hls_sha384Accel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  1 20:21:52 2025...
+INFO: [HLS 200-802] Generated output file sha384Accel/sha384Accel.zip
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.023 seconds; peak allocated memory: 210.965 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 23s

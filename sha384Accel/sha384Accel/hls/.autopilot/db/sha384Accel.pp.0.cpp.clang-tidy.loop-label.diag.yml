@@ -1,0 +1,103 @@
+---
+MainSourceFile:  'D:/Vitis/shaAccel/sha384Accel/sha384Accel/hls/.autopilot/db/sha384Accel.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          293181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          293647
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          294114
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          588584
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          966601
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          966644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_3:  '
+    FileOffset:      26
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          966971
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_4:  '
+    FileOffset:      38
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          967356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_5:  '
+    FileOffset:      46
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          967598
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_6:  '
+    FileOffset:      47
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          967641
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_52_7:  '
+    FileOffset:      52
+    FilePath:        sha384Accel.cpp
+    Replacements:    
+      - FilePath:        'D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp'
+        Offset:          967822
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_52_7: '
+...

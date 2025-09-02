@@ -1,0 +1,272 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha384Accel_Pipeline_VITIS_LOOP_38_4'
+================================================================
+* Date:           Fri Aug  1 20:18:11 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        sha384Accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aspartan7
+* Target device:  xa7s6-cpga196-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.213 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |      130|      130|  1.300 us|  1.300 us|  129|  129|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_38_4  |      128|      128|         1|          1|          1|   128|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+------+------+-----+
+|       Name      | BRAM_18K| DSP|  FF  |  LUT | URAM|
++-----------------+---------+----+------+------+-----+
+|DSP              |        -|   -|     -|     -|    -|
+|Expression       |        -|   -|     0|    52|    -|
+|FIFO             |        -|   -|     -|     -|    -|
+|Instance         |        -|   -|     0|    34|    -|
+|Memory           |        -|   -|     -|     -|    -|
+|Multiplexer      |        -|   -|     0|    54|    -|
+|Register         |        -|   -|    21|     -|    -|
++-----------------+---------+----+------+------+-----+
+|Total            |        0|   0|    21|   140|    0|
++-----------------+---------+----+------+------+-----+
+|Available        |       10|  10|  7500|  3750|    0|
++-----------------+---------+----+------+------+-----+
+|Utilization (%)  |        0|   0|    ~0|     3|    0|
++-----------------+---------+----+------+------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------+-------------------------------+---------+----+---+----+-----+
+    |              Instance             |             Module            | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------------+-------------------------------+---------+----+---+----+-----+
+    |bitselect_1ns_128ns_7ns_1_1_1_U74  |bitselect_1ns_128ns_7ns_1_1_1  |        0|   0|  0|  34|    0|
+    +-----------------------------------+-------------------------------+---------+----+---+----+-----+
+    |Total                              |                               |        0|   0|  0|  34|    0|
+    +-----------------------------------+-------------------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln38_fu_787_p2     |         +|   0|  0|  18|          11|           1|
+    |sizeIndex_1_fu_793_p2  |         +|   0|  0|  15|           8|           2|
+    |icmp_ln38_fu_611_p2    |      icmp|   0|  0|  19|          11|          12|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  52|          30|          15|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                        |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j                 |   9|          2|   11|         22|
+    |ap_sig_allocacmp_sizeIndex_load    |   9|          2|    8|         16|
+    |ap_sig_allocacmp_sizeIndex_load_1  |   9|          2|    8|         16|
+    |j_1_fu_172                         |   9|          2|   11|         22|
+    |sizeIndex_fu_168                   |   9|          2|    8|         16|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              |  54|         12|   47|         94|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   1|   0|    1|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |j_1_fu_172        |  11|   0|   11|          0|
+    |sizeIndex_fu_168  |   8|   0|    8|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             |  21|   0|   21|          0|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++--------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  sha384Accel_Pipeline_VITIS_LOOP_38_4|  return value|
+|buffer_31_address0  |  out|    5|   ap_memory|                             buffer_31|         array|
+|buffer_31_ce0       |  out|    1|   ap_memory|                             buffer_31|         array|
+|buffer_31_we0       |  out|    1|   ap_memory|                             buffer_31|         array|
+|buffer_31_d0        |  out|    1|   ap_memory|                             buffer_31|         array|
+|buffer_30_address0  |  out|    5|   ap_memory|                             buffer_30|         array|
+|buffer_30_ce0       |  out|    1|   ap_memory|                             buffer_30|         array|
+|buffer_30_we0       |  out|    1|   ap_memory|                             buffer_30|         array|
+|buffer_30_d0        |  out|    1|   ap_memory|                             buffer_30|         array|
+|buffer_29_address0  |  out|    5|   ap_memory|                             buffer_29|         array|
+|buffer_29_ce0       |  out|    1|   ap_memory|                             buffer_29|         array|
+|buffer_29_we0       |  out|    1|   ap_memory|                             buffer_29|         array|
+|buffer_29_d0        |  out|    1|   ap_memory|                             buffer_29|         array|
+|buffer_28_address0  |  out|    5|   ap_memory|                             buffer_28|         array|
+|buffer_28_ce0       |  out|    1|   ap_memory|                             buffer_28|         array|
+|buffer_28_we0       |  out|    1|   ap_memory|                             buffer_28|         array|
+|buffer_28_d0        |  out|    1|   ap_memory|                             buffer_28|         array|
+|buffer_27_address0  |  out|    5|   ap_memory|                             buffer_27|         array|
+|buffer_27_ce0       |  out|    1|   ap_memory|                             buffer_27|         array|
+|buffer_27_we0       |  out|    1|   ap_memory|                             buffer_27|         array|
+|buffer_27_d0        |  out|    1|   ap_memory|                             buffer_27|         array|
+|buffer_26_address0  |  out|    5|   ap_memory|                             buffer_26|         array|
+|buffer_26_ce0       |  out|    1|   ap_memory|                             buffer_26|         array|
+|buffer_26_we0       |  out|    1|   ap_memory|                             buffer_26|         array|
+|buffer_26_d0        |  out|    1|   ap_memory|                             buffer_26|         array|
+|buffer_25_address0  |  out|    5|   ap_memory|                             buffer_25|         array|
+|buffer_25_ce0       |  out|    1|   ap_memory|                             buffer_25|         array|
+|buffer_25_we0       |  out|    1|   ap_memory|                             buffer_25|         array|
+|buffer_25_d0        |  out|    1|   ap_memory|                             buffer_25|         array|
+|buffer_24_address0  |  out|    5|   ap_memory|                             buffer_24|         array|
+|buffer_24_ce0       |  out|    1|   ap_memory|                             buffer_24|         array|
+|buffer_24_we0       |  out|    1|   ap_memory|                             buffer_24|         array|
+|buffer_24_d0        |  out|    1|   ap_memory|                             buffer_24|         array|
+|buffer_23_address0  |  out|    5|   ap_memory|                             buffer_23|         array|
+|buffer_23_ce0       |  out|    1|   ap_memory|                             buffer_23|         array|
+|buffer_23_we0       |  out|    1|   ap_memory|                             buffer_23|         array|
+|buffer_23_d0        |  out|    1|   ap_memory|                             buffer_23|         array|
+|buffer_22_address0  |  out|    5|   ap_memory|                             buffer_22|         array|
+|buffer_22_ce0       |  out|    1|   ap_memory|                             buffer_22|         array|
+|buffer_22_we0       |  out|    1|   ap_memory|                             buffer_22|         array|
+|buffer_22_d0        |  out|    1|   ap_memory|                             buffer_22|         array|
+|buffer_21_address0  |  out|    5|   ap_memory|                             buffer_21|         array|
+|buffer_21_ce0       |  out|    1|   ap_memory|                             buffer_21|         array|
+|buffer_21_we0       |  out|    1|   ap_memory|                             buffer_21|         array|
+|buffer_21_d0        |  out|    1|   ap_memory|                             buffer_21|         array|
+|buffer_20_address0  |  out|    5|   ap_memory|                             buffer_20|         array|
+|buffer_20_ce0       |  out|    1|   ap_memory|                             buffer_20|         array|
+|buffer_20_we0       |  out|    1|   ap_memory|                             buffer_20|         array|
+|buffer_20_d0        |  out|    1|   ap_memory|                             buffer_20|         array|
+|buffer_19_address0  |  out|    5|   ap_memory|                             buffer_19|         array|
+|buffer_19_ce0       |  out|    1|   ap_memory|                             buffer_19|         array|
+|buffer_19_we0       |  out|    1|   ap_memory|                             buffer_19|         array|
+|buffer_19_d0        |  out|    1|   ap_memory|                             buffer_19|         array|
+|buffer_18_address0  |  out|    5|   ap_memory|                             buffer_18|         array|
+|buffer_18_ce0       |  out|    1|   ap_memory|                             buffer_18|         array|
+|buffer_18_we0       |  out|    1|   ap_memory|                             buffer_18|         array|
+|buffer_18_d0        |  out|    1|   ap_memory|                             buffer_18|         array|
+|buffer_17_address0  |  out|    5|   ap_memory|                             buffer_17|         array|
+|buffer_17_ce0       |  out|    1|   ap_memory|                             buffer_17|         array|
+|buffer_17_we0       |  out|    1|   ap_memory|                             buffer_17|         array|
+|buffer_17_d0        |  out|    1|   ap_memory|                             buffer_17|         array|
+|buffer_16_address0  |  out|    5|   ap_memory|                             buffer_16|         array|
+|buffer_16_ce0       |  out|    1|   ap_memory|                             buffer_16|         array|
+|buffer_16_we0       |  out|    1|   ap_memory|                             buffer_16|         array|
+|buffer_16_d0        |  out|    1|   ap_memory|                             buffer_16|         array|
+|buffer_15_address0  |  out|    5|   ap_memory|                             buffer_15|         array|
+|buffer_15_ce0       |  out|    1|   ap_memory|                             buffer_15|         array|
+|buffer_15_we0       |  out|    1|   ap_memory|                             buffer_15|         array|
+|buffer_15_d0        |  out|    1|   ap_memory|                             buffer_15|         array|
+|buffer_14_address0  |  out|    5|   ap_memory|                             buffer_14|         array|
+|buffer_14_ce0       |  out|    1|   ap_memory|                             buffer_14|         array|
+|buffer_14_we0       |  out|    1|   ap_memory|                             buffer_14|         array|
+|buffer_14_d0        |  out|    1|   ap_memory|                             buffer_14|         array|
+|buffer_13_address0  |  out|    5|   ap_memory|                             buffer_13|         array|
+|buffer_13_ce0       |  out|    1|   ap_memory|                             buffer_13|         array|
+|buffer_13_we0       |  out|    1|   ap_memory|                             buffer_13|         array|
+|buffer_13_d0        |  out|    1|   ap_memory|                             buffer_13|         array|
+|buffer_12_address0  |  out|    5|   ap_memory|                             buffer_12|         array|
+|buffer_12_ce0       |  out|    1|   ap_memory|                             buffer_12|         array|
+|buffer_12_we0       |  out|    1|   ap_memory|                             buffer_12|         array|
+|buffer_12_d0        |  out|    1|   ap_memory|                             buffer_12|         array|
+|buffer_11_address0  |  out|    5|   ap_memory|                             buffer_11|         array|
+|buffer_11_ce0       |  out|    1|   ap_memory|                             buffer_11|         array|
+|buffer_11_we0       |  out|    1|   ap_memory|                             buffer_11|         array|
+|buffer_11_d0        |  out|    1|   ap_memory|                             buffer_11|         array|
+|buffer_10_address0  |  out|    5|   ap_memory|                             buffer_10|         array|
+|buffer_10_ce0       |  out|    1|   ap_memory|                             buffer_10|         array|
+|buffer_10_we0       |  out|    1|   ap_memory|                             buffer_10|         array|
+|buffer_10_d0        |  out|    1|   ap_memory|                             buffer_10|         array|
+|buffer_9_address0   |  out|    5|   ap_memory|                              buffer_9|         array|
+|buffer_9_ce0        |  out|    1|   ap_memory|                              buffer_9|         array|
+|buffer_9_we0        |  out|    1|   ap_memory|                              buffer_9|         array|
+|buffer_9_d0         |  out|    1|   ap_memory|                              buffer_9|         array|
+|buffer_8_address0   |  out|    5|   ap_memory|                              buffer_8|         array|
+|buffer_8_ce0        |  out|    1|   ap_memory|                              buffer_8|         array|
+|buffer_8_we0        |  out|    1|   ap_memory|                              buffer_8|         array|
+|buffer_8_d0         |  out|    1|   ap_memory|                              buffer_8|         array|
+|buffer_7_address0   |  out|    5|   ap_memory|                              buffer_7|         array|
+|buffer_7_ce0        |  out|    1|   ap_memory|                              buffer_7|         array|
+|buffer_7_we0        |  out|    1|   ap_memory|                              buffer_7|         array|
+|buffer_7_d0         |  out|    1|   ap_memory|                              buffer_7|         array|
+|buffer_6_address0   |  out|    5|   ap_memory|                              buffer_6|         array|
+|buffer_6_ce0        |  out|    1|   ap_memory|                              buffer_6|         array|
+|buffer_6_we0        |  out|    1|   ap_memory|                              buffer_6|         array|
+|buffer_6_d0         |  out|    1|   ap_memory|                              buffer_6|         array|
+|buffer_5_address0   |  out|    5|   ap_memory|                              buffer_5|         array|
+|buffer_5_ce0        |  out|    1|   ap_memory|                              buffer_5|         array|
+|buffer_5_we0        |  out|    1|   ap_memory|                              buffer_5|         array|
+|buffer_5_d0         |  out|    1|   ap_memory|                              buffer_5|         array|
+|buffer_4_address0   |  out|    5|   ap_memory|                              buffer_4|         array|
+|buffer_4_ce0        |  out|    1|   ap_memory|                              buffer_4|         array|
+|buffer_4_we0        |  out|    1|   ap_memory|                              buffer_4|         array|
+|buffer_4_d0         |  out|    1|   ap_memory|                              buffer_4|         array|
+|buffer_3_address0   |  out|    5|   ap_memory|                              buffer_3|         array|
+|buffer_3_ce0        |  out|    1|   ap_memory|                              buffer_3|         array|
+|buffer_3_we0        |  out|    1|   ap_memory|                              buffer_3|         array|
+|buffer_3_d0         |  out|    1|   ap_memory|                              buffer_3|         array|
+|buffer_2_address0   |  out|    5|   ap_memory|                              buffer_2|         array|
+|buffer_2_ce0        |  out|    1|   ap_memory|                              buffer_2|         array|
+|buffer_2_we0        |  out|    1|   ap_memory|                              buffer_2|         array|
+|buffer_2_d0         |  out|    1|   ap_memory|                              buffer_2|         array|
+|buffer_1_address0   |  out|    5|   ap_memory|                              buffer_1|         array|
+|buffer_1_ce0        |  out|    1|   ap_memory|                              buffer_1|         array|
+|buffer_1_we0        |  out|    1|   ap_memory|                              buffer_1|         array|
+|buffer_1_d0         |  out|    1|   ap_memory|                              buffer_1|         array|
+|buffer_r_address0   |  out|    5|   ap_memory|                              buffer_r|         array|
+|buffer_r_ce0        |  out|    1|   ap_memory|                              buffer_r|         array|
+|buffer_r_we0        |  out|    1|   ap_memory|                              buffer_r|         array|
+|buffer_r_d0         |  out|    1|   ap_memory|                              buffer_r|         array|
+|size                |   in|  128|     ap_none|                                  size|        scalar|
++--------------------+-----+-----+------------+--------------------------------------+--------------+
+

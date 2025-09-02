@@ -1,0 +1,55 @@
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2678:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2678:5: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2692:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2692:5: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2706:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:2706:5: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:4674:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:4674:7: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6718:5: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    while(iterneeded) {
+    ^~~~~
+    VITIS_LOOP_13_1: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6718:5: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6720:9: warning: Added loop label VITIS_LOOP_15_2:   [xilinx-label-all-loops]
+        for(j = 0; j < 896; j++, counter++) {
+        ^~~
+        VITIS_LOOP_15_2: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6720:9: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6731:13: warning: Added loop label VITIS_LOOP_26_3:   [xilinx-label-all-loops]
+            for(; j < 1024; j++, counter++) {
+            ^~~
+            VITIS_LOOP_26_3: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6731:13: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6743:13: warning: Added loop label VITIS_LOOP_38_4:   [xilinx-label-all-loops]
+            for(; j < 1024; j++, counter++, sizeIndex--) {
+            ^~~
+            VITIS_LOOP_38_4: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6743:13: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6751:9: warning: Added loop label VITIS_LOOP_46_5:   [xilinx-label-all-loops]
+        for (int j = 0; j < 16; j++) {
+        ^~~
+        VITIS_LOOP_46_5: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6751:9: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6752:13: warning: Added loop label VITIS_LOOP_47_6:   [xilinx-label-all-loops]
+            for (int k = 63; k >= 0; k--, buffi++) {
+            ^~~
+            VITIS_LOOP_47_6: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6752:13: note: FIX-IT applied suggested code changes
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6757:9: warning: Added loop label VITIS_LOOP_52_7:   [xilinx-label-all-loops]
+        for(int j = 0; j < 8; j++) {
+        ^~~
+        VITIS_LOOP_52_7: 
+D:\Vitis\shaAccel\sha384Accel\sha384Accel\hls\.autopilot\db\sha384Accel.pp.0.cpp:6757:9: note: FIX-IT applied suggested code changes

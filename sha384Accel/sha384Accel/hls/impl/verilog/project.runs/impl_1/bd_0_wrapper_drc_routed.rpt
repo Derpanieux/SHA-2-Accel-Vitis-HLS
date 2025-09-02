@@ -1,0 +1,63 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Aug  1 20:28:25 2025
+| Host         : DESKTOP-E57T4BO running 64-bit major release  (build 9200)
+| Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+| Design       : bd_0_wrapper
+| Device       : xa7s6cpga196-2I
+| Speed File   : -2I
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_bd_0_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++-----------+----------+-----------------------------------------------------+--------+
+| Rule      | Severity | Description                                         | Checks |
++-----------+----------+-----------------------------------------------------+--------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
+| RTSTAT-10 | Warning  | No routable loads                                   | 1      |
++-----------+----------+-----------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+258 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/ap_idle,
+bd_0_i/hls_inst/inst/grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/bitstream_read,
+bd_0_i/hls_inst/inst/output_r[0], bd_0_i/hls_inst/inst/output_r[10],
+bd_0_i/hls_inst/inst/output_r[11], bd_0_i/hls_inst/inst/output_r[12],
+bd_0_i/hls_inst/inst/output_r[1], bd_0_i/hls_inst/inst/output_r[2],
+bd_0_i/hls_inst/inst/output_r[3], bd_0_i/hls_inst/inst/output_r[4],
+bd_0_i/hls_inst/inst/output_r[5], bd_0_i/hls_inst/inst/output_r[6],
+bd_0_i/hls_inst/inst/output_r[7], bd_0_i/hls_inst/inst/output_r[8],
+bd_0_i/hls_inst/inst/output_r[9] (the first 15 of 258 listed nets/buses).
+Related violations: <none>
+
+

@@ -1,0 +1,473 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>8.226</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>8.226</CP_FINAL>
+    <CP_ROUTE>8.226</CP_ROUTE>
+    <CP_SYNTH>5.795</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>1.774</SLACK_FINAL>
+    <SLACK_ROUTE>1.774</SLACK_ROUTE>
+    <SLACK_SYNTH>4.205</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>1.774</WNS_FINAL>
+    <WNS_ROUTE>1.774</WNS_ROUTE>
+    <WNS_SYNTH>4.205</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>8</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>3399</FF>
+      <LATCH>0</LATCH>
+      <LUT>3327</LUT>
+      <SLICE>1061</SLICE>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>10</BRAM>
+      <CLB>0</CLB>
+      <DSP>10</DSP>
+      <FF>7500</FF>
+      <LUT>3750</LUT>
+      <SLICE>2000</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="sha384Accel" DISPNAME="inst" RTLNAME="sha384Accel">
+      <SubModules count="41">buffer_10_U buffer_11_U buffer_12_U buffer_13_U buffer_14_U buffer_15_U buffer_16_U buffer_17_U buffer_18_U buffer_19_U buffer_1_U buffer_20_U buffer_21_U buffer_22_U buffer_23_U buffer_24_U buffer_25_U buffer_26_U buffer_27_U buffer_28_U buffer_29_U buffer_2_U buffer_30_U buffer_31_U buffer_3_U buffer_4_U buffer_5_U buffer_6_U buffer_7_U buffer_8_U buffer_9_U buffer_U grp_chunkProcessor_fu_557 grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442 grp_sha384Accel_Pipeline_VITIS_LOOP_38_4_fu_483 grp_sha384Accel_Pipeline_VITIS_LOOP_46_5_fu_520 grp_sha384Accel_Pipeline_VITIS_LOOP_52_7_fu_566 interHash_U message_U wordsout_U</SubModules>
+      <Resources BRAM="8" FF="3399" LUT="3327"/>
+      <LocalResources FF="767" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_10_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_10_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_10_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_10" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_11_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_11_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_11_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_11" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_12_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_12_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_12_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_12" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_13_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_13_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_13_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_13" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_14_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_14_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_14_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_14" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_15_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_15_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_15_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_15" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_16_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_16_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_16_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_16" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_17_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_17_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_17_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_17" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_18_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_18_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_18_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_18" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_19_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_19_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_19_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_19" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_1_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_1_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_1_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_20_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_20_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_20_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_20" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_21_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_21_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_21_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_21" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_22_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_22_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_22_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_22" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_23_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_23_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_23_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_23" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_24_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_24_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_24_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_24" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_25_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_25_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_25_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_25" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_26_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_26_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_26_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_26" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_27_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_27_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_27_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_27" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_28_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_28_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_28_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_28" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_29_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_29_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_29_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_29" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_2_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_2_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_2_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_30_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_30_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_30_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_30" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_31_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_31_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_31_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_31" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_3_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_3_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_3_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_4_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_4_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_4_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_5_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_5_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_5_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_5" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_6_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_6_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_6_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_6" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_7_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_7_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_7_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_7" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_8_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_8_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_8_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_8" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_9_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_9_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_9_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer_9" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buffer_U" DEPTH="1" TYPE="resource" MODULENAME="buffer_RAM_AUTO_1R1W" DISPNAME="buffer_U" RTLNAME="sha384Accel_buffer_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buffer_U" SOURCE="sha384Accel.cpp:5" STORAGESIZE="1 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buffer" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557" DEPTH="1" TYPE="function" MODULENAME="chunkProcessor" DISPNAME="grp_chunkProcessor_fu_557" RTLNAME="sha384Accel_chunkProcessor">
+      <SubModules count="7">grp_chunkProcessor_Pipeline_VITIS_LOOP_11_2_fu_163 grp_chunkProcessor_Pipeline_VITIS_LOOP_24_1_fu_155 grp_chunkProcessor_Pipeline_VITIS_LOOP_27_2_fu_168 grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193 grp_chunkProcessor_Pipeline_VITIS_LOOP_8_1_fu_147 wValues_U wvars_U</SubModules>
+      <Resources BRAM="4" FF="2083" LUT="2269"/>
+      <LocalResources FF="533" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_11_2_fu_163" DEPTH="2" TYPE="function" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_11_2" DISPNAME="grp_chunkProcessor_Pipeline_VITIS_LOOP_11_2_fu_163" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_11_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="220" LUT="286"/>
+      <LocalResources FF="218" LUT="121"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_11_2_fu_163/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="167"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_24_1_fu_155" DEPTH="2" TYPE="function" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_24_1" DISPNAME="grp_chunkProcessor_Pipeline_VITIS_LOOP_24_1_fu_155" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_24_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_24_1_fu_155/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_27_2_fu_168" DEPTH="2" TYPE="function" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_27_2" DISPNAME="grp_chunkProcessor_Pipeline_VITIS_LOOP_27_2_fu_168" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U kValues_U</SubModules>
+      <Resources FF="1105" LUT="1374"/>
+      <LocalResources FF="1038" LUT="812"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_27_2_fu_168/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="3" LUT="565"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_27_2_fu_168/kValues_U" DEPTH="3" TYPE="resource" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R" DISPNAME="kValues_U" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_27_2_kValues_ROM_AUTO_1R">
+      <Resources FF="64" LUT="1"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="kValues_U" SOURCE="" STORAGESIZE="64 80 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="kValues" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193" DEPTH="2" TYPE="function" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_34_4" DISPNAME="grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_34_4">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_34_4_fu_193/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_8_1_fu_147" DEPTH="2" TYPE="function" MODULENAME="chunkProcessor_Pipeline_VITIS_LOOP_8_1" DISPNAME="grp_chunkProcessor_Pipeline_VITIS_LOOP_8_1_fu_147" RTLNAME="sha384Accel_chunkProcessor_Pipeline_VITIS_LOOP_8_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/grp_chunkProcessor_Pipeline_VITIS_LOOP_8_1_fu_147/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/wValues_U" DEPTH="2" TYPE="resource" MODULENAME="chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W" DISPNAME="wValues_U" RTLNAME="sha384Accel_chunkProcessor_wValues_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="192" LUT="491"/>
+      <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="wValues_U" SOURCE="../chunkProcessor512/chunkProcessor512.cpp:19" STORAGESIZE="64 80 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="wValues" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_chunkProcessor_fu_557/wvars_U" DEPTH="2" TYPE="resource" MODULENAME="chunkProcessor_wvars_RAM_AUTO_1R1W" DISPNAME="wvars_U" RTLNAME="sha384Accel_chunkProcessor_wvars_RAM_AUTO_1R1W">
+      <Resources BRAM="4" LUT="70"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="wvars_U" SOURCE="../chunkProcessor512/chunkProcessor512.cpp:23" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="wvars" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" DEPTH="1" TYPE="function" MODULENAME="sha384Accel_Pipeline_VITIS_LOOP_15_2" DISPNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" RTLNAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="156" LUT="319"/>
+      <LocalResources FF="154" LUT="182"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="138"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" DEPTH="1" TYPE="function" MODULENAME="sha384Accel_Pipeline_VITIS_LOOP_26_3" DISPNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" RTLNAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_26_3">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="155" LUT="286"/>
+      <LocalResources FF="153" LUT="146"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="140"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_38_4_fu_483" DEPTH="1" TYPE="function" MODULENAME="sha384Accel_Pipeline_VITIS_LOOP_38_4" DISPNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_38_4_fu_483" RTLNAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_38_4">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="20" LUT="129"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_38_4_fu_483/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="80"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_46_5_fu_520" DEPTH="1" TYPE="function" MODULENAME="sha384Accel_Pipeline_VITIS_LOOP_46_5" DISPNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_46_5_fu_520" RTLNAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_46_5">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_46_5_fu_520/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_52_7_fu_566" DEPTH="1" TYPE="function" MODULENAME="sha384Accel_Pipeline_VITIS_LOOP_52_7" DISPNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_52_7_fu_566" RTLNAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_52_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_sha384Accel_Pipeline_VITIS_LOOP_52_7_fu_566/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="sha384Accel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/interHash_U" DEPTH="1" TYPE="resource" MODULENAME="chunkProcessor_wvars_RAM_AUTO_1R1W" DISPNAME="interHash_U" RTLNAME="sha384Accel_chunkProcessor_wvars_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="interHash_U" SOURCE="sha384Accel.cpp:6" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="interHash" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/message_U" DEPTH="1" TYPE="resource" MODULENAME="message_RAM_AUTO_1R1W" DISPNAME="message_U" RTLNAME="sha384Accel_message_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="64"/>
+      <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="message_U" SOURCE="sha384Accel.cpp:44" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="message" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/wordsout_U" DEPTH="1" TYPE="resource" MODULENAME="wordsout_RAM_AUTO_1R1W" DISPNAME="wordsout_U" RTLNAME="sha384Accel_wordsout_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="114"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="wordsout_U" SOURCE="sha384Accel.cpp:43" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="wordsout" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="8.252" DATAPATH_LOGIC_DELAY="4.065" DATAPATH_NET_DELAY="4.187" ENDPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[127]/D" LOGIC_LEVELS="33" MAX_FANOUT="132" SLACK="1.774" STARTPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg/C">
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel.v" LINE_NUMBER="2227"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[4]_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[48]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[52]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[56]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[60]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[64]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[68]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[72]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[76]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[80]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[84]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[88]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[92]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[96]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[100]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[104]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[108]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[112]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[116]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[120]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[124]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[127]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2.v" LINE_NUMBER="573" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="8.247" DATAPATH_LOGIC_DELAY="4.060" DATAPATH_NET_DELAY="4.187" ENDPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[125]/D" LOGIC_LEVELS="33" MAX_FANOUT="132" SLACK="1.779" STARTPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg/C">
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel.v" LINE_NUMBER="2227"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[4]_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[48]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[52]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[56]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[60]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[64]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[68]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[72]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[76]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[80]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[84]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[88]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[92]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[96]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[100]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[104]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[108]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[112]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[116]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[120]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[124]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[125]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2.v" LINE_NUMBER="573" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="8.189" DATAPATH_LOGIC_DELAY="4.002" DATAPATH_NET_DELAY="4.187" ENDPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[126]/D" LOGIC_LEVELS="33" MAX_FANOUT="132" SLACK="1.837" STARTPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg/C">
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel.v" LINE_NUMBER="2227"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[0]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186[4]_i_2" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[48]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[52]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[56]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[60]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[64]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[68]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[72]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[76]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[80]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[84]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[88]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[92]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[96]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[100]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[104]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[108]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[112]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[116]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[120]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/flow_control_loop_pipe_sequential_init_U/counter_1_fu_186_reg[124]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399/counter_1_fu_186_reg[126]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_15_2.v" LINE_NUMBER="573" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="8.145" DATAPATH_LOGIC_DELAY="4.234" DATAPATH_NET_DELAY="3.911" ENDPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/counter_fu_182_reg[125]/D" LOGIC_LEVELS="34" MAX_FANOUT="132" SLACK="1.839" STARTPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442_ap_start_reg_reg/C">
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel.v" LINE_NUMBER="2239"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/j_2_fu_186[10]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182[0]_i_7" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel.v" LINE_NUMBER="9" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[48]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[52]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[56]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[60]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[64]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[68]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[72]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[76]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[80]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[84]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[88]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[92]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[96]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[100]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[104]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[108]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[112]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[116]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[120]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[124]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/counter_fu_182_reg[125]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_26_3.v" LINE_NUMBER="572" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="8.140" DATAPATH_LOGIC_DELAY="4.229" DATAPATH_NET_DELAY="3.911" ENDPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/counter_fu_182_reg[127]/D" LOGIC_LEVELS="34" MAX_FANOUT="132" SLACK="1.844" STARTPOINT_PIN="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442_ap_start_reg_reg/C">
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442_ap_start_reg_reg" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel.v" LINE_NUMBER="2239"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/j_2_fu_186[10]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182[0]_i_7" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="sha384Accel.v" LINE_NUMBER="9" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[0]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[4]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[8]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[12]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[16]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[20]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[24]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[28]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[32]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[36]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[40]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[44]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[48]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[52]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[56]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[60]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[64]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[68]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[72]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[76]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[80]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[84]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[88]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[92]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[96]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[100]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[104]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[108]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[112]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[116]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[120]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/flow_control_loop_pipe_sequential_init_U/counter_fu_182_reg[124]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="sha384Accel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <CELL NAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442/counter_fu_182_reg[127]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="sha384Accel_sha384Accel_Pipeline_VITIS_LOOP_26_3.v" LINE_NUMBER="572" MODULE_INSTNAME="grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_sha384Accel_Pipeline_VITIS_LOOP_15_2_fu_399 grp_sha384Accel_Pipeline_VITIS_LOOP_26_3_fu_442</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/sha384Accel_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/sha384Accel_failfast_routed.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/sha384Accel_power_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/sha384Accel_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/sha384Accel_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/sha384Accel_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/sha384Accel_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/sha384Accel_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Fri Aug 01 20:28:43 -0400 2025"/>
+    <item NAME="Version" VALUE="2025.1 (Build 6135595 on May 21 2025)"/>
+    <item NAME="Project" VALUE="sha384Accel"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="aspartan7"/>
+    <item NAME="Target device" VALUE="xa7s6-cpga196-2I"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE=""/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+
